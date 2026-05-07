@@ -82,6 +82,17 @@
         .visual-placeholder { width: 100%; height: 100%; min-height: 200px; border: 2px dashed #94a3b8; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f1f5f9; color: #64748b; font-size: 0.85rem; font-weight: 600; text-align: center; padding: 2rem; }
         .visual-placeholder-title { font-weight: 800; color: var(--corp-navy); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em;}
         .visual-placeholder-desc { font-weight: 400; font-size: 0.7rem; color: #475569; max-width: 80%; line-height: 1.4; }
+    
+        /* Institutional Utility Classes */
+        .bg-corp-navy { background-color: var(--corp-navy) !important; }
+        .bg-corp-blue { background-color: var(--corp-blue) !important; }
+        .bg-corp-gold { background-color: var(--corp-gold) !important; }
+        .text-corp-navy { color: var(--corp-navy) !important; }
+        .text-corp-blue { color: var(--corp-blue) !important; }
+        .text-corp-gold { color: var(--corp-gold) !important; }
+        .border-corp-navy { border-color: var(--corp-navy) !important; }
+        .border-corp-blue { border-color: var(--corp-blue) !important; }
+        .border-corp-gold { border-color: var(--corp-gold) !important; }
     </style>
 </head>
 <body>
@@ -97,7 +108,7 @@
             <p class="text-2xl max-w-3xl leading-relaxed mb-6 font-bold" style="color: var(--corp-blue);">
                 Institutional Feasibility & Investment Memorandum
             </p>
-            <p class="text-sm max-w-2xl leading-relaxed mb-16 text-slate-500 font-medium">
+            <p class="text-sm max-w-2xl leading-relaxed mb-16 text-slate-700 font-medium">
                 The $500M Master Blueprint for the Vertical Integration of an Indonesian-Headquartered Global Seafood Infrastructure Conglomerate.
             </p>
             <div class="text-sm uppercase tracking-widest font-bold" style="color: var(--text-muted);">
@@ -130,12 +141,12 @@
         
         <div class="exec-visual-box">
             <div class="flex flex-col md:flex-row items-center justify-center gap-6 w-full text-sm font-bold">
-                <div class="p-6 bg-slate-100 border border-slate-300 text-slate-500 text-center w-full">Raw Marine Biomass</div>
-                <div class="text-2xl text-slate-400">→</div>
+                <div class="p-6 bg-slate-100 border border-slate-300 text-slate-700 text-center w-full">Raw Marine Biomass</div>
+                <div class="text-2xl text-slate-600">→</div>
                 <div class="p-6 bg-blue-100 border-2 border-blue-600 text-blue-900 text-center w-full">SuperFrozen Processing</div>
-                <div class="text-2xl text-slate-400">→</div>
+                <div class="text-2xl text-slate-600">→</div>
                 <div class="p-6 bg-yellow-100 border-2 border-yellow-700 text-yellow-900 text-center w-full">FMCG Brands</div>
-                <div class="text-2xl text-slate-400">→</div>
+                <div class="text-2xl text-slate-600">→</div>
                 <div class="p-6 bg-sky-100 border border-sky-600 text-sky-900 text-center w-full">Global Retail</div>
             </div>
             <div class="mt-8 pt-4 border-t-2 border-corp-gold w-full text-center">
@@ -167,15 +178,15 @@
         <div class="grid grid-cols-3 gap-6 text-center mb-6">
             <div class="p-6 border-l-4 bg-white shadow-sm" style="border-left-color: var(--corp-gold);">
                 <h4 class="font-bold text-lg mb-2" style="color: var(--corp-navy);">Sovereign Mandate</h4>
-                <p class="text-sm text-slate-500">Reducing the 30% national post-harvest loss rate through privatized cold-chain modernization.</p>
+                <p class="text-sm text-slate-700">Reducing the 30% national post-harvest loss rate through privatized cold-chain modernization.</p>
             </div>
             <div class="p-6 border-l-4 bg-white shadow-sm" style="border-left-color: var(--corp-blue);">
                 <h4 class="font-bold text-lg mb-2" style="color: var(--corp-navy);">Industrial Brain</h4>
-                <p class="text-sm text-slate-500">All global processing, IP holding, and core strategic decision-making remains domiciled in Jakarta/Surabaya.</p>
+                <p class="text-sm text-slate-700">All global processing, IP holding, and core strategic decision-making remains domiciled in Jakarta/Surabaya.</p>
             </div>
             <div class="p-6 border-l-4 border-green-600 bg-white shadow-sm">
                 <h4 class="font-bold text-lg mb-2" style="color: var(--corp-navy);">Export Multiplier</h4>
-                <p class="text-sm text-slate-500">Transitioning the state from a raw biomass exporter to a high-margin finished FMCG exporter.</p>
+                <p class="text-sm text-slate-700">Transitioning the state from a raw biomass exporter to a high-margin finished FMCG exporter.</p>
             </div>
         </div>
         
@@ -272,7 +283,7 @@
                     <div>OP_OS // GLOBAL COMMAND CENTER</div>
                     <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-500"></span> ACTIVE</div>
                 </div>
-                <div class="ai-panel text-sm text-slate-300 bg-[#0f172a]">
+                <div class="ai-panel text-sm text-slate-500 bg-[#0f172a]">
                     <div class="flex justify-between border-b border-slate-700 pb-2 mb-4">
                         <span class="font-bold text-white">VESSEL TELEMETRY</span>
                         <span class="text-emerald-400">412 NODES ONLINE</span>
@@ -383,7 +394,7 @@
         <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The Ocean Pearl financial model relies on modeled utilization curves, species mix assumptions, and precise infrastructure yield logic. The capital structure avoids trapping equity in working capital by leveraging highly efficient trade-finance facilities. The resulting economics generate infrastructure-grade yields paired with private-equity growth trajectories. 
             <br><br>
-            <span class="text-sm text-slate-500 italic font-bold">Indicative targets shown for strategic illustration. Final figures must be recalculated from the full 10-year model and approved assumptions register located in Section 6.</span>
+            <span class="text-sm text-slate-700 italic font-bold">Indicative targets shown for strategic illustration. Final figures must be recalculated from the full 10-year model and approved assumptions register located in Section 6.</span>
         </div>
     </div>
 
@@ -410,7 +421,7 @@
     <div class="doc-page divider-page">
         <h1 class="text-5xl font-extrabold tracking-widest leading-tight uppercase text-white" style="font-family: 'Playfair Display', serif;">Full Institutional<br>Feasibility &<br>Investment<br>Memorandum</h1>
         <div class="w-24 h-1 mt-12 mb-12" style="background-color: var(--corp-gold);"></div>
-        <p class="text-sm tracking-widest uppercase font-bold text-slate-300">Section 1 through 9</p>
+        <p class="text-sm tracking-widest uppercase font-bold text-slate-500">Section 1 through 9</p>
     </div>
 
     <!-- PAGE 14: FULL MEMORANDUM OPENING -->
@@ -1062,7 +1073,7 @@
         <h2 class="exec-headline">Fleet Telemetry & Vessel Monitoring</h2>
         <h3 class="exec-subheadline">Eliminating the "dark zones" of deep-sea collection.</h3>
         
-        <div class="exec-visual-box bg-[#0f172a] text-slate-300 p-0 overflow-hidden relative">
+        <div class="exec-visual-box bg-[#0f172a] text-slate-500 p-0 overflow-hidden relative">
             <div class="w-full h-8 bg-[#1e293b] flex items-center px-4 justify-between text-sm font-mono border-b border-slate-700">
                 <span>OP_OS // MODULE_01 // TELEMETRY_ACTIVE</span>
                 <span class="text-emerald-400">STATUS: NOMINAL</span>
@@ -1070,7 +1081,7 @@
             <div class="p-6 grid grid-cols-3 gap-6 w-full font-mono text-sm">
                 <div class="col-span-2 border border-slate-700 bg-[#1e293b] p-4 relative h-48">
                     <div class="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9IiM2NDc0OGIiLz48L3N2Zz4=')]"></div>
-                    <h4 class="text-slate-400 mb-2 border-b border-slate-700 pb-1">INDIAN OCEAN SECTOR: 4A</h4>
+                    <h4 class="text-slate-600 mb-2 border-b border-slate-700 pb-1">INDIAN OCEAN SECTOR: 4A</h4>
                     <div class="w-2 h-2 rounded-full bg-emerald-400 absolute top-12 left-16 animate-pulse"></div>
                     <div class="w-2 h-2 rounded-full bg-emerald-400 absolute top-24 left-32 animate-pulse"></div>
                     <div class="w-2 h-2 rounded-full bg-emerald-400 absolute top-10 left-48 animate-pulse"></div>
@@ -1079,12 +1090,12 @@
                 </div>
                 <div class="space-y-4">
                     <div class="border border-slate-700 bg-[#1e293b] p-3">
-                        <div class="text-slate-500 mb-1">MOTHER VESSEL 04 (OMAN)</div>
+                        <div class="text-slate-700 mb-1">MOTHER VESSEL 04 (OMAN)</div>
                         <div class="text-lg text-white font-bold">114.2 MT</div>
                         <div class="text-[13px] text-emerald-400">HOLD CAPACITY: 82%</div>
                     </div>
                     <div class="border border-slate-700 bg-[#1e293b] p-3">
-                        <div class="text-slate-500 mb-1">MOTHER VESSEL 07 (PAPUA)</div>
+                        <div class="text-slate-700 mb-1">MOTHER VESSEL 07 (PAPUA)</div>
                         <div class="text-lg text-white font-bold">62.8 MT</div>
                         <div class="text-[13px] text-emerald-400">HOLD CAPACITY: 41%</div>
                     </div>
@@ -1106,7 +1117,7 @@
         <h2 class="exec-headline">Cold Chain Thermal Intelligence</h2>
         <h3 class="exec-subheadline">Micro-monitoring the -60°C integrity of every export carton.</h3>
         
-        <div class="exec-visual-box bg-[#0f172a] text-slate-300 p-0 overflow-hidden relative">
+        <div class="exec-visual-box bg-[#0f172a] text-slate-500 p-0 overflow-hidden relative">
             <div class="w-full h-8 bg-[#1e293b] flex items-center px-4 justify-between text-sm font-mono border-b border-slate-700">
                 <span>OP_OS // MODULE_02 // THERMAL_TRACKING</span>
                 <span class="text-emerald-400">ACTIVE</span>
@@ -1114,11 +1125,11 @@
             <div class="p-8 w-full font-mono">
                 <div class="flex justify-between items-end border-b border-slate-700 pb-2 mb-6">
                     <div>
-                        <div class="text-sm text-slate-500">CONSIGNMENT OP-USA-8821</div>
+                        <div class="text-sm text-slate-700">CONSIGNMENT OP-USA-8821</div>
                         <div class="text-xl text-white">SASHIMI GRADE TUNA LOINS</div>
                     </div>
                     <div class="text-right">
-                        <div class="text-sm text-slate-500">CURRENT AMBIENT</div>
+                        <div class="text-sm text-slate-700">CURRENT AMBIENT</div>
                         <div class="text-2xl text-blue-400 font-bold">-61.2°C</div>
                     </div>
                 </div>
@@ -1129,7 +1140,7 @@
                         <span class="absolute -right-12 bottom-7 text-[13px] text-red-400">CRITICAL -50°C</span>
                     </div>
                 </div>
-                <div class="mt-4 text-[13px] text-slate-400 flex justify-between">
+                <div class="mt-4 text-[13px] text-slate-600 flex justify-between">
                     <span>JAKARTA DEPARTURE (T-240H)</span>
                     <span>PACIFIC TRANSIT (T-120H)</span>
                     <span>LA PORT ARRIVAL (NOW)</span>
@@ -1152,21 +1163,21 @@
         <h3 class="exec-subheadline">Algorithmic supply-demand matching.</h3>
         
         <div class="exec-visual-box bg-[#0f172a] p-0 font-mono text-sm">
-            <div class="w-full h-8 bg-[#1e293b] flex items-center px-4 justify-between text-sm border-b border-slate-700 text-slate-400">
+            <div class="w-full h-8 bg-[#1e293b] flex items-center px-4 justify-between text-sm border-b border-slate-700 text-slate-600">
                 <span>OP_OS // MODULE_03 // PRICING_ALGO</span>
             </div>
             <div class="p-6 grid grid-cols-2 gap-4 w-full">
                 <div class="border border-slate-700 bg-[#1e293b] p-4">
-                    <h4 class="text-slate-400 mb-4 border-b border-slate-700 pb-2">TOKYO API (TOYOSU)</h4>
+                    <h4 class="text-slate-600 mb-4 border-b border-slate-700 pb-2">TOKYO API (TOYOSU)</h4>
                     <div class="flex justify-between mb-2"><span class="text-white">BLUEFIN LION</span><span class="text-emerald-400">¥8,400/KG ▲</span></div>
                     <div class="flex justify-between mb-2"><span class="text-white">YELLOWFIN</span><span class="text-red-400">¥2,100/KG ▼</span></div>
                     <div class="flex justify-between"><span class="text-white">OCTOPUS</span><span class="text-emerald-400">¥1,800/KG ▲</span></div>
                 </div>
                 <div class="border border-slate-700 bg-[#1e293b] p-4">
-                    <h4 class="text-slate-400 mb-4 border-b border-slate-700 pb-2">HQ PROCESSING ALLOCATION</h4>
-                    <div class="flex justify-between mb-2"><span class="text-slate-300">DIVERT YF TO:</span><span class="text-white font-bold">USA HUB (STEAKS)</span></div>
-                    <div class="flex justify-between mb-2"><span class="text-slate-300">DIVERT BF TO:</span><span class="text-white font-bold">JAPAN (SASHIMI)</span></div>
-                    <div class="flex justify-between"><span class="text-slate-300">DIVERT LOW-GRADE:</span><span class="text-white font-bold">CANNED (MENA)</span></div>
+                    <h4 class="text-slate-600 mb-4 border-b border-slate-700 pb-2">HQ PROCESSING ALLOCATION</h4>
+                    <div class="flex justify-between mb-2"><span class="text-slate-500">DIVERT YF TO:</span><span class="text-white font-bold">USA HUB (STEAKS)</span></div>
+                    <div class="flex justify-between mb-2"><span class="text-slate-500">DIVERT BF TO:</span><span class="text-white font-bold">JAPAN (SASHIMI)</span></div>
+                    <div class="flex justify-between"><span class="text-slate-500">DIVERT LOW-GRADE:</span><span class="text-white font-bold">CANNED (MENA)</span></div>
                 </div>
             </div>
         </div>
@@ -1185,17 +1196,17 @@
         <h2 class="exec-headline">Executive Financial AI Assistant</h2>
         <h3 class="exec-subheadline">Instantaneous EBITDA routing and scenario modeling.</h3>
         
-        <div class="exec-visual-box bg-slate-900 text-slate-300 p-8 font-mono text-sm shadow-xl">
+        <div class="exec-visual-box bg-slate-900 text-slate-500 p-8 font-mono text-sm shadow-xl">
             <div class="flex items-start gap-4 w-full">
                 <div class="w-8 h-8 rounded bg-blue-600 flex items-center justify-center text-white shrink-0">OP</div>
                 <div class="bg-slate-800 p-4 rounded-lg border border-slate-700 w-full">
-                    <p class="mb-4 text-slate-400">EXECUTIVE QUERY: Evaluate diversion of 40 MT of Skipjack from Egypt Hub to Saudi JV based on current container freight indices.</p>
+                    <p class="mb-4 text-slate-600">EXECUTIVE QUERY: Evaluate diversion of 40 MT of Skipjack from Egypt Hub to Saudi JV based on current container freight indices.</p>
                     <div class="h-px bg-slate-700 my-4 w-full"></div>
                     <p class="text-white mb-2 font-bold">ANALYSIS COMPLETE:</p>
                     <ul class="space-y-2 text-sm mb-4">
                         <li class="flex justify-between"><span>Red Sea Freight Delta:</span><span class="text-red-400">+$420/TEU</span></li>
                         <li class="flex justify-between"><span>Saudi HORECA Margin Uplift:</span><span class="text-emerald-400">+14.5%</span></li>
-                        <li class="flex justify-between"><span>Inventory Risk (Egypt):</span><span class="text-slate-400">Negligible (32 Days Cover)</span></li>
+                        <li class="flex justify-between"><span>Inventory Risk (Egypt):</span><span class="text-slate-600">Negligible (32 Days Cover)</span></li>
                     </ul>
                     <div class="bg-slate-900 p-3 border-l-2 border-emerald-500">
                         <span class="text-emerald-500 font-bold block mb-1">RECOMMENDATION: EXECUTE DIVERSION</span>
@@ -1257,7 +1268,7 @@
                 </div>
             </div>
             <div class="w-1/2 p-8 flex items-center justify-center bg-slate-50">
-                <p class="text-sm italic text-slate-500 font-serif">"Technology in seafood is largely applied to catch methods. Ocean Pearl is the first to apply it purely to margin protection."</p>
+                <p class="text-sm italic text-slate-700 font-serif">"Technology in seafood is largely applied to catch methods. Ocean Pearl is the first to apply it purely to margin protection."</p>
             </div>
         </div>
         
@@ -1339,12 +1350,12 @@
             <div class="flex flex-col items-center gap-6 w-full text-sm font-bold">
                 <div class="flex w-full gap-8">
                     <div class="flex-1 p-6 bg-slate-100 border border-slate-400 text-center opacity-70">
-                        <div class="text-slate-500 mb-2">Pre-Acquisition Target</div>
-                        <div class="text-sm text-slate-400">High Cost of Goods</div>
+                        <div class="text-slate-700 mb-2">Pre-Acquisition Target</div>
+                        <div class="text-sm text-slate-600">High Cost of Goods</div>
                     </div>
                     <div class="flex-1 p-6 bg-slate-100 border border-slate-400 text-center opacity-70">
-                        <div class="text-slate-500 mb-2">Fragmented Importers</div>
-                        <div class="text-sm text-slate-400">Margin Leakage</div>
+                        <div class="text-slate-700 mb-2">Fragmented Importers</div>
+                        <div class="text-sm text-slate-600">Margin Leakage</div>
                     </div>
                 </div>
                 
@@ -1353,14 +1364,14 @@
                 <div class="flex w-full gap-8 items-center">
                     <div class="flex-1 p-6 bg-corp-navy text-white text-center shadow-lg border-2 border-corp-gold">
                         <div class="text-corp-gold mb-2">Ocean Pearl HQ</div>
-                        <div class="text-sm text-slate-300">100% Equity Ownership</div>
+                        <div class="text-sm text-slate-500">100% Equity Ownership</div>
                     </div>
-                    <div class="text-xl text-slate-400 w-12 text-center">→</div>
+                    <div class="text-xl text-slate-600 w-12 text-center">→</div>
                     <div class="flex-1 p-6 bg-sky-100 border border-sky-400 text-center">
                         <div class="text-corp-navy mb-2">Direct Indonesia Factory Feed</div>
-                        <div class="text-sm text-slate-500">Replaces COGS Supply Line</div>
+                        <div class="text-sm text-slate-700">Replaces COGS Supply Line</div>
                     </div>
-                    <div class="text-xl text-slate-400 w-12 text-center">→</div>
+                    <div class="text-xl text-slate-600 w-12 text-center">→</div>
                     <div class="flex-1 p-6 bg-yellow-100 border-2 border-yellow-600 text-center shadow-md">
                         <div class="text-yellow-900 mb-2">Immediate EBITDA Accretion</div>
                         <div class="text-sm text-yellow-700">Eliminates 22% Middleman Markup</div>
@@ -1442,11 +1453,11 @@
         <div class="exec-visual-box bg-white p-8">
             <h4 class="font-bold text-sm text-corp-navy uppercase mb-6 w-full text-center">Value Chain Margin Recapture (Illustrative)</h4>
             <div class="flex items-end justify-center gap-4 h-48 w-full text-sm font-bold">
-                <div class="flex flex-col items-center"><div class="w-16 h-12 bg-slate-300 mb-2"></div><span class="text-center text-slate-500">Raw Catch Cost</span></div>
-                <div class="flex flex-col items-center"><div class="w-16 h-8 bg-red-400 mb-2 opacity-50"></div><span class="text-center text-slate-500">Local Broker (Eliminated)</span></div>
+                <div class="flex flex-col items-center"><div class="w-16 h-12 bg-slate-300 mb-2"></div><span class="text-center text-slate-700">Raw Catch Cost</span></div>
+                <div class="flex flex-col items-center"><div class="w-16 h-8 bg-red-400 mb-2 opacity-50"></div><span class="text-center text-slate-700">Local Broker (Eliminated)</span></div>
                 <div class="flex flex-col items-center"><div class="w-16 h-16 bg-corp-gold mb-2"></div><span class="text-center text-corp-navy">Ocean Pearl Processing</span></div>
-                <div class="flex flex-col items-center"><div class="w-16 h-12 bg-red-400 mb-2 opacity-50"></div><span class="text-center text-slate-500">Import Agent (Eliminated)</span></div>
-                <div class="flex flex-col items-center"><div class="w-16 h-12 bg-red-400 mb-2 opacity-50"></div><span class="text-center text-slate-500">USA Wholesale (Eliminated)</span></div>
+                <div class="flex flex-col items-center"><div class="w-16 h-12 bg-red-400 mb-2 opacity-50"></div><span class="text-center text-slate-700">Import Agent (Eliminated)</span></div>
+                <div class="flex flex-col items-center"><div class="w-16 h-12 bg-red-400 mb-2 opacity-50"></div><span class="text-center text-slate-700">USA Wholesale (Eliminated)</span></div>
                 <div class="flex flex-col items-center"><div class="w-16 h-48 bg-corp-blue mb-2"></div><span class="text-center text-corp-navy">Ocean Pearl Retained Margin</span></div>
             </div>
         </div>
@@ -1471,15 +1482,15 @@
                 <div class="flex justify-between w-full mt-4 gap-4">
                     <div class="flex-1 p-4 bg-white border border-slate-300 text-center">
                         <div class="font-bold text-corp-blue mb-2">USA Hub</div>
-                        <div class="text-slate-500 text-sm">Bulk Institutional Export</div>
+                        <div class="text-slate-700 text-sm">Bulk Institutional Export</div>
                     </div>
                     <div class="flex-1 p-4 bg-white border border-slate-300 text-center">
                         <div class="font-bold text-corp-blue mb-2">Egypt Hub</div>
-                        <div class="text-slate-500 text-sm">Regional FMCG Deficit</div>
+                        <div class="text-slate-700 text-sm">Regional FMCG Deficit</div>
                     </div>
                     <div class="flex-1 p-4 bg-white border border-slate-300 text-center">
                         <div class="font-bold text-corp-blue mb-2">Japan/China</div>
-                        <div class="text-slate-500 text-sm">AirFresh / Premium</div>
+                        <div class="text-slate-700 text-sm">AirFresh / Premium</div>
                     </div>
                 </div>
             </div>
@@ -1619,7 +1630,7 @@
                     <div class="h-full flex items-center justify-center text-white text-sm font-bold" style="width: 25%; background-color: var(--corp-blue);">Japan/China (25%)</div>
                     <div class="h-full flex items-center justify-center text-white text-sm font-bold" style="width: 20%; background-color: var(--corp-gold);">GCC/MENA (20%)</div>
                     <div class="h-full flex items-center justify-center text-slate-700 text-sm font-bold bg-slate-300" style="width: 15%;">Europe (15%)</div>
-                    <div class="h-full flex items-center justify-center text-slate-500 text-sm font-bold bg-slate-200" style="width: 5%;">Dom (5%)</div>
+                    <div class="h-full flex items-center justify-center text-slate-700 text-sm font-bold bg-slate-200" style="width: 5%;">Dom (5%)</div>
                 </div>
                 
                 <div class="w-full mt-10 grid grid-cols-5 gap-4 text-center text-sm">
@@ -1640,8 +1651,8 @@
                         <div class="text-slate-600 mt-1">Private Label</div>
                     </div>
                     <div>
-                        <div class="font-bold text-slate-500 text-base">DOMESTIC</div>
-                        <div class="text-slate-500 mt-1">Local Wholesale</div>
+                        <div class="font-bold text-slate-700 text-base">DOMESTIC</div>
+                        <div class="text-slate-700 mt-1">Local Wholesale</div>
                     </div>
                 </div>
             </div>
@@ -1665,7 +1676,7 @@
             <div class="flex flex-col items-center gap-2 w-full">
                 <!-- Base -->
                 <div class="w-full bg-slate-100 p-6 text-center border-2 border-slate-300 rounded shadow-sm">
-                    <div class="font-bold text-slate-500 uppercase tracking-widest text-sm mb-1">Input Commodity</div>
+                    <div class="font-bold text-slate-700 uppercase tracking-widest text-sm mb-1">Input Commodity</div>
                     <div class="font-bold text-slate-800 text-xl">Raw Marine Biomass</div>
                     <div class="font-mono text-slate-600 mt-1 text-lg">Avg Cost: $3.00 / kg</div>
                 </div>
@@ -1674,9 +1685,9 @@
                 
                 <!-- Hub -->
                 <div class="w-full p-6 text-center rounded shadow-md" style="background-color: var(--corp-navy);">
-                    <div class="font-bold text-blue-200 uppercase tracking-widest text-sm mb-1">Value Creation Engine</div>
+                    <div class="font-bold text-white uppercase tracking-widest text-sm mb-1">Value Creation Engine</div>
                     <div class="font-bold text-white text-2xl">Indonesian Processing Hub</div>
-                    <div class="text-blue-100 mt-1">Automated AI Routing & Quality Grading</div>
+                    <div class="text-white mt-1">Automated AI Routing & Quality Grading</div>
                 </div>
                 
                 <div class="h-10 border-l-4 border-corp-navy"></div>
@@ -1694,7 +1705,7 @@
                         <div class="font-mono text-xl mt-2">$14.00</div>
                     </div>
                     <div class="flex-1 bg-blue-500 text-white p-6 rounded shadow-sm border-b-4 border-blue-700">
-                        <div class="uppercase text-sm text-blue-200 mb-2">Grade B</div>
+                        <div class="uppercase text-sm text-white mb-2">Grade B</div>
                         <div class="text-lg">HORECA Cuts</div>
                         <div class="font-mono text-xl mt-2">$8.50</div>
                     </div>
@@ -1932,9 +1943,9 @@
                 <div class="absolute top-6 h-12 border-l-4 border-slate-800" style="left: 80%;"></div>
                 
                 <!-- Day Count Below -->
-                <div class="absolute top-20 text-slate-500 font-mono" style="left: 0%;">Day 0</div>
-                <div class="absolute top-20 text-slate-500 font-mono" style="left: 13%;">Day 15</div>
-                <div class="absolute top-20 text-slate-500 font-mono" style="left: 43%;">Day 45</div>
+                <div class="absolute top-20 text-slate-700 font-mono" style="left: 0%;">Day 0</div>
+                <div class="absolute top-20 text-slate-700 font-mono" style="left: 13%;">Day 15</div>
+                <div class="absolute top-20 text-slate-700 font-mono" style="left: 43%;">Day 45</div>
                 <div class="absolute top-20 text-slate-800 font-mono font-bold" style="left: 78%;">Day 80</div>
             </div>
             
@@ -2004,9 +2015,9 @@
         <div class="exec-visual-box bg-white p-10 flex flex-row items-center justify-center gap-10 border border-slate-300">
             <!-- Stack Graphic -->
             <div class="w-1/3 flex flex-col h-64 border-4 border-slate-800 rounded-lg overflow-hidden shadow-xl">
-                <div class="h-1/5 bg-slate-200 flex flex-col items-center justify-center text-sm font-bold text-slate-700 border-b-2 border-slate-400"><span>Trade Revolver</span><span class="font-mono text-slate-500 text-sm">Short-Term</span></div>
-                <div class="h-2/5 bg-corp-blue flex flex-col items-center justify-center text-sm font-bold text-white border-b-2 border-slate-400"><span>ECA / Infra Debt</span><span class="font-mono text-blue-200 text-sm">Long-Term</span></div>
-                <div class="h-2/5 bg-corp-navy flex flex-col items-center justify-center text-sm font-bold text-white"><span>Sovereign Equity</span><span class="font-mono text-blue-200 text-sm">Permanent</span></div>
+                <div class="h-1/5 bg-slate-200 flex flex-col items-center justify-center text-sm font-bold text-slate-700 border-b-2 border-slate-400"><span>Trade Revolver</span><span class="font-mono text-slate-700 text-sm">Short-Term</span></div>
+                <div class="h-2/5 bg-corp-blue flex flex-col items-center justify-center text-sm font-bold text-white border-b-2 border-slate-400"><span>ECA / Infra Debt</span><span class="font-mono text-white text-sm">Long-Term</span></div>
+                <div class="h-2/5 bg-corp-navy flex flex-col items-center justify-center text-sm font-bold text-white"><span>Sovereign Equity</span><span class="font-mono text-white text-sm">Permanent</span></div>
             </div>
             <!-- Logic Box -->
             <div class="w-2/3 space-y-6 text-sm text-slate-700">
@@ -2252,11 +2263,11 @@
                     </tr>
                     <tr class="border-b border-slate-300">
                         <td class="p-4 text-left font-bold text-slate-700 text-sm">M&A Acquisition Outlay</td>
-                        <td class="p-4 font-mono text-sm text-slate-400">-</td>
-                        <td class="p-4 font-mono text-sm text-slate-400">-</td>
-                        <td class="p-4 font-mono text-sm text-slate-400">-</td>
+                        <td class="p-4 font-mono text-sm text-slate-600">-</td>
+                        <td class="p-4 font-mono text-sm text-slate-600">-</td>
+                        <td class="p-4 font-mono text-sm text-slate-600">-</td>
                         <td class="p-4 font-mono text-red-700 font-bold text-base bg-red-50 border-l border-r border-red-200">(45.0)</td>
-                        <td class="p-4 font-mono text-sm text-slate-400">-</td>
+                        <td class="p-4 font-mono text-sm text-slate-600">-</td>
                     </tr>
                     <tr class="border-b-4 border-corp-navy bg-slate-100">
                         <td class="p-4 text-left font-bold text-corp-navy text-base uppercase">Unlevered Free Cash Flow</td>
@@ -2379,7 +2390,7 @@
         <div class="exec-visual-box bg-white p-8 border border-slate-300">
             <h4 class="font-bold text-lg text-corp-navy uppercase mb-6 w-full text-center">Project IRR Output Matrix</h4>
             <div class="flex mt-2 mb-4 items-center justify-center">
-                <span class="text-sm font-bold text-slate-500 uppercase tracking-widest bg-slate-100 py-1 px-4 rounded border border-slate-200">Premium Seafood Price Variance (X-Axis)</span>
+                <span class="text-sm font-bold text-slate-700 uppercase tracking-widest bg-slate-100 py-1 px-4 rounded border border-slate-200">Premium Seafood Price Variance (X-Axis)</span>
             </div>
             <table class="w-full text-sm text-center border-collapse font-mono">
                 <thead>
@@ -2460,11 +2471,11 @@
                 <!-- Top Subsidiaries -->
                 <div class="flex gap-6 w-full">
                     <div class="flex-1 bg-slate-50 border-2 border-slate-300 p-6 text-center text-slate-700 rounded shadow-sm">
-                        <div class="text-sm uppercase text-slate-500 mb-1">USA Subsidiary</div>
+                        <div class="text-sm uppercase text-slate-700 mb-1">USA Subsidiary</div>
                         <div class="text-lg text-corp-navy">USD Retail Collection</div>
                     </div>
                     <div class="flex-1 bg-slate-50 border-2 border-slate-300 p-6 text-center text-slate-700 rounded shadow-sm">
-                        <div class="text-sm uppercase text-slate-500 mb-1">Egypt Subsidiary</div>
+                        <div class="text-sm uppercase text-slate-700 mb-1">Egypt Subsidiary</div>
                         <div class="text-lg text-corp-navy">MENA Hard Currency</div>
                     </div>
                 </div>
@@ -2472,21 +2483,21 @@
                 <!-- Connector Down -->
                 <div class="flex justify-center text-corp-navy text-2xl py-2">
                     <div class="flex flex-col items-center">
-                        <span class="text-sm text-slate-500 uppercase tracking-widest mb-1">OECD Transfer Pricing Repatriation</span>
+                        <span class="text-sm text-slate-700 uppercase tracking-widest mb-1">OECD Transfer Pricing Repatriation</span>
                         <span>↓↓↓</span>
                     </div>
                 </div>
                 
                 <!-- Master HQ -->
                 <div class="w-full bg-corp-navy text-white p-8 text-center rounded shadow-lg border-b-4" style="border-color: var(--corp-gold);">
-                    <div class="text-sm uppercase text-blue-200 mb-1">Apex Audit Entity</div>
+                    <div class="text-sm uppercase text-white mb-1">Apex Audit Entity</div>
                     <div class="text-2xl">Indonesian Master Holding (HQ)</div>
                 </div>
                 
                 <!-- Connector Down -->
                 <div class="flex justify-center text-corp-navy text-2xl py-2">
                     <div class="flex flex-col items-center">
-                        <span class="text-sm text-slate-500 uppercase tracking-widest mb-1">Centralized Capital Allocation</span>
+                        <span class="text-sm text-slate-700 uppercase tracking-widest mb-1">Centralized Capital Allocation</span>
                         <span>↓↓↓</span>
                     </div>
                 </div>
@@ -2530,16 +2541,16 @@
                 <div class="flex-1 bg-slate-50 border-2 border-slate-300 p-6 flex flex-col justify-between shadow-sm">
                     <div class="text-center mb-4">
                         <div class="text-lg text-corp-navy mb-1">International Asset Base</div>
-                        <div class="text-sm text-slate-500 uppercase tracking-widest">70–75% Strategic Deployment</div>
+                        <div class="text-sm text-slate-700 uppercase tracking-widest">70–75% Strategic Deployment</div>
                     </div>
                     <div class="space-y-3 mb-4">
                         <div class="p-3 bg-white border border-slate-200 rounded">
                             <div class="text-corp-navy">Downstream Assets</div>
-                            <div class="text-sm text-slate-500 font-normal">USA/MENA Hubs, Retail Networks, Cold-Chain</div>
+                            <div class="text-sm text-slate-700 font-normal">USA/MENA Hubs, Retail Networks, Cold-Chain</div>
                         </div>
                         <div class="p-3 bg-white border border-slate-200 rounded">
                             <div class="text-corp-navy">Procurement Assets</div>
-                            <div class="text-sm text-slate-500 font-normal">Deep-Sea Fleets, Sourcing Corridors</div>
+                            <div class="text-sm text-slate-700 font-normal">Deep-Sea Fleets, Sourcing Corridors</div>
                         </div>
                     </div>
                     <div class="text-center text-sm text-emerald-600 font-bold">Foreign EBITDA Generation Hub</div>
@@ -2550,7 +2561,7 @@
                     <div class="flex flex-col items-center">
                         <div class="text-sm uppercase text-emerald-600 font-black mb-1">Profit Flows</div>
                         <div class="text-3xl text-emerald-500">→</div>
-                        <div class="text-sm uppercase text-slate-400 font-bold mt-1 text-center">Dividends & Fees</div>
+                        <div class="text-sm uppercase text-slate-600 font-bold mt-1 text-center">Dividends & Fees</div>
                     </div>
                     <div class="flex flex-col items-center">
                         <div class="text-sm uppercase text-corp-navy font-black mb-1 text-center">IP & Export<br>Control</div>
@@ -2562,7 +2573,7 @@
                 <div class="flex-1 bg-corp-navy text-white border-2 border-corp-gold p-6 flex flex-col justify-between shadow-xl">
                     <div class="text-center mb-4">
                         <div class="text-lg text-corp-gold mb-1">Indonesian Master HQ</div>
-                        <div class="text-sm text-blue-200 uppercase tracking-widest">The Treasury Anchor</div>
+                        <div class="text-sm text-white uppercase tracking-widest">The Treasury Anchor</div>
                     </div>
                     <div class="space-y-2 text-slate-200 font-medium text-sm mb-4">
                         <div class="flex items-center gap-2 border-l-2 border-corp-gold pl-2">Centralized Treasury & FX Oversight</div>
@@ -2578,7 +2589,7 @@
         </div>
 
         <!-- Governance Note Box -->
-        <div class="w-full p-4 bg-slate-100 border border-slate-300 mb-6 text-sm text-slate-500 italic">
+        <div class="w-full p-4 bg-slate-100 border border-slate-300 mb-6 text-sm text-slate-700 italic">
             <span class="font-bold uppercase text-slate-600 not-italic block mb-1">Regulatory & Governance Compliance:</span>
             All cross-border capital allocations are subject to applicable Indonesian, host-country, tax, foreign exchange, investment, banking, and transfer-pricing regulations. Final structures must be reviewed by qualified legal, tax, and banking advisers before execution.
         </div>
@@ -2619,7 +2630,7 @@
             <h1 class="text-6xl font-extrabold mb-4 text-white">Section 8</h1>
             <div class="w-24 h-1 mx-auto mb-8" style="background-color: var(--corp-gold);"></div>
             <h2 class="text-4xl font-bold tracking-tight text-white mb-6">Government Impact, Food Security & ESG</h2>
-            <p class="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+            <p class="text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
                 Positioning Ocean Pearl as Strategic National Infrastructure for the Republic of Indonesia.
             </p>
         </div>
@@ -2638,13 +2649,13 @@
             <div class="grid grid-cols-2 gap-12 w-full">
                 <!-- Fragmented Logic -->
                 <div class="flex flex-col">
-                    <div class="text-sm uppercase text-slate-400 font-bold mb-4 tracking-widest">Legacy Fragmented Chain</div>
+                    <div class="text-sm uppercase text-slate-600 font-bold mb-4 tracking-widest">Legacy Fragmented Chain</div>
                     <div class="space-y-3 opacity-60">
-                        <div class="p-4 bg-slate-100 border border-slate-300 text-slate-500 text-sm font-bold">Ambient Post-Harvest Storage</div>
-                        <div class="flex justify-center text-slate-300">↓</div>
+                        <div class="p-4 bg-slate-100 border border-slate-300 text-slate-700 text-sm font-bold">Ambient Post-Harvest Storage</div>
+                        <div class="flex justify-center text-slate-500">↓</div>
                         <div class="p-4 bg-red-50 border border-red-200 text-red-900 text-sm font-bold">30% Material Spoilage Loss</div>
-                        <div class="flex justify-center text-slate-300">↓</div>
-                        <div class="p-4 bg-slate-100 border border-slate-300 text-slate-500 text-sm font-bold">Low-Value Commodity Trading</div>
+                        <div class="flex justify-center text-slate-500">↓</div>
+                        <div class="p-4 bg-slate-100 border border-slate-300 text-slate-700 text-sm font-bold">Low-Value Commodity Trading</div>
                     </div>
                 </div>
                 
@@ -2664,15 +2675,15 @@
             <div class="mt-10 grid grid-cols-3 gap-6 w-full pt-8 border-t border-slate-200">
                 <div class="text-center">
                     <div class="text-2xl font-black text-corp-navy">95%</div>
-                    <div class="text-sm text-slate-500 uppercase font-bold">Quality Retention</div>
+                    <div class="text-sm text-slate-700 uppercase font-bold">Quality Retention</div>
                 </div>
                 <div class="text-center">
                     <div class="text-2xl font-black text-emerald-600">-30%</div>
-                    <div class="text-sm text-slate-500 uppercase font-bold">Waste Reduction</div>
+                    <div class="text-sm text-slate-700 uppercase font-bold">Waste Reduction</div>
                 </div>
                 <div class="text-center">
                     <div class="text-2xl font-black text-corp-gold">+42%</div>
-                    <div class="text-sm text-slate-500 uppercase font-bold">Net National Value Add</div>
+                    <div class="text-sm text-slate-700 uppercase font-bold">Net National Value Add</div>
                 </div>
             </div>
         </div>
@@ -2697,7 +2708,7 @@
                     <div class="text-5xl mb-4 text-corp-gold">🎣</div>
                     <div class="text-center">
                         <div class="font-bold text-corp-navy">Traditional Fisherman</div>
-                        <div class="text-sm text-slate-500">The Sourcing Foundation</div>
+                        <div class="text-sm text-slate-700">The Sourcing Foundation</div>
                     </div>
                 </div>
                 <div class="flex-grow flex flex-col gap-4">
@@ -2716,7 +2727,7 @@
                 </div>
             </div>
             <div class="mt-8 text-center w-full">
-                <div class="text-[11px] text-slate-500 font-medium max-w-xl mx-auto italic">
+                <div class="text-[11px] text-slate-700 font-medium max-w-xl mx-auto italic">
                     "By providing the ice necessary to preserve the catch, Ocean Pearl enables the fisherman to participate in high-margin global markets rather than being trapped in local commodity pricing."
                 </div>
             </div>
@@ -2741,7 +2752,7 @@
                 <!-- Sulawesi/Makassar -->
                 <div class="bg-white p-6 border-t-4 border-corp-navy shadow-md">
                     <div class="text-corp-navy mb-2">Makassar Hub</div>
-                    <div class="text-sm text-slate-500 mb-4 uppercase">Western Gateway</div>
+                    <div class="text-sm text-slate-700 mb-4 uppercase">Western Gateway</div>
                     <ul class="text-sm space-y-2 text-slate-600 font-normal">
                         <li>• Deep-water port integration</li>
                         <li>• Centralized processing capacity</li>
@@ -2751,7 +2762,7 @@
                 <!-- Maluku -->
                 <div class="bg-white p-6 border-t-4 border-corp-gold shadow-md">
                     <div class="text-corp-navy mb-2">Maluku Corridor</div>
-                    <div class="text-sm text-slate-500 mb-4 uppercase">Productivity Anchor</div>
+                    <div class="text-sm text-slate-700 mb-4 uppercase">Productivity Anchor</div>
                     <ul class="text-sm space-y-2 text-slate-600 font-normal">
                         <li>• Tuna processing expansion</li>
                         <li>• Cold-chain hub network</li>
@@ -2761,7 +2772,7 @@
                 <!-- Papua -->
                 <div class="bg-white p-6 border-t-4 border-blue-600 shadow-md">
                     <div class="text-corp-navy mb-2">Papua Region</div>
-                    <div class="text-sm text-slate-500 mb-4 uppercase">The Sourcing Frontier</div>
+                    <div class="text-sm text-slate-700 mb-4 uppercase">The Sourcing Frontier</div>
                     <ul class="text-sm space-y-2 text-slate-600 font-normal">
                         <li>• Remote ice-factory deployment</li>
                         <li>• Coastal community integration</li>
@@ -2771,7 +2782,7 @@
             </div>
             
             <div class="mt-8 flex justify-center w-full gap-4 items-center">
-                <span class="text-sm font-bold text-slate-400 uppercase">Industrial Integration Flow:</span>
+                <span class="text-sm font-bold text-slate-600 uppercase">Industrial Integration Flow:</span>
                 <div class="flex-grow h-0.5 bg-slate-200"></div>
                 <div class="px-4 py-2 bg-corp-navy text-white text-sm rounded">Total Archipelago Synergy</div>
             </div>
@@ -2794,15 +2805,15 @@
         
         <div class="exec-visual-box bg-white p-10 border border-slate-300">
             <div class="flex flex-col items-center w-full">
-                <div class="text-sm uppercase text-slate-400 font-bold mb-8 tracking-widest">The National Protein Security Buffer</div>
+                <div class="text-sm uppercase text-slate-600 font-bold mb-8 tracking-widest">The National Protein Security Buffer</div>
                 
                 <div class="flex gap-4 w-full h-48 items-end justify-center mb-8">
                     <div class="w-24 bg-slate-100 border border-slate-300 flex flex-col justify-end items-center p-2">
-                        <div class="text-sm text-slate-500 mb-2 uppercase font-bold text-center">Unstable Supply</div>
+                        <div class="text-sm text-slate-700 mb-2 uppercase font-bold text-center">Unstable Supply</div>
                         <div class="w-full h-1/3 bg-slate-300"></div>
                     </div>
                     <div class="w-24 bg-slate-100 border border-slate-300 flex flex-col justify-end items-center p-2">
-                        <div class="text-sm text-slate-500 mb-2 uppercase font-bold text-center">High Spoilage</div>
+                        <div class="text-sm text-slate-700 mb-2 uppercase font-bold text-center">High Spoilage</div>
                         <div class="w-full h-1/2 bg-slate-300"></div>
                     </div>
                     <div class="w-8 flex items-center justify-center text-2xl text-corp-gold font-bold">→</div>
@@ -2815,11 +2826,11 @@
                 <div class="grid grid-cols-2 gap-8 w-full mt-4">
                     <div class="p-6 bg-slate-50 border border-slate-200">
                         <div class="text-sm font-bold text-corp-navy mb-2">Inventory Stabilization</div>
-                        <div class="text-sm text-slate-500 leading-relaxed font-normal">Maintaining multi-month cold-storage reserves to buffer against seasonal harvest fluctuations and ensure price stability for domestic markets.</div>
+                        <div class="text-sm text-slate-700 leading-relaxed font-normal">Maintaining multi-month cold-storage reserves to buffer against seasonal harvest fluctuations and ensure price stability for domestic markets.</div>
                     </div>
                     <div class="p-6 bg-slate-50 border border-slate-200">
                         <div class="text-sm font-bold text-corp-navy mb-2">Regional Distribution Velocity</div>
-                        <div class="text-sm text-slate-500 leading-relaxed font-normal">Utilizing the Ocean Pearl thermal fleet to transport high-quality protein from remote Eastern harvest zones to Western population centers.</div>
+                        <div class="text-sm text-slate-700 leading-relaxed font-normal">Utilizing the Ocean Pearl thermal fleet to transport high-quality protein from remote Eastern harvest zones to Western population centers.</div>
                     </div>
                 </div>
             </div>
@@ -2846,41 +2857,41 @@
                 <div class="relative w-64 h-64 border-4 border-dashed border-slate-700 rounded-full flex items-center justify-center">
                     <div class="absolute -top-6 bg-corp-gold text-corp-navy px-4 py-2 font-black text-sm rounded">100% BIOMASS CAPTURE</div>
                     <div class="w-32 h-32 bg-corp-navy border-2 border-corp-gold rounded-full flex flex-col items-center justify-center text-center p-4">
-                        <div class="text-sm text-blue-200 uppercase mb-1">Central Processing</div>
+                        <div class="text-sm text-white uppercase mb-1">Central Processing</div>
                         <div class="text-sm font-bold">Zero-Waste Hub</div>
                     </div>
                     
                     <!-- Nodes -->
                     <div class="absolute top-0 right-0 p-3 bg-white text-corp-navy rounded shadow-lg translate-x-1/2 -translate-y-1/2 border border-slate-300">
                         <div class="text-[13px] font-black uppercase mb-1">Human Grade</div>
-                        <div class="text-[12px] font-medium text-slate-500">Premium Fillets & Loins</div>
+                        <div class="text-[12px] font-medium text-slate-700">Premium Fillets & Loins</div>
                     </div>
                     <div class="absolute bottom-0 right-0 p-3 bg-white text-corp-navy rounded shadow-lg translate-x-1/2 translate-y-1/2 border border-slate-300">
                         <div class="text-[13px] font-black uppercase mb-1">Industrial</div>
-                        <div class="text-[12px] font-medium text-slate-500">High-Protein Fishmeal</div>
+                        <div class="text-[12px] font-medium text-slate-700">High-Protein Fishmeal</div>
                     </div>
                     <div class="absolute bottom-0 left-0 p-3 bg-white text-corp-navy rounded shadow-lg -translate-x-1/2 translate-y-1/2 border border-slate-300">
                         <div class="text-[13px] font-black uppercase mb-1">Thermal</div>
-                        <div class="text-[12px] font-medium text-slate-500">LCO2 Heat Exchange Re-use</div>
+                        <div class="text-[12px] font-medium text-slate-700">LCO2 Heat Exchange Re-use</div>
                     </div>
                     <div class="absolute top-0 left-0 p-3 bg-white text-corp-navy rounded shadow-lg -translate-x-1/2 -translate-y-1/2 border border-slate-300">
                         <div class="text-[13px] font-black uppercase mb-1">Biotech</div>
-                        <div class="text-[12px] font-medium text-slate-500">Omega-3 Oil Extraction</div>
+                        <div class="text-[12px] font-medium text-slate-700">Omega-3 Oil Extraction</div>
                     </div>
                 </div>
                 
                 <div class="mt-12 flex gap-8 w-full justify-center text-sm text-center font-bold">
                     <div class="flex flex-col gap-1">
                         <span class="text-corp-gold">99.2%</span>
-                        <span class="text-slate-400 uppercase text-[13px]">Resource Utilization</span>
+                        <span class="text-slate-600 uppercase text-[13px]">Resource Utilization</span>
                     </div>
                     <div class="flex flex-col gap-1">
                         <span class="text-corp-gold">Zero</span>
-                        <span class="text-slate-400 uppercase text-[13px]">Wastewater Discharge</span>
+                        <span class="text-slate-600 uppercase text-[13px]">Wastewater Discharge</span>
                     </div>
                     <div class="flex flex-col gap-1">
                         <span class="text-corp-gold">Certified</span>
-                        <span class="text-slate-400 uppercase text-[13px]">MSC / FIP Compliant</span>
+                        <span class="text-slate-600 uppercase text-[13px]">MSC / FIP Compliant</span>
                     </div>
                 </div>
             </div>
@@ -2902,30 +2913,30 @@
         
         <div class="exec-visual-box bg-white p-10 border border-slate-300">
             <div class="flex flex-col gap-6 w-full">
-                <div class="text-sm uppercase text-slate-400 font-bold mb-2 tracking-widest text-center">The Ocean Pearl Skills Escalator</div>
+                <div class="text-sm uppercase text-slate-600 font-bold mb-2 tracking-widest text-center">The Ocean Pearl Skills Escalator</div>
                 
                 <div class="flex flex-col gap-2">
                     <div class="flex items-center gap-4">
                         <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-xl border border-slate-300">03</div>
                         <div class="flex-grow p-4 bg-corp-navy text-white shadow-md border-l-4 border-corp-gold">
                             <div class="text-sm font-bold">Intelligent Operations (AI/eBajau)</div>
-                            <div class="text-sm text-blue-200 font-normal">Thermal monitoring, logistics optimization, and data analytics careers.</div>
+                            <div class="text-sm text-white font-normal">Thermal monitoring, logistics optimization, and data analytics careers.</div>
                         </div>
                     </div>
-                    <div class="flex justify-center h-4 text-slate-300">|</div>
+                    <div class="flex justify-center h-4 text-slate-500">|</div>
                     <div class="flex items-center gap-4">
                         <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-xl border border-slate-300">02</div>
                         <div class="flex-grow p-4 bg-slate-50 border border-slate-300 shadow-sm border-l-4 border-corp-blue">
                             <div class="text-sm font-bold text-corp-navy">Technical Processing & Cold-Chain Logistics</div>
-                            <div class="text-sm text-slate-500 font-normal">SuperFrozen facility management, HACCP compliance, and maritime engineering.</div>
+                            <div class="text-sm text-slate-700 font-normal">SuperFrozen facility management, HACCP compliance, and maritime engineering.</div>
                         </div>
                     </div>
-                    <div class="flex justify-center h-4 text-slate-300">|</div>
+                    <div class="flex justify-center h-4 text-slate-500">|</div>
                     <div class="flex items-center gap-4">
                         <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-xl border border-slate-300">01</div>
                         <div class="flex-grow p-4 bg-slate-50 border border-slate-300 shadow-sm border-l-4 border-slate-400">
                             <div class="text-sm font-bold text-slate-700">Modernized Sourcing Operations</div>
-                            <div class="text-sm text-slate-500 font-normal">Ice factory management, coastal procurement, and quality-standard training.</div>
+                            <div class="text-sm text-slate-700 font-normal">Ice factory management, coastal procurement, and quality-standard training.</div>
                         </div>
                     </div>
                 </div>
@@ -2934,15 +2945,15 @@
             <div class="mt-8 flex justify-between w-full p-6 bg-slate-50 rounded border border-slate-200">
                 <div class="text-center flex-1 border-r border-slate-200">
                     <div class="text-xl font-bold text-corp-navy">5,000+</div>
-                    <div class="text-[13px] uppercase font-bold text-slate-400">Direct Industrial Jobs</div>
+                    <div class="text-[13px] uppercase font-bold text-slate-600">Direct Industrial Jobs</div>
                 </div>
                 <div class="text-center flex-1 border-r border-slate-200">
                     <div class="text-xl font-bold text-corp-navy">25,000+</div>
-                    <div class="text-[13px] uppercase font-bold text-slate-400">Indirect Ecosystem Impact</div>
+                    <div class="text-[13px] uppercase font-bold text-slate-600">Indirect Ecosystem Impact</div>
                 </div>
                 <div class="text-center flex-1">
                     <div class="text-xl font-bold text-corp-navy">100%</div>
-                    <div class="text-[13px] uppercase font-bold text-slate-400">BPJS / Social Compliance</div>
+                    <div class="text-[13px] uppercase font-bold text-slate-600">BPJS / Social Compliance</div>
                 </div>
             </div>
         </div>
@@ -2964,11 +2975,11 @@
         <div class="exec-visual-box bg-white p-0 border border-slate-300">
             <div class="grid grid-cols-5 h-64 w-full">
                 <div class="bg-slate-200 flex items-center justify-center border-r border-slate-300">
-                    <span class="rotate-[-90deg] text-sm font-black text-slate-400 whitespace-nowrap uppercase tracking-widest">Global Commodity Market</span>
+                    <span class="rotate-[-90deg] text-sm font-black text-slate-600 whitespace-nowrap uppercase tracking-widest">Global Commodity Market</span>
                 </div>
                 <div class="col-span-4 p-10 flex flex-col justify-center">
                     <div class="flex items-center gap-6 mb-8">
-                        <div class="text-sm font-bold text-slate-500 w-24">Traditional Export</div>
+                        <div class="text-sm font-bold text-slate-700 w-24">Traditional Export</div>
                         <div class="flex-grow h-6 bg-slate-100 relative">
                             <div class="absolute left-0 top-0 h-full w-1/3 bg-slate-400"></div>
                             <span class="absolute left-4 top-1/2 -translate-y-1/2 text-sm text-white font-bold">Raw Commodity Margin</span>
@@ -3006,35 +3017,35 @@
         
         <div class="exec-visual-box bg-slate-50 p-10 border border-slate-300">
             <div class="flex flex-col gap-8 w-full">
-                <div class="text-sm uppercase text-slate-400 font-bold mb-2 tracking-widest text-center">Inter-Ministerial & Infrastructure Alignment</div>
+                <div class="text-sm uppercase text-slate-600 font-bold mb-2 tracking-widest text-center">Inter-Ministerial & Infrastructure Alignment</div>
                 
                 <div class="grid grid-cols-2 gap-4">
                     <div class="p-6 bg-white border border-slate-200 shadow-sm flex items-start gap-4">
                         <div class="w-10 h-10 bg-corp-gold text-white flex items-center justify-center font-bold rounded">01</div>
                         <div>
                             <div class="text-sm font-bold text-corp-navy">BKPM / Ministry of Investment</div>
-                            <div class="text-sm text-slate-500 font-normal">Utilization of tax holidays and investment incentives for coastal infrastructure deployment in Region III (Eastern Indonesia).</div>
+                            <div class="text-sm text-slate-700 font-normal">Utilization of tax holidays and investment incentives for coastal infrastructure deployment in Region III (Eastern Indonesia).</div>
                         </div>
                     </div>
                     <div class="p-6 bg-white border border-slate-200 shadow-sm flex items-start gap-4">
                         <div class="w-10 h-10 bg-corp-navy text-white flex items-center justify-center font-bold rounded">02</div>
                         <div>
                             <div class="text-sm font-bold text-corp-navy">Ministry of Marine Affairs (KKP)</div>
-                            <div class="text-sm text-slate-500 font-normal">Direct support for national fisheries modernization targets and implementation of traceable harvest standards.</div>
+                            <div class="text-sm text-slate-700 font-normal">Direct support for national fisheries modernization targets and implementation of traceable harvest standards.</div>
                         </div>
                     </div>
                     <div class="p-6 bg-white border border-slate-200 shadow-sm flex items-start gap-4">
                         <div class="w-10 h-10 bg-blue-600 text-white flex items-center justify-center font-bold rounded">03</div>
                         <div>
                             <div class="text-sm font-bold text-corp-navy">State-Owned Ports (Pelindo)</div>
-                            <div class="text-sm text-slate-500 font-normal">Logistics synchronization with national port hubs (Makassar/Jakarta) to streamline export velocity and cold-chain integrity.</div>
+                            <div class="text-sm text-slate-700 font-normal">Logistics synchronization with national port hubs (Makassar/Jakarta) to streamline export velocity and cold-chain integrity.</div>
                         </div>
                     </div>
                     <div class="p-6 bg-white border border-slate-200 shadow-sm flex items-start gap-4">
                         <div class="w-10 h-10 bg-emerald-600 text-white flex items-center justify-center font-bold rounded">04</div>
                         <div>
                             <div class="text-sm font-bold text-corp-navy">LPEI / Indonesia Eximbank</div>
-                            <div class="text-sm text-slate-500 font-normal">Utilization of export credit and trade finance facilities to support high-value FMCG penetration into global markets.</div>
+                            <div class="text-sm text-slate-700 font-normal">Utilization of export credit and trade finance facilities to support high-value FMCG penetration into global markets.</div>
                         </div>
                     </div>
                 </div>
@@ -3064,25 +3075,25 @@
                 <div class="grid grid-cols-2 gap-x-20 gap-y-12 w-full max-w-2xl">
                     <div class="flex flex-col gap-2">
                         <div class="text-5xl font-black text-white">$1.2B+</div>
-                        <div class="text-sm text-blue-200 uppercase font-bold tracking-widest">Incremental Export Revenue</div>
+                        <div class="text-sm text-white uppercase font-black tracking-widest">Incremental Export Revenue</div>
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="text-5xl font-black text-white">30,000+</div>
-                        <div class="text-sm text-blue-200 uppercase font-bold tracking-widest">Coastal Livelihoods Transformed</div>
+                        <div class="text-sm text-white uppercase font-black tracking-widest">Coastal Livelihoods Transformed</div>
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="text-5xl font-black text-white">2.5M+</div>
-                        <div class="text-sm text-blue-200 uppercase font-bold tracking-widest">MT Protein Spoilage Prevented</div>
+                        <div class="text-sm text-white uppercase font-black tracking-widest">MT Protein Spoilage Prevented</div>
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="text-5xl font-black text-white">Top 3</div>
-                        <div class="text-sm text-blue-200 uppercase font-bold tracking-widest">Global Seafood Export Rank</div>
+                        <div class="text-sm text-white uppercase font-black tracking-widest">Global Seafood Export Rank</div>
                     </div>
                 </div>
                 
                 <div class="mt-16 w-full h-1 bg-gradient-to-r from-transparent via-corp-gold to-transparent opacity-50"></div>
                 
-                <div class="mt-8 text-lg font-serif italic text-blue-100 max-w-xl">
+                <div class="mt-8 text-lg font-serif italic text-white max-w-xl">
                     "This is not a seafood company. This is the industrialization of the Indonesian archipelago's greatest natural resource."
                 </div>
             </div>
@@ -3099,7 +3110,7 @@
             <h1 class="text-5xl font-extrabold mb-4 text-white">Part C</h1>
             <div class="w-16 h-1 mx-auto mb-8" style="background-color: var(--corp-gold);"></div>
             <h2 class="text-3xl font-bold tracking-tight text-white mb-6 uppercase tracking-widest">Institutional Appendices</h2>
-            <p class="text-lg text-slate-300 max-w-xl mx-auto leading-relaxed">
+            <p class="text-lg text-slate-500 max-w-xl mx-auto leading-relaxed">
                 Detailed Technical Specifications, Assumptions Registers, and Risk Mitigation Frameworks.
             </p>
         </div>
