@@ -84,9 +84,20 @@ The document is structurally split into two distinct psychological experiences. 
 *Investor Psychology:* Big-4 audit survival.
 *   **P81-88:** Treasury committee structure, risk/hedging frameworks, transfer pricing matrices, intercompany economic substance, and Capital-Market exit pathways (Sukuk/IPO).
 
-#### SECTION 8: GOVERNMENT IMPACT & FOOD SECURITY
+#### SECTION 8: GOVERNMENT IMPACT, FOOD SECURITY & ESG
 *Investor Psychology:* Securing Sovereign/Ministry political capital.
-*   **P89-94:** Food security thesis, Fisherman income multipliers, regional job creation, ESG compliance.
+*   **P80-90:**
+    *   **P80:** Section Opening: Strategic Food Infrastructure
+    *   **P81:** Indonesian Fisheries Modernization Impact
+    *   **P82:** Fisherman Income & Coastal Development
+    *   **P83:** Regional Industrialization Impact (Eastern Indonesia focus)
+    *   **P84:** Food Security & Protein Infrastructure
+    *   **P85:** ESG & Zero-Waste Processing (Circular Economy)
+    *   **P86:** Employment & Skills Development
+    *   **P87:** Global Seafood Competitiveness & Market Power
+    *   **P88:** Government Partnership & Infrastructure Alignment
+    *   **P89:** Strategic National Impact Summary
+    *   **P90:** Transition Divider into Appendices
 
 #### SECTION 9: INSTITUTIONAL APPENDICES
 *Investor Psychology:* Data transparency and operational reality.
