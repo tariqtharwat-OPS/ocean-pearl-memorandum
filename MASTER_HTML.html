@@ -9,10 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module">
-      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-      mermaid.initialize({ startOnLoad: true, theme: 'base', themeVariables: { primaryColor: '#f1f5f9', primaryTextColor: '#0f172a', primaryBorderColor: '#0f172a', lineColor: '#334155' }});
-    </script>
+    
     <style>
         :root {
             --corp-navy: #0A192F;
@@ -58,9 +55,10 @@
 
         @media print {
             body { background: white; }
-            .doc-page { margin: 0; padding: 20mm; box-shadow: none; page-break-after: always; min-height: 100vh; border-top: 8px solid var(--corp-navy); }
+            .doc-page { margin: 0; padding: 20mm; box-shadow: none; page-break-after: always; min-height: 100vh; border-top: 8px solid var(--corp-navy); break-inside: avoid; page-break-inside: avoid; }
             .divider-page { border-top: none; }
             .no-print { display: none; }
+            table, .exec-visual-box, tr, td, th { break-inside: avoid; page-break-inside: avoid; }
         }
 
         .page-header { display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding-bottom: 1rem; margin-bottom: 2.5rem; width: 100%; }
@@ -102,7 +100,7 @@
             <p class="text-sm max-w-2xl leading-relaxed mb-16 text-slate-500 font-medium">
                 The $500M Master Blueprint for the Vertical Integration of an Indonesian-Headquartered Global Seafood Infrastructure Conglomerate.
             </p>
-            <div class="text-xs uppercase tracking-widest font-bold" style="color: var(--text-muted);">
+            <div class="text-sm uppercase tracking-widest font-bold" style="color: var(--text-muted);">
                 <p class="mb-2">Strictly Confidential</p>
                 <p>Prepared for Sovereign & Institutional Review</p>
             </div>
@@ -112,7 +110,7 @@
     <!-- PAGE 2: DISCLAIMER -->
     <div class="doc-page">
         <h2 class="text-2xl font-bold mb-6 border-b pb-2">Institutional Disclaimer & Confidentiality Notice</h2>
-        <div class="text-[11px] text-justify space-y-4 leading-relaxed font-medium" style="color: var(--text-muted);">
+        <div class="text-sm text-justify space-y-4 leading-relaxed font-medium" style="color: var(--text-muted);">
             <p>This Institutional Feasibility & Investment Memorandum (the "Memorandum") has been prepared exclusively for the confidential review of targeted sovereign wealth funds, project finance institutions, tier-1 infrastructure equity investors, and government ministries.</p>
             <p>The information contained herein does not constitute an offer to sell or a solicitation of an offer to buy any securities or assets of PT Ocean Pearl Indonesia, its parent holding company, or its global subsidiaries.</p>
             <p><strong style="color: var(--corp-navy);">PRELIMINARY FINANCIALS & FORWARD-LOOKING STATEMENTS:</strong> All financial metrics, EBITDA bridges, infrastructure yield calculations, working capital metrics, and staged capital deployment structures contained in this Memorandum are <strong>preliminary model outputs</strong>. All assumptions remain subject to verification. Projections are not guarantees of future performance. Actual results, performance, or achievements may differ materially due to various risks, including global macroeconomic shifts, fuel and freight volatility, regulatory changes, climate impacts on marine biomass, and execution risks inherent in multinational infrastructure deployment.</p>
@@ -131,18 +129,17 @@
         <h3 class="exec-subheadline">Eradicating the commodity trader. Building the infrastructure conglomerate.</h3>
         
         <div class="exec-visual-box">
-            <div class="mermaid">
-                flowchart LR
-                    A[Raw Marine Biomass] -->|Infrastructure Capture| B{SuperFrozen Processing}
-                    B -->|Zero-Waste| C[FMCG Brands]
-                    C -->|Owned Distribution| D[Global Retail & HORECA]
-                    D -->|Value Repatriation| E((Indonesian HQ))
-                    
-                    style A fill:#e2e8f0,stroke:#64748b
-                    style B fill:#bfdbfe,stroke:#2563eb,stroke-width:2px
-                    style C fill:#fef08a,stroke:#b45309,stroke-width:2px
-                    style D fill:#bae6fd,stroke:#0284c7
-                    style E fill:#1e3a8a,stroke:#0f172a,color:#fff,stroke-width:4px
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 w-full text-sm font-bold">
+                <div class="p-6 bg-slate-100 border border-slate-300 text-slate-500 text-center w-full">Raw Marine Biomass</div>
+                <div class="text-2xl text-slate-400">→</div>
+                <div class="p-6 bg-blue-100 border-2 border-blue-600 text-blue-900 text-center w-full">SuperFrozen Processing</div>
+                <div class="text-2xl text-slate-400">→</div>
+                <div class="p-6 bg-yellow-100 border-2 border-yellow-700 text-yellow-900 text-center w-full">FMCG Brands</div>
+                <div class="text-2xl text-slate-400">→</div>
+                <div class="p-6 bg-sky-100 border border-sky-600 text-sky-900 text-center w-full">Global Retail</div>
+            </div>
+            <div class="mt-8 pt-4 border-t-2 border-corp-gold w-full text-center">
+                <span class="p-4 bg-corp-navy text-white inline-block">Value Repatriation → Indonesian HQ</span>
             </div>
         </div>
         
@@ -170,15 +167,15 @@
         <div class="grid grid-cols-3 gap-6 text-center mb-6">
             <div class="p-6 border-l-4 bg-white shadow-sm" style="border-left-color: var(--corp-gold);">
                 <h4 class="font-bold text-lg mb-2" style="color: var(--corp-navy);">Sovereign Mandate</h4>
-                <p class="text-xs text-slate-500">Reducing the 30% national post-harvest loss rate through privatized cold-chain modernization.</p>
+                <p class="text-sm text-slate-500">Reducing the 30% national post-harvest loss rate through privatized cold-chain modernization.</p>
             </div>
             <div class="p-6 border-l-4 bg-white shadow-sm" style="border-left-color: var(--corp-blue);">
                 <h4 class="font-bold text-lg mb-2" style="color: var(--corp-navy);">Industrial Brain</h4>
-                <p class="text-xs text-slate-500">All global processing, IP holding, and core strategic decision-making remains domiciled in Jakarta/Surabaya.</p>
+                <p class="text-sm text-slate-500">All global processing, IP holding, and core strategic decision-making remains domiciled in Jakarta/Surabaya.</p>
             </div>
             <div class="p-6 border-l-4 border-green-600 bg-white shadow-sm">
                 <h4 class="font-bold text-lg mb-2" style="color: var(--corp-navy);">Export Multiplier</h4>
-                <p class="text-xs text-slate-500">Transitioning the state from a raw biomass exporter to a high-margin finished FMCG exporter.</p>
+                <p class="text-sm text-slate-500">Transitioning the state from a raw biomass exporter to a high-margin finished FMCG exporter.</p>
             </div>
         </div>
         
@@ -275,7 +272,7 @@
                     <div>OP_OS // GLOBAL COMMAND CENTER</div>
                     <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-500"></span> ACTIVE</div>
                 </div>
-                <div class="ai-panel text-xs text-slate-300 bg-[#0f172a]">
+                <div class="ai-panel text-sm text-slate-300 bg-[#0f172a]">
                     <div class="flex justify-between border-b border-slate-700 pb-2 mb-4">
                         <span class="font-bold text-white">VESSEL TELEMETRY</span>
                         <span class="text-emerald-400">412 NODES ONLINE</span>
@@ -328,20 +325,23 @@
         <h3 class="exec-subheadline">The $500M scale-up logic mapped by strict operational gates.</h3>
         
         <div class="exec-visual-box p-0 bg-transparent border-none">
-            <div class="mermaid">
-                gantt
-                    title Capital Deployment Phases
-                    dateFormat YYYY-MM
-                    section Stage 0: Pre-Seed
-                    Formation & USA Scouting : 2026-06, 6m
-                    section Stage 1: Proof
-                    Hub 1 / Oman / EBITDA Target : 2027-01, 12m
-                    section Stage 2: Scale
-                    Multi-Hub / Canned Mfg / Fishmeal : 2028-01, 12m
-                    section Stage 3: Expansion
-                    USA Acquisition / Global Retail : 2029-01, 18m
-                    section Stage 4: Maturity
-                    Labuan Bond Readiness / JVs : 2030-06, 18m
+            <div class="w-full flex flex-col gap-4 text-sm">
+                <div class="flex border-l-4 border-corp-gold bg-slate-50 p-4">
+                    <div class="font-bold w-1/4 text-corp-navy">Stage 1</div>
+                    <div class="w-3/4 text-slate-600">Proof of Concept & Infrastructure Scouting (Months 1-6)</div>
+                </div>
+                <div class="flex border-l-4 border-corp-gold bg-slate-50 p-4">
+                    <div class="font-bold w-1/4 text-corp-navy">Stage 2</div>
+                    <div class="w-3/4 text-slate-600">Hub 1 Establishment & Oman Target Acquisition (Months 7-12)</div>
+                </div>
+                <div class="flex border-l-4 border-corp-gold bg-slate-50 p-4">
+                    <div class="font-bold w-1/4 text-corp-navy">Stage 3</div>
+                    <div class="w-3/4 text-slate-600">Processing Scaling & Biomass Dominance (Months 13-24)</div>
+                </div>
+                <div class="flex border-l-4 border-corp-gold bg-slate-50 p-4">
+                    <div class="font-bold w-1/4 text-corp-navy">Stage 4</div>
+                    <div class="w-3/4 text-slate-600">Global Distribution & Yield Repatriation (Months 25-36)</div>
+                </div>
             </div>
         </div>
         
@@ -383,7 +383,7 @@
         <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The Ocean Pearl financial model relies on modeled utilization curves, species mix assumptions, and precise infrastructure yield logic. The capital structure avoids trapping equity in working capital by leveraging highly efficient trade-finance facilities. The resulting economics generate infrastructure-grade yields paired with private-equity growth trajectories. 
             <br><br>
-            <span class="text-xs text-slate-500 italic font-bold">Indicative targets shown for strategic illustration. Final figures must be recalculated from the full 10-year model and approved assumptions register located in Section 6.</span>
+            <span class="text-sm text-slate-500 italic font-bold">Indicative targets shown for strategic illustration. Final figures must be recalculated from the full 10-year model and approved assumptions register located in Section 6.</span>
         </div>
     </div>
 
@@ -576,7 +576,7 @@
         </div>
         
         <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            The East Asian markets dictate global premium seafood pricing. Japan is the ultimate destination for Ocean Pearl's SuperFrozen (-60°C) tuna and premium octopus, where perfect preservation commands meaningully higher price realization than standard frozen commodity pricing. Concurrently, China represents an insatiable high-volume engine for premium imported seafood via large-scale wholesale networks and rapid-delivery e-commerce partnerships, absorbing the scale that regional markets cannot.
+            The East Asian markets dictate global premium seafood pricing. Japan is the ultimate destination for Ocean Pearl's SuperFrozen (-60°C) tuna and premium octopus, where optimal preservation commands meaningully higher price realization than standard frozen commodity pricing. Concurrently, China represents an insatiable high-volume engine for premium imported seafood via large-scale wholesale networks and rapid-delivery e-commerce partnerships, absorbing the scale that regional markets cannot.
         </div>
     </div>
 
@@ -680,7 +680,7 @@
         </div>
         
         <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            To secure the massive volume of the Oman/Yemen/Somalia corridor and remote Eastern Indonesia, Ocean Pearl deploys vessel-mounted ice factories. These floating collection nodes generate ice deep at sea, exchanging it with localized fleets for raw catch. This eliminates the need for smaller vessels to return to port for ice, drastically increasing their days-at-sea and yielding a continuous flow of perfectly preserved deep-water biomass directly into the Ocean Pearl supply chain.
+            To secure the massive volume of the Oman/Yemen/Somalia corridor and remote Eastern Indonesia, Ocean Pearl deploys vessel-mounted ice factories. These floating collection nodes generate ice deep at sea, exchanging it with localized fleets for raw catch. This eliminates the need for smaller vessels to return to port for ice, drastically increasing their days-at-sea and yielding a continuous flow of directly preserved deep-water biomass directly into the Ocean Pearl supply chain.
         </div>
     </div>
 
@@ -887,7 +887,7 @@
         </div>
         
         <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            The Chef Selection division targets the massive Hotel, Restaurant, and Catering (HORECA) markets, specifically within the GCC, Saudi Arabia, and the USA. This product line focuses on perfectly portion-controlled, easy-to-prep frozen fillets and bulk packs. By providing strict quality consistency and reliable volume to executive chefs and airline caterers, Ocean Pearl secures high-value, recurring B2B procurement contracts.
+            The Chef Selection division targets the massive Hotel, Restaurant, and Catering (HORECA) markets, specifically within the GCC, Saudi Arabia, and the USA. This product line focuses on directly portion-controlled, easy-to-prep frozen fillets and bulk packs. By providing strict quality consistency and reliable volume to executive chefs and airline caterers, Ocean Pearl secures high-value, recurring B2B procurement contracts.
         </div>
     </div>
 
@@ -1011,7 +1011,7 @@
         </div>
         
         <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            The 8-pillar product ecosystem is the financial engine that converts physical infrastructure into sovereign-grade returns. By operating concurrently across luxury sashimi, high-volume HORECA, mass-market canned goods, and zero-waste fishmeal, Ocean Pearl achieves a perfectly hedged margin profile. This FMCG-grade capability positions the platform not as a price-taker in the commodity market, but secures strong pricing leverage in global retail.
+            The 8-pillar product ecosystem is the financial engine that converts physical infrastructure into sovereign-grade returns. By operating concurrently across luxury sashimi, high-volume HORECA, mass-market canned goods, and zero-waste fishmeal, Ocean Pearl achieves a directly hedged margin profile. This FMCG-grade capability positions the platform not as a price-taker in the commodity market, but secures strong pricing leverage in global retail.
         </div>
     </div>
 
@@ -1063,11 +1063,11 @@
         <h3 class="exec-subheadline">Eliminating the "dark zones" of deep-sea collection.</h3>
         
         <div class="exec-visual-box bg-[#0f172a] text-slate-300 p-0 overflow-hidden relative">
-            <div class="w-full h-8 bg-[#1e293b] flex items-center px-4 justify-between text-[10px] font-mono border-b border-slate-700">
+            <div class="w-full h-8 bg-[#1e293b] flex items-center px-4 justify-between text-sm font-mono border-b border-slate-700">
                 <span>OP_OS // MODULE_01 // TELEMETRY_ACTIVE</span>
                 <span class="text-emerald-400">STATUS: NOMINAL</span>
             </div>
-            <div class="p-6 grid grid-cols-3 gap-6 w-full font-mono text-xs">
+            <div class="p-6 grid grid-cols-3 gap-6 w-full font-mono text-sm">
                 <div class="col-span-2 border border-slate-700 bg-[#1e293b] p-4 relative h-48">
                     <div class="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9IiM2NDc0OGIiLz48L3N2Zz4=')]"></div>
                     <h4 class="text-slate-400 mb-2 border-b border-slate-700 pb-1">INDIAN OCEAN SECTOR: 4A</h4>
@@ -1075,7 +1075,7 @@
                     <div class="w-2 h-2 rounded-full bg-emerald-400 absolute top-24 left-32 animate-pulse"></div>
                     <div class="w-2 h-2 rounded-full bg-emerald-400 absolute top-10 left-48 animate-pulse"></div>
                     <div class="w-2 h-2 rounded-full bg-amber-400 absolute top-32 left-64 animate-pulse"></div>
-                    <div class="absolute bottom-4 right-4 text-emerald-400 text-[10px]">142 VESSELS TRACKED</div>
+                    <div class="absolute bottom-4 right-4 text-emerald-400 text-sm">142 VESSELS TRACKED</div>
                 </div>
                 <div class="space-y-4">
                     <div class="border border-slate-700 bg-[#1e293b] p-3">
@@ -1107,18 +1107,18 @@
         <h3 class="exec-subheadline">Micro-monitoring the -60°C integrity of every export carton.</h3>
         
         <div class="exec-visual-box bg-[#0f172a] text-slate-300 p-0 overflow-hidden relative">
-            <div class="w-full h-8 bg-[#1e293b] flex items-center px-4 justify-between text-[10px] font-mono border-b border-slate-700">
+            <div class="w-full h-8 bg-[#1e293b] flex items-center px-4 justify-between text-sm font-mono border-b border-slate-700">
                 <span>OP_OS // MODULE_02 // THERMAL_TRACKING</span>
                 <span class="text-emerald-400">ACTIVE</span>
             </div>
             <div class="p-8 w-full font-mono">
                 <div class="flex justify-between items-end border-b border-slate-700 pb-2 mb-6">
                     <div>
-                        <div class="text-[10px] text-slate-500">CONSIGNMENT OP-USA-8821</div>
+                        <div class="text-sm text-slate-500">CONSIGNMENT OP-USA-8821</div>
                         <div class="text-xl text-white">SASHIMI GRADE TUNA LOINS</div>
                     </div>
                     <div class="text-right">
-                        <div class="text-[10px] text-slate-500">CURRENT AMBIENT</div>
+                        <div class="text-sm text-slate-500">CURRENT AMBIENT</div>
                         <div class="text-2xl text-blue-400 font-bold">-61.2°C</div>
                     </div>
                 </div>
@@ -1151,8 +1151,8 @@
         <h2 class="exec-headline">Procurement & Pricing Engine</h2>
         <h3 class="exec-subheadline">Algorithmic supply-demand matching.</h3>
         
-        <div class="exec-visual-box bg-[#0f172a] p-0 font-mono text-xs">
-            <div class="w-full h-8 bg-[#1e293b] flex items-center px-4 justify-between text-[10px] border-b border-slate-700 text-slate-400">
+        <div class="exec-visual-box bg-[#0f172a] p-0 font-mono text-sm">
+            <div class="w-full h-8 bg-[#1e293b] flex items-center px-4 justify-between text-sm border-b border-slate-700 text-slate-400">
                 <span>OP_OS // MODULE_03 // PRICING_ALGO</span>
             </div>
             <div class="p-6 grid grid-cols-2 gap-4 w-full">
@@ -1192,7 +1192,7 @@
                     <p class="mb-4 text-slate-400">EXECUTIVE QUERY: Evaluate diversion of 40 MT of Skipjack from Egypt Hub to Saudi JV based on current container freight indices.</p>
                     <div class="h-px bg-slate-700 my-4 w-full"></div>
                     <p class="text-white mb-2 font-bold">ANALYSIS COMPLETE:</p>
-                    <ul class="space-y-2 text-xs mb-4">
+                    <ul class="space-y-2 text-sm mb-4">
                         <li class="flex justify-between"><span>Red Sea Freight Delta:</span><span class="text-red-400">+$420/TEU</span></li>
                         <li class="flex justify-between"><span>Saudi HORECA Margin Uplift:</span><span class="text-emerald-400">+14.5%</span></li>
                         <li class="flex justify-between"><span>Inventory Risk (Egypt):</span><span class="text-slate-400">Negligible (32 Days Cover)</span></li>
@@ -1243,15 +1243,15 @@
                 <h4 class="font-bold text-sm text-corp-navy uppercase mb-6">OP_OS EBITDA Drivers</h4>
                 <div class="space-y-4">
                     <div>
-                        <div class="flex justify-between text-xs mb-1"><span>Spoilage Prevention</span><span class="font-bold text-emerald-600">+4.1%</span></div>
+                        <div class="flex justify-between text-sm mb-1"><span>Spoilage Prevention</span><span class="font-bold text-emerald-600">+4.1%</span></div>
                         <div class="w-full bg-slate-100 h-2 rounded"><div class="bg-corp-blue h-2 rounded" style="width: 41%;"></div></div>
                     </div>
                     <div>
-                        <div class="flex justify-between text-xs mb-1"><span>Logistics Routing</span><span class="font-bold text-emerald-600">+2.5%</span></div>
+                        <div class="flex justify-between text-sm mb-1"><span>Logistics Routing</span><span class="font-bold text-emerald-600">+2.5%</span></div>
                         <div class="w-full bg-slate-100 h-2 rounded"><div class="bg-corp-blue h-2 rounded" style="width: 25%;"></div></div>
                     </div>
                     <div>
-                        <div class="flex justify-between text-xs mb-1"><span>Pricing Optimization</span><span class="font-bold text-emerald-600">+3.8%</span></div>
+                        <div class="flex justify-between text-sm mb-1"><span>Pricing Optimization</span><span class="font-bold text-emerald-600">+3.8%</span></div>
                         <div class="w-full bg-slate-100 h-2 rounded"><div class="bg-corp-blue h-2 rounded" style="width: 38%;"></div></div>
                     </div>
                 </div>
@@ -1297,7 +1297,7 @@
         
         <div class="exec-visual-box bg-white p-6 border-slate-300">
             <h4 class="font-bold text-sm text-corp-navy uppercase mb-4 text-left w-full">Target Screening Matrix</h4>
-            <div class="w-full border border-slate-200 text-xs text-left">
+            <div class="w-full border border-slate-200 text-sm text-left">
                 <div class="flex border-b border-slate-200 bg-slate-50 font-bold">
                     <div class="w-1/3 p-3">Criterion</div>
                     <div class="w-2/3 p-3">Requirement / Rationale</div>
@@ -1336,19 +1336,36 @@
         <h3 class="exec-subheadline">Extracting maximum structural synergy within 180 days.</h3>
         
         <div class="exec-visual-box p-0 bg-transparent border-none">
-            <div class="mermaid">
-                flowchart TD
-                    A[Pre-Acquisition Target] -->|High Cost of Goods| B[Fragmented Importer Network]
-                    C[Ocean Pearl HQ] -->|Acquires 100% Equity| A
-                    C -->|Replaces COGS Supply Line| D[Direct Indonesia Factory Feed]
-                    D -->|Eliminates 22% Middleman Markup| E{Immediate EBITDA Accretion}
-                    A -->|Retains| F[USA Retail Vendor Numbers]
-                    E --> F
-                    
-                    style A fill:#f1f5f9,stroke:#64748b
-                    style C fill:#1e3a8a,color:#fff
-                    style D fill:#38bdf8
-                    style E fill:#fef08a,stroke:#b45309,stroke-width:2px
+            <div class="flex flex-col items-center gap-6 w-full text-sm font-bold">
+                <div class="flex w-full gap-8">
+                    <div class="flex-1 p-6 bg-slate-100 border border-slate-400 text-center opacity-70">
+                        <div class="text-slate-500 mb-2">Pre-Acquisition Target</div>
+                        <div class="text-xs text-slate-400">High Cost of Goods</div>
+                    </div>
+                    <div class="flex-1 p-6 bg-slate-100 border border-slate-400 text-center opacity-70">
+                        <div class="text-slate-500 mb-2">Fragmented Importers</div>
+                        <div class="text-xs text-slate-400">Margin Leakage</div>
+                    </div>
+                </div>
+                
+                <div class="text-2xl text-corp-gold">↓ Post-Acquisition Structure ↓</div>
+                
+                <div class="flex w-full gap-8 items-center">
+                    <div class="flex-1 p-6 bg-corp-navy text-white text-center shadow-lg border-2 border-corp-gold">
+                        <div class="text-corp-gold mb-2">Ocean Pearl HQ</div>
+                        <div class="text-xs text-slate-300">100% Equity Ownership</div>
+                    </div>
+                    <div class="text-xl text-slate-400 w-12 text-center">→</div>
+                    <div class="flex-1 p-6 bg-sky-100 border border-sky-400 text-center">
+                        <div class="text-corp-navy mb-2">Direct Indonesia Factory Feed</div>
+                        <div class="text-xs text-slate-500">Replaces COGS Supply Line</div>
+                    </div>
+                    <div class="text-xl text-slate-400 w-12 text-center">→</div>
+                    <div class="flex-1 p-6 bg-yellow-100 border-2 border-yellow-600 text-center shadow-md">
+                        <div class="text-yellow-900 mb-2">Immediate EBITDA Accretion</div>
+                        <div class="text-xs text-yellow-700">Eliminates 22% Middleman Markup</div>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -1388,23 +1405,28 @@
         <h3 class="exec-subheadline">De-risking border transit via absolute traceability.</h3>
         
         <div class="exec-visual-box p-0 bg-transparent border-none">
-            <div class="mermaid">
-                sequenceDiagram
-                    participant IND as Indonesia HQ
-                    participant OP_OS as AI Platform
-                    participant FDA as USA Customs/FDA
-                    participant USA as USA Hub
-                    IND->>OP_OS: Log Processing & Temp Data
-                    OP_OS->>FDA: Advance Electronic Notification (FSMA)
-                    IND->>USA: Dispatch Container
-                    OP_OS-->>USA: Live Thermal Telemetry
-                    USA->>FDA: Present Clean Digital Audit
-                    FDA-->>USA: Expedited Port Clearance
+            <div class="flex flex-col gap-4 w-full text-left">
+                <div class="flex justify-between items-center bg-slate-50 p-4 border border-slate-200 shadow-sm">
+                    <span class="font-bold text-corp-navy w-1/3">1. IoT Capture</span>
+                    <span class="text-slate-600 text-sm w-2/3">Live thermal telemetry logged at Indonesia HQ.</span>
+                </div>
+                <div class="flex justify-between items-center bg-slate-50 p-4 border border-slate-200 shadow-sm">
+                    <span class="font-bold text-corp-navy w-1/3">2. Advance Electronic Notification</span>
+                    <span class="text-slate-600 text-sm w-2/3">AI Platform submits FSMA data to USA FDA pre-arrival.</span>
+                </div>
+                <div class="flex justify-between items-center bg-slate-50 p-4 border border-slate-200 shadow-sm">
+                    <span class="font-bold text-corp-navy w-1/3">3. Container Dispatch</span>
+                    <span class="text-slate-600 text-sm w-2/3">Physical transit from Indonesia to USA Hub.</span>
+                </div>
+                <div class="flex justify-between items-center bg-corp-navy text-white p-4 border-l-4 border-corp-gold shadow-md">
+                    <span class="font-bold w-1/3 text-corp-gold">4. Expedited Port Clearance</span>
+                    <span class="text-sm w-2/3">Clean digital audit presented. Zero regulatory disruption.</span>
+                </div>
             </div>
         </div>
         
         <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            The United States Food and Drug Administration (FDA) strictly enforces the Food Safety Modernization Act (FSMA). Fragmented exporters frequently suffer delays or cargo rejection due to incomplete traceability. Because Ocean Pearl owns the entire supply chain from the Omani fishing vessel to the USA cold-storage door, it provides a flawless, unbroken digital audit trail. This institutional-grade compliance guarantees expedited port clearance and zero regulatory disruption.
+            The United States Food and Drug Administration (FDA) strictly enforces the Food Safety Modernization Act (FSMA). Fragmented exporters frequently suffer delays or cargo rejection due to incomplete traceability. Because Ocean Pearl owns the entire supply chain from the Omani fishing vessel to the USA cold-storage door, it provides a auditable, unbroken digital audit trail. This institutional-grade compliance guarantees expedited port clearance and zero regulatory disruption.
         </div>
     </div>
 
@@ -1419,7 +1441,7 @@
         
         <div class="exec-visual-box bg-white p-8">
             <h4 class="font-bold text-sm text-corp-navy uppercase mb-6 w-full text-center">Value Chain Margin Recapture (Illustrative)</h4>
-            <div class="flex items-end justify-center gap-4 h-48 w-full text-[10px] font-bold">
+            <div class="flex items-end justify-center gap-4 h-48 w-full text-sm font-bold">
                 <div class="flex flex-col items-center"><div class="w-16 h-12 bg-slate-300 mb-2"></div><span class="text-center text-slate-500">Raw Catch Cost</span></div>
                 <div class="flex flex-col items-center"><div class="w-16 h-8 bg-red-400 mb-2 opacity-50"></div><span class="text-center text-slate-500">Local Broker (Eliminated)</span></div>
                 <div class="flex flex-col items-center"><div class="w-16 h-16 bg-corp-gold mb-2"></div><span class="text-center text-corp-navy">Ocean Pearl Processing</span></div>
@@ -1430,7 +1452,7 @@
         </div>
         
         <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            The economic rationale for the USA acquisition is perfectly demonstrated by the margin waterfall logic. By structurally eliminating the local Indonesian broker, the international export agent, and the USA domestic wholesaler, Ocean Pearl successfully compresses five layers of third-party profit-taking into a single, vertically integrated corporate entity. This strategy structurally supports the high EBITDA margins required by tier-1 institutional investors.
+            The economic rationale for the USA acquisition is directly demonstrated by the margin waterfall logic. By structurally eliminating the local Indonesian broker, the international export agent, and the USA domestic wholesaler, Ocean Pearl successfully compresses five layers of third-party profit-taking into a single, vertically integrated corporate entity. This strategy structurally supports the high EBITDA margins required by tier-1 institutional investors.
         </div>
     </div>
 
@@ -1444,17 +1466,22 @@
         <h3 class="exec-subheadline">Balancing inventory across three continents.</h3>
         
         <div class="exec-visual-box p-0 bg-transparent border-none">
-            <div class="mermaid">
-                flowchart LR
-                    ID[Indonesia Factory] -->|Bulk Export| USA[USA Hub]
-                    ID -->|Bulk Export| EG[Egypt Hub]
-                    ID -->|AirFresh / SuperFrozen| JP[Japan/China]
-                    EG -.->|Cross-Balance Deficit| USA
-                    USA -.->|Pricing Arbitrage| JP
-                    
-                    style ID fill:#1e3a8a,color:#fff
-                    style USA fill:#f8fafc,stroke:#0f172a
-                    style EG fill:#f8fafc,stroke:#0f172a
+            <div class="flex flex-col items-center gap-6 w-full text-sm">
+                <div class="p-6 bg-corp-navy text-white w-2/3 text-center font-bold border-b-4 border-corp-gold shadow-lg">Indonesia Central Factory Hub</div>
+                <div class="flex justify-between w-full mt-4 gap-4">
+                    <div class="flex-1 p-4 bg-white border border-slate-300 text-center">
+                        <div class="font-bold text-corp-blue mb-2">USA Hub</div>
+                        <div class="text-slate-500 text-sm">Bulk Institutional Export</div>
+                    </div>
+                    <div class="flex-1 p-4 bg-white border border-slate-300 text-center">
+                        <div class="font-bold text-corp-blue mb-2">Egypt Hub</div>
+                        <div class="text-slate-500 text-sm">Regional FMCG Deficit</div>
+                    </div>
+                    <div class="flex-1 p-4 bg-white border border-slate-300 text-center">
+                        <div class="font-bold text-corp-blue mb-2">Japan/China</div>
+                        <div class="text-slate-500 text-sm">AirFresh / Premium</div>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -1512,7 +1539,7 @@
         <h3 class="exec-subheadline">The mathematical foundation of the platform.</h3>
         
         <div class="exec-visual-box bg-white p-0 overflow-hidden border border-slate-300">
-            <table class="w-full text-xs border-collapse font-sans">
+            <table class="w-full text-sm border-collapse font-sans">
                 <thead>
                     <tr class="text-white" style="background-color: var(--corp-navy);">
                         <th class="p-4 text-left font-bold uppercase tracking-wider">Macro Category</th>
@@ -1621,7 +1648,7 @@
         </div>
         
         <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            Concentration risk is unacceptable for institutional debt providers. By Year 5, Ocean Pearl achieves a perfectly balanced geographic revenue profile. The high-volume, high-margin USA market anchors the platform via direct retail penetration. The Japan/China corridor absorbs all premium SuperFrozen output, while the GCC/MENA region provides a massive, recession-resistant baseload for canned and HORECA products. This structure immunizes the company against localized economic shocks.
+            Concentration risk is unacceptable for institutional debt providers. By Year 5, Ocean Pearl achieves a directly balanced geographic revenue profile. The high-volume, high-margin USA market anchors the platform via direct retail penetration. The Japan/China corridor absorbs all premium SuperFrozen output, while the GCC/MENA region provides a massive, recession-resistant baseload for canned and HORECA products. This structure immunizes the company against localized economic shocks.
         </div>
     </div>
 
@@ -1638,7 +1665,7 @@
             <div class="flex flex-col items-center gap-2 w-full">
                 <!-- Base -->
                 <div class="w-full bg-slate-100 p-6 text-center border-2 border-slate-300 rounded shadow-sm">
-                    <div class="font-bold text-slate-500 uppercase tracking-widest text-xs mb-1">Input Commodity</div>
+                    <div class="font-bold text-slate-500 uppercase tracking-widest text-sm mb-1">Input Commodity</div>
                     <div class="font-bold text-slate-800 text-xl">Raw Marine Biomass</div>
                     <div class="font-mono text-slate-600 mt-1 text-lg">Avg Cost: $3.00 / kg</div>
                 </div>
@@ -1647,7 +1674,7 @@
                 
                 <!-- Hub -->
                 <div class="w-full p-6 text-center rounded shadow-md" style="background-color: var(--corp-navy);">
-                    <div class="font-bold text-blue-200 uppercase tracking-widest text-xs mb-1">Value Creation Engine</div>
+                    <div class="font-bold text-blue-200 uppercase tracking-widest text-sm mb-1">Value Creation Engine</div>
                     <div class="font-bold text-white text-2xl">Indonesian Processing Hub</div>
                     <div class="text-blue-100 mt-1">Automated AI Routing & Quality Grading</div>
                 </div>
@@ -1657,22 +1684,22 @@
                 <!-- Outputs -->
                 <div class="flex w-full justify-between gap-4 text-sm font-bold text-center">
                     <div class="flex-1 bg-emerald-600 text-white p-6 rounded shadow-sm border-b-4 border-emerald-800">
-                        <div class="uppercase text-xs text-emerald-200 mb-2">Grade A+</div>
+                        <div class="uppercase text-sm text-emerald-200 mb-2">Grade A+</div>
                         <div class="text-lg">SuperFrozen</div>
                         <div class="font-mono text-xl mt-2">$18.50</div>
                     </div>
                     <div class="flex-1 bg-amber-500 text-white p-6 rounded shadow-sm border-b-4 border-amber-700">
-                        <div class="uppercase text-xs text-amber-100 mb-2">Grade A</div>
+                        <div class="uppercase text-sm text-amber-100 mb-2">Grade A</div>
                         <div class="text-lg">Smoked / RTE</div>
                         <div class="font-mono text-xl mt-2">$14.00</div>
                     </div>
                     <div class="flex-1 bg-blue-500 text-white p-6 rounded shadow-sm border-b-4 border-blue-700">
-                        <div class="uppercase text-xs text-blue-200 mb-2">Grade B</div>
+                        <div class="uppercase text-sm text-blue-200 mb-2">Grade B</div>
                         <div class="text-lg">HORECA Cuts</div>
                         <div class="font-mono text-xl mt-2">$8.50</div>
                     </div>
                     <div class="flex-1 bg-slate-500 text-white p-6 rounded shadow-sm border-b-4 border-slate-700">
-                        <div class="uppercase text-xs text-slate-200 mb-2">Grade C / Mass</div>
+                        <div class="uppercase text-sm text-slate-200 mb-2">Grade C / Mass</div>
                         <div class="text-lg">Canned Tins</div>
                         <div class="font-mono text-xl mt-2">$4.50</div>
                     </div>
@@ -1695,7 +1722,7 @@
         <h3 class="exec-subheadline">Volume vs. Margin stratification.</h3>
         
         <div class="exec-visual-box bg-white p-0 border border-slate-300">
-            <table class="w-full text-xs border-collapse text-right">
+            <table class="w-full text-sm border-collapse text-right">
                 <thead>
                     <tr class="text-white" style="background-color: var(--corp-navy);">
                         <th class="p-4 text-left font-bold text-sm">Product Pillar</th>
@@ -1977,9 +2004,9 @@
         <div class="exec-visual-box bg-white p-10 flex flex-row items-center justify-center gap-10 border border-slate-300">
             <!-- Stack Graphic -->
             <div class="w-1/3 flex flex-col h-64 border-4 border-slate-800 rounded-lg overflow-hidden shadow-xl">
-                <div class="h-1/5 bg-slate-200 flex flex-col items-center justify-center text-xs font-bold text-slate-700 border-b-2 border-slate-400"><span>Trade Revolver</span><span class="font-mono text-slate-500 text-[10px]">Short-Term</span></div>
-                <div class="h-2/5 bg-corp-blue flex flex-col items-center justify-center text-sm font-bold text-white border-b-2 border-slate-400"><span>ECA / Infra Debt</span><span class="font-mono text-blue-200 text-[10px]">Long-Term</span></div>
-                <div class="h-2/5 bg-corp-navy flex flex-col items-center justify-center text-sm font-bold text-white"><span>Sovereign Equity</span><span class="font-mono text-blue-200 text-[10px]">Permanent</span></div>
+                <div class="h-1/5 bg-slate-200 flex flex-col items-center justify-center text-sm font-bold text-slate-700 border-b-2 border-slate-400"><span>Trade Revolver</span><span class="font-mono text-slate-500 text-sm">Short-Term</span></div>
+                <div class="h-2/5 bg-corp-blue flex flex-col items-center justify-center text-sm font-bold text-white border-b-2 border-slate-400"><span>ECA / Infra Debt</span><span class="font-mono text-blue-200 text-sm">Long-Term</span></div>
+                <div class="h-2/5 bg-corp-navy flex flex-col items-center justify-center text-sm font-bold text-white"><span>Sovereign Equity</span><span class="font-mono text-blue-200 text-sm">Permanent</span></div>
             </div>
             <!-- Logic Box -->
             <div class="w-2/3 space-y-6 text-sm text-slate-700">
@@ -2060,7 +2087,7 @@
         <h3 class="exec-subheadline">Demonstrating the hockey-stick elimination via infrastructure staging.</h3>
         
         <div class="exec-visual-box bg-white p-0 border border-slate-300 overflow-x-auto">
-            <table class="w-full text-xs border-collapse text-right whitespace-nowrap">
+            <table class="w-full text-sm border-collapse text-right whitespace-nowrap">
                 <thead>
                     <tr class="text-white" style="background-color: var(--corp-navy);">
                         <th class="p-4 text-left font-bold text-sm">Consolidated Metrics (USD M)</th>
@@ -2195,7 +2222,7 @@
         <h3 class="exec-subheadline">Tracking the transition from CapEx burn to free cash generation.</h3>
         
         <div class="exec-visual-box bg-white p-0 border border-slate-300 overflow-x-auto">
-            <table class="w-full text-xs border-collapse text-right whitespace-nowrap">
+            <table class="w-full text-sm border-collapse text-right whitespace-nowrap">
                 <thead>
                     <tr class="text-white" style="background-color: var(--corp-navy);">
                         <th class="p-4 text-left font-bold text-sm">Cashflow Statement (USD M)</th>
@@ -2297,7 +2324,7 @@
         <h3 class="exec-subheadline">Stress-testing the platform against macroeconomic shocks.</h3>
         
         <div class="exec-visual-box bg-white p-0 border border-slate-300">
-            <table class="w-full text-xs border-collapse text-right">
+            <table class="w-full text-sm border-collapse text-right">
                 <thead>
                     <tr class="text-white" style="background-color: var(--corp-navy);">
                         <th class="p-5 text-left font-bold text-sm">Key Output Metric</th>
@@ -2309,9 +2336,9 @@
                 <tbody>
                     <tr class="border-b border-slate-200">
                         <td class="p-5 text-left font-bold text-slate-800 text-sm">Scenario Definition</td>
-                        <td class="p-5 text-slate-600 text-xs text-left bg-red-50 leading-relaxed">Prices drop 15%. Freight stays at pandemic highs. Utilization drops to 60%.</td>
-                        <td class="p-5 text-slate-600 text-xs text-left leading-relaxed">Current Toyosu baseline. Standard freight. 85% utilization.</td>
-                        <td class="p-5 text-slate-600 text-xs text-left bg-emerald-50 leading-relaxed">Sashimi supercycle. Immediate USA synergy. 95% utilization.</td>
+                        <td class="p-5 text-slate-600 text-sm text-left bg-red-50 leading-relaxed">Prices drop 15%. Freight stays at pandemic highs. Utilization drops to 60%.</td>
+                        <td class="p-5 text-slate-600 text-sm text-left leading-relaxed">Current Toyosu baseline. Standard freight. 85% utilization.</td>
+                        <td class="p-5 text-slate-600 text-sm text-left bg-emerald-50 leading-relaxed">Sashimi supercycle. Immediate USA synergy. 95% utilization.</td>
                     </tr>
                     <tr class="border-b border-slate-200 bg-white">
                         <td class="p-5 text-left font-bold text-corp-navy text-sm">Stabilized EBITDA Margin</td>
@@ -2352,12 +2379,12 @@
         <div class="exec-visual-box bg-white p-8 border border-slate-300">
             <h4 class="font-bold text-lg text-corp-navy uppercase mb-6 w-full text-center">Project IRR Output Matrix</h4>
             <div class="flex mt-2 mb-4 items-center justify-center">
-                <span class="text-xs font-bold text-slate-500 uppercase tracking-widest bg-slate-100 py-1 px-4 rounded border border-slate-200">Premium Seafood Price Variance (X-Axis)</span>
+                <span class="text-sm font-bold text-slate-500 uppercase tracking-widest bg-slate-100 py-1 px-4 rounded border border-slate-200">Premium Seafood Price Variance (X-Axis)</span>
             </div>
             <table class="w-full text-sm text-center border-collapse font-mono">
                 <thead>
                     <tr>
-                        <th class="p-4 border border-slate-300 bg-slate-200 text-xs text-left font-sans text-slate-700">Freight Cost<br>Variance</th>
+                        <th class="p-4 border border-slate-300 bg-slate-200 text-sm text-left font-sans text-slate-700">Freight Cost<br>Variance</th>
                         <th class="p-4 border border-slate-300 bg-slate-100 font-bold">-15% Price</th>
                         <th class="p-4 border border-slate-300 bg-slate-100 font-bold">-5% Price</th>
                         <th class="p-4 border border-slate-300 bg-slate-800 text-white font-bold text-base">Base Price</th>
@@ -2426,18 +2453,18 @@
             <span class="page-num">77</span>
         </div>
         <h2 class="exec-headline">Compliance & Repatriation Architecture</h2>
-        <h3 class="exec-subheadline">Ensuring flawless Anti-Money Laundering (AML) auditability.</h3>
+        <h3 class="exec-subheadline">Ensuring auditable Anti-Money Laundering (AML) auditability.</h3>
         
         <div class="exec-visual-box bg-white p-10 border border-slate-300">
             <div class="flex flex-col gap-4 text-sm font-bold w-full">
                 <!-- Top Subsidiaries -->
                 <div class="flex gap-6 w-full">
                     <div class="flex-1 bg-slate-50 border-2 border-slate-300 p-6 text-center text-slate-700 rounded shadow-sm">
-                        <div class="text-xs uppercase text-slate-500 mb-1">USA Subsidiary</div>
+                        <div class="text-sm uppercase text-slate-500 mb-1">USA Subsidiary</div>
                         <div class="text-lg text-corp-navy">USD Retail Collection</div>
                     </div>
                     <div class="flex-1 bg-slate-50 border-2 border-slate-300 p-6 text-center text-slate-700 rounded shadow-sm">
-                        <div class="text-xs uppercase text-slate-500 mb-1">Egypt Subsidiary</div>
+                        <div class="text-sm uppercase text-slate-500 mb-1">Egypt Subsidiary</div>
                         <div class="text-lg text-corp-navy">MENA Hard Currency</div>
                     </div>
                 </div>
@@ -2445,7 +2472,7 @@
                 <!-- Connector Down -->
                 <div class="flex justify-center text-corp-navy text-2xl py-2">
                     <div class="flex flex-col items-center">
-                        <span class="text-xs text-slate-500 uppercase tracking-widest mb-1">OECD Transfer Pricing Repatriation</span>
+                        <span class="text-sm text-slate-500 uppercase tracking-widest mb-1">OECD Transfer Pricing Repatriation</span>
                         <span>↓↓↓</span>
                     </div>
                 </div>
@@ -2459,7 +2486,7 @@
                 <!-- Connector Down -->
                 <div class="flex justify-center text-corp-navy text-2xl py-2">
                     <div class="flex flex-col items-center">
-                        <span class="text-xs text-slate-500 uppercase tracking-widest mb-1">Centralized Capital Allocation</span>
+                        <span class="text-sm text-slate-500 uppercase tracking-widest mb-1">Centralized Capital Allocation</span>
                         <span>↓↓↓</span>
                     </div>
                 </div>
@@ -2467,15 +2494,15 @@
                 <!-- Bottom Outflows -->
                 <div class="flex gap-4 w-full">
                     <div class="flex-1 bg-red-50 text-red-900 border border-red-200 p-5 text-center rounded shadow-sm">
-                        <div class="text-xs uppercase text-red-600 mb-1">IDR Conversion</div>
+                        <div class="text-sm uppercase text-red-600 mb-1">IDR Conversion</div>
                         <div class="text-base">Payroll & OpEx</div>
                     </div>
                     <div class="flex-1 bg-blue-50 text-blue-900 border border-blue-200 p-5 text-center rounded shadow-sm">
-                        <div class="text-xs uppercase text-blue-600 mb-1">USD Settlement</div>
+                        <div class="text-sm uppercase text-blue-600 mb-1">USD Settlement</div>
                         <div class="text-base">ECA Debt Service</div>
                     </div>
                     <div class="flex-1 bg-emerald-50 text-emerald-900 border border-emerald-200 p-5 text-center rounded shadow-sm">
-                        <div class="text-xs uppercase text-emerald-600 mb-1">Dividend Distribution</div>
+                        <div class="text-sm uppercase text-emerald-600 mb-1">Dividend Distribution</div>
                         <div class="text-base">Investor Yield</div>
                     </div>
                 </div>
