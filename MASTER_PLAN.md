@@ -1,12 +1,13 @@
 # OCEAN PEARL GLOBAL
-## LOCKED MASTER DOCUMENT BLUEPRINT
-**Status: PERMANENTLY LOCKED**
+## CONTROLLED INSTITUTIONAL BUILD PLAN — CURRENT DRAFT UNDER REVIEW
+**Status: Stabilized draft under institutional development.**
+*Note: Appendix expansion, final financial reconciliation, visual harmonization, and final diligence review are still pending.*
 **Target Length:** 100–120+ Pages
 
 ---
 
 ### THE TWO-PART CHOREOGRAPHY
-The document is structurally split into two distinct psychological experiences. The first is a high-velocity, 10-page executive brief designed for Ministers, SWF Executives, and Board Chairmen. The second is the uncompromising, 100+ page technical feasibility memorandum designed for Big-4 auditors, infrastructure funds, and project finance teams.
+The document is structurally split into two distinct psychological experiences. The first is a high-velocity, 10-page executive brief designed for Ministers, SWF Executives, and Board Chairmen. The second is the uncompromising technical feasibility memorandum designed for review by Big-4 auditors, infrastructure funds, and project finance teams.
 
 ---
 
@@ -16,9 +17,9 @@ The document is structurally split into two distinct psychological experiences. 
 *   **Page 1: Cover Page** (Minimalist, official logo, sovereign-grade aesthetic)
 *   **Page 2: Institutional Disclaimer** (Dense, regulatory compliance, multi-jurisdictional safe harbor)
 *   **Page 3: Ocean Pearl Global Thesis** (The shift from fragmented fishing to an infrastructure conglomerate)
-*   **Page 4: Indonesia National Champion Positioning** (Repatriating downstream margin back to the State)
+*   **Page 4: Indonesia National Champion Positioning** (Consolidating compliant group-level value under Indonesian-led governance)
 *   **Page 5: Global Platform Structure** (The Industrial HQ vs. The Global Hubs)
-*   **Page 6: Ice + SuperFrozen Infrastructure Moat** (The physical hardware blocking competitors)
+*   **Page 6: Ice + SuperFrozen Infrastructure Moat** (The physical hardware defensibility)
 *   **Page 7: Product & Brand Ecosystem** (Visual proof of FMCG downstream monetization)
 *   **Page 8: AI Operations Platform** (The Palantir-style central command system)
 *   **Page 9: Global Market Strategy & USA M&A** (Defensive retail penetration)
@@ -35,14 +36,14 @@ The document is structurally split into two distinct psychological experiences. 
 
 ---
 
-### PART B: FULL INSTITUTIONAL FEASIBILITY MEMORANDUM (PAGES 14–120+)
+### PART B: FULL INSTITUTIONAL FEASIBILITY MEMORANDUM (PAGES 14–100+)
 
 #### SECTION 1: GLOBAL PLATFORM & INFRASTRUCTURE EMPIRE
 *Investor Psychology:* Maritime-industrial scale. Proof of heavy physical assets.
-*   **P14-22:** Corporate Structure, Indonesian Operational Hubs, Red Sea/MENA Corridor, Arabian Sea Fleet Logistics. Massive processing facility and port loading renders.
+*   **P14-22:** Corporate Structure, Indonesian Operational Hubs, Red Sea/MENA Corridor, Arabian Sea Fleet Logistics. Processing facility and port loading renders.
 
 #### SECTION 2: THE CORE MOAT (HEAVY INFRASTRUCTURE)
-*Investor Psychology:* Mathematical lockout of competitors.
+*Investor Psychology:* Defensible infrastructure-backed advantage.
 *   **P23-32:** Fixed Ice Hubs, Mobile Truck Routes, Vessel-Based Ice operations, SuperFrozen LCO2 lines. Spoilage reduction matrices and fisherman integration ecosystems.
 
 #### SECTION 3: FMCG-GRADE PRODUCT ECOSYSTEM
@@ -86,38 +87,38 @@ The document is structurally split into two distinct psychological experiences. 
 
 #### SECTION 8: GOVERNMENT IMPACT, FOOD SECURITY & ESG
 *Investor Psychology:* Securing Sovereign/Ministry political capital.
-*   **P80-90:**
-    *   **P80:** Section Opening: Strategic Food Infrastructure
-    *   **P81:** Indonesian Fisheries Modernization Impact
-    *   **P82:** Fisherman Income & Coastal Development
-    *   **P83:** Regional Industrialization Impact (Eastern Indonesia focus)
-    *   **P84:** Food Security & Protein Infrastructure
-    *   **P85:** ESG & Zero-Waste Processing (Circular Economy)
-    *   **P86:** Employment & Skills Development
-    *   **P87:** Global Seafood Competitiveness & Market Power
-    *   **P88:** Government Partnership & Infrastructure Alignment
-    *   **P89:** Strategic National Impact Summary
-    *   **P90:** Transition Divider into Appendices
+*   **P89-98:**
+    *   **P89:** Section Opening: Strategic Food Infrastructure
+    *   **P90:** Indonesian Fisheries Modernization Impact
+    *   **P91:** Fisherman Income & Coastal Development
+    *   **P92:** Regional Industrialization Impact (Eastern Indonesia focus)
+    *   **P93:** Food Security & Protein Infrastructure
+    *   **P94:** ESG & Biomass Optimization / Waste Minimization (Circular Economy)
+    *   **P95:** Employment & Skills Development
+    *   **P96:** Global Seafood Competitiveness & Market Power
+    *   **P97:** Government Partnership & Infrastructure Alignment
+    *   **P98:** Strategic National Impact Summary
 
 #### SECTION 9: INSTITUTIONAL APPENDICES
 *Investor Psychology:* Data transparency and operational reality.
-*   **P95-120+:**
-    *   Assumptions Register
-    *   Financial Methodology
-    *   Species Glossary
-    *   Equipment & Al Ashry Specs
-    *   SuperFrozen Tech Specs
-    *   AI/eBajau Architecture
-    *   ESG & FDA Standards
-    *   Transfer Pricing & AML Frameworks
-    *   Risk Register & Data Room Checklist
+*   **P99-100+:** (Currently P99-100, pending further build-out)
+    *   Appendix A — Assumptions Register
+    *   Appendix B — Financial Methodology
+    *   Appendix C — Species & Product Glossary
+    *   Appendix D — Technology & Equipment Summary
+    *   Appendix E — AI/eBajau System Architecture
+    *   Appendix F — Treasury / AML / Transfer Pricing Framework
+    *   Appendix G — ESG & Government Impact Methodology
+    *   Appendix H — Risk Register
+    *   Appendix I — Investor Data Room Checklist
+    *   Appendix J — Implementation Roadmap
 
 ---
-**PRE-LOCK AUDIT COMPLETE:**
-1. Sovereign-grade? Yes.
+**CURRENT BUILD STATUS:**
+1. Sovereign-grade aesthetic? In progress.
 2. Infrastructure-heavy? Yes.
-3. Operationally real? Yes.
-4. Financially disciplined? Yes (20-page dominant model).
+3. Operationally real? Designed for review.
+4. Financially disciplined? Preliminary model integrated.
 5. Globally scalable? Yes.
 6. Difficult to replicate? Yes.
-7. Ministry/SWF/Big-4 Approved layout? Yes.
+7. Ministry/SWF/Big-4 designed for review? Yes.
