@@ -1,7 +1,8 @@
-# OCEAN PEARL GLOBAL
-## CONTROLLED INSTITUTIONAL BUILD PLAN — CURRENT DRAFT UNDER REVIEW
-**Status: Stabilized draft under institutional development.**
-*Note: Appendix expansion, final financial reconciliation, visual harmonization, and final diligence review are still pending.*
+# Ocean Pearl Global Integrated Seafood Platform
+## Controlled Institutional Build Plan — Current Draft Under Review
+
+**Current status: Stabilized working draft under controlled institutional development. Appendix expansion, final financial reconciliation, visual harmonization, legal/tax/technical validation, and investor/bank/government review remain pending.**
+
 **Target Length:** 100–120+ Pages
 
 ---
@@ -22,10 +23,10 @@ The document is structurally split into two distinct psychological experiences. 
 *   **Page 6: Ice + SuperFrozen Infrastructure Moat** (The physical hardware defensibility)
 *   **Page 7: Product & Brand Ecosystem** (Visual proof of FMCG downstream monetization)
 *   **Page 8: AI Operations Platform** (The Palantir-style central command system)
-*   **Page 9: Global Market Strategy & USA M&A** (Defensive retail penetration)
+*   **Page 9: Global Market Strategy & USA M&A** (Defensible retail penetration)
 *   **Page 10: Investment Stages & Capital Stack** (The 5-stage scale-up logic)
-*   **Page 11: Core Financial Highlights** (High-level EBITDA, IRR, DSCR, Payback)
-*   **Page 12: Why This Wins (Strategic Conclusion)** (Global food security and infrastructure dominance)
+*   **Page 11: Core Financial Highlights** (High-level EBITDA, IRR, DSCR, Payback - preliminary model assumptions)
+*   **Page 12: Why This Wins (Strategic Conclusion)** (Global food security and infrastructure-backed advantage)
 
 ---
 
@@ -40,7 +41,7 @@ The document is structurally split into two distinct psychological experiences. 
 
 #### SECTION 1: GLOBAL PLATFORM & INFRASTRUCTURE EMPIRE
 *Investor Psychology:* Maritime-industrial scale. Proof of heavy physical assets.
-*   **P14-22:** Corporate Structure, Indonesian Operational Hubs, Red Sea/MENA Corridor, Arabian Sea Fleet Logistics. Processing facility and port loading renders.
+*   **P14-22:** Corporate Structure, Indonesian Operational Hubs, Red Sea/MENA Corridor, Arabian Sea Fleet Logistics. Large-scale processing facility and port loading renders.
 
 #### SECTION 2: THE CORE MOAT (HEAVY INFRASTRUCTURE)
 *Investor Psychology:* Defensible infrastructure-backed advantage.
@@ -48,20 +49,20 @@ The document is structurally split into two distinct psychological experiences. 
 
 #### SECTION 3: FMCG-GRADE PRODUCT ECOSYSTEM
 *Investor Psychology:* Real consumer brands, real supermarket shelves.
-*   **P33-42:** High-fidelity renders of Premium Sashimi, Chef Selection HORECA, AirFresh cargo, Canned mass-market, and Fishmeal bulk bags. Barcodes, export marks, nutritional layouts.
+*   **P33-44:** High-fidelity renders of Premium Sashimi, Chef Selection HORECA, AirFresh cargo, Canned mass-market, and Fishmeal bulk bags. Barcodes, export marks, nutritional layouts.
 
 #### SECTION 4: AI-ENABLED SEAFOOD OPERATING SYSTEM
 *Investor Psychology:* Centralized supply-chain war room.
-*   **P43-48:** Global Command Center visualization. Palantir-style dashboards for Fleet tracking, Thermal monitoring, and Executive AI EBITDA routing.
+*   **P45-54:** Global Command Center visualization. Palantir-style dashboards for Fleet tracking, Thermal monitoring, and Executive AI EBITDA routing.
 
 #### SECTION 5: USA M&A INTEGRATION (PE-GRADE)
 *Investor Psychology:* Disciplined synergy extraction.
-*   **P49-54:** Acquisition criteria, screening matrix, retail penetration strategy, post-merger integration timeline, and EBITDA accretion modeling.
+*   **P55-58:** Acquisition criteria, screening matrix, retail penetration strategy, post-merger integration timeline, and EBITDA accretion modeling.
 
-#### SECTION 6: THE INSTITUTIONAL FINANCIAL MODEL (THE DOMINANT SECTION)
-*Investor Psychology:* Absolute mathematical conviction. Built from zero.
-*   **P55-80:**
-    1. Full assumptions register
+#### SECTION 6: THE INSTITUTIONAL FINANCIAL MODEL (THE STRATEGIC CORE)
+*Investor Psychology:* Clear financial logic. Built from zero.
+*   **P59-80:**
+    1. Full assumptions register (preliminary)
     2. Species mix assumptions
     3. Yield assumptions (SuperFrozen vs Canned)
     4. Utilization curves (Plants, Ice, Fleet)
@@ -82,8 +83,8 @@ The document is structurally split into two distinct psychological experiences. 
     19. Free cashflow projections
 
 #### SECTION 7: TREASURY GOVERNANCE & AML DEFENSIBILITY
-*Investor Psychology:* Big-4 audit survival.
-*   **P81-88:** Treasury committee structure, risk/hedging frameworks, transfer pricing matrices, intercompany economic substance, and Capital-Market exit pathways (Sukuk/IPO).
+*Investor Psychology:* Audit-ready transparency.
+*   **P81-88:** Treasury committee structure, risk/hedging frameworks, transfer pricing matrices, intercompany economic substance, and Capital-Market exit pathways.
 
 #### SECTION 8: GOVERNMENT IMPACT, FOOD SECURITY & ESG
 *Investor Psychology:* Securing Sovereign/Ministry political capital.
@@ -95,13 +96,14 @@ The document is structurally split into two distinct psychological experiences. 
     *   **P93:** Food Security & Protein Infrastructure
     *   **P94:** ESG & Biomass Optimization / Waste Minimization (Circular Economy)
     *   **P95:** Employment & Skills Development
-    *   **P96:** Global Seafood Competitiveness & Market Power
+    *   **P96:** Global Seafood Competitiveness & Defensible Procurement Position
     *   **P97:** Government Partnership & Infrastructure Alignment
     *   **P98:** Strategic National Impact Summary
 
 #### SECTION 9: INSTITUTIONAL APPENDICES
 *Investor Psychology:* Data transparency and operational reality.
-*   **P99-100+:** (Currently P99-100, pending further build-out)
+*   **P99-100:** (Currently started only)
+    *Note: Section 9 appendices are incomplete and scheduled for expansion beyond P100.*
     *   Appendix A — Assumptions Register
     *   Appendix B — Financial Methodology
     *   Appendix C — Species & Product Glossary
@@ -117,8 +119,8 @@ The document is structurally split into two distinct psychological experiences. 
 **CURRENT BUILD STATUS:**
 1. Sovereign-grade aesthetic? In progress.
 2. Infrastructure-heavy? Yes.
-3. Operationally real? Designed for review.
+3. Operationally real? Designed for institutional review.
 4. Financially disciplined? Preliminary model integrated.
 5. Globally scalable? Yes.
 6. Difficult to replicate? Yes.
-7. Ministry/SWF/Big-4 designed for review? Yes.
+7. Designed for institutional review? Yes.
