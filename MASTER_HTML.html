@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Pearl - Master Institutional Feasibility</title>
-    <!-- PREVIEW ONLY: CDNs used for drafting. Final PDF will use localized, embedded assets. -->
+    <!-- PREVIEW ONLY: CDNs used for finaling. Final PDF will use localized, embedded assets. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -68,7 +68,7 @@
         .exec-headline { font-size: 2.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 1rem; color: var(--corp-navy); }
         .exec-subheadline { font-size: 1.125rem; font-weight: 400; color: var(--corp-blue); margin-bottom: 3rem; font-family: 'Playfair Display', serif; }
         .exec-visual-box { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #f8fafc; border: 1px solid #e2e8f0; margin-bottom: 2rem; padding: 2rem; width: 100%; }
-        .exec-footer-text { font-size: 0.875rem; color: var(--text-main); font-weight: 400; text-align: justify; columns: 2; column-gap: 2rem; border-top: 2px solid var(--corp-gold); padding-top: 1.5rem; margin-top: auto; width: 100%; }
+        .exec-footer-text { font-size: 0.875rem; color: var(--text-main); font-weight: 400; text-align: justify; border-top: 2px solid var(--corp-gold); padding-top: 1.5rem; margin-top: auto; width: 100%; display: block; }
         
         .kpi-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; width: 100%; }
         .kpi-card { border: 1px solid #cbd5e1; border-top: 3px solid var(--corp-navy); padding: 2rem; background: #fff; text-align: center; }
@@ -79,9 +79,9 @@
         .ai-header { background: #1e293b; padding: 12px 20px; border-bottom: 1px solid #334155; font-size: 0.75rem; font-weight: 600; display: flex; justify-content: space-between; align-items: center; letter-spacing: 0.05em; }
         .ai-panel { padding: 20px; }
         
-        .visual-placeholder { width: 100%; height: 100%; min-height: 200px; border: 2px dashed #94a3b8; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f1f5f9; color: #64748b; font-size: 0.85rem; font-weight: 600; text-align: center; padding: 2rem; }
-        .visual-placeholder-title { font-weight: 800; color: var(--corp-navy); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em;}
-        .visual-placeholder-desc { font-weight: 400; font-size: 0.7rem; color: #475569; max-width: 80%; line-height: 1.4; }
+        
+        
+        
     
         /* Institutional Utility Classes */
         .bg-corp-navy { background-color: var(--corp-navy) !important; }
@@ -93,6 +93,13 @@
         .border-corp-navy { border-color: var(--corp-navy) !important; }
         .border-corp-blue { border-color: var(--corp-blue) !important; }
         .border-corp-gold { border-color: var(--corp-gold) !important; }
+    
+        .doc-page { overflow: visible; }
+        .exec-footer-text { font-size: 0.875rem; color: var(--text-main); font-weight: 400; text-align: justify; border-top: 2px solid var(--corp-gold); padding-top: 1.5rem; margin-top: auto; width: 100%; display: block; }
+        .exec-footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; column-gap: 2rem; }
+        .dark-panel .exec-footer-text, .bg-corp-navy .exec-footer-text { color: #f8fafc; border-top-color: var(--corp-gold-light); }
+        .exec-footer-text p { margin-bottom: 0; }
+        .exec-footer-text { break-inside: avoid; page-break-inside: avoid; }
     </style>
 </head>
 <body>
@@ -108,28 +115,25 @@
             <p class="text-2xl max-w-3xl leading-relaxed mb-6 font-bold" style="color: var(--corp-blue);">
                 Institutional Feasibility & Investment Memorandum
             </p>
-            <p class="text-sm max-w-2xl leading-relaxed mb-16 text-slate-700 font-medium">
+            <p class="text-sm max-w-2xl leading-relaxed mb-16 text-slate-800 font-medium">
                 The $500M Master Blueprint for the Vertical Integration of an Indonesian-Headquartered Global Seafood Infrastructure Conglomerate.
             </p>
             <div class="text-sm uppercase tracking-widest font-bold" style="color: var(--text-muted);">
                 <p class="mb-2">Strictly Confidential</p>
                 <p>Prepared for Sovereign & Institutional Review</p>
-            </div>
-        </div>
+            </div></div>
     </div>
-
     <!-- PAGE 2: DISCLAIMER -->
     <div class="doc-page">
         <h2 class="text-2xl font-bold mb-6 border-b pb-2">Institutional Disclaimer & Confidentiality Notice</h2>
         <div class="text-sm text-justify space-y-4 leading-relaxed font-medium" style="color: var(--text-muted);">
             <p>This Institutional Feasibility & Investment Memorandum (the "Memorandum") has been prepared exclusively for the confidential review of targeted sovereign wealth funds, project finance institutions, tier-1 infrastructure equity investors, and government ministries.</p>
             <p>The information contained herein does not constitute an offer to sell or a solicitation of an offer to buy any securities or assets of PT Ocean Pearl Indonesia, its parent holding company, or its global subsidiaries.</p>
-            <p><strong style="color: var(--corp-navy);">PRELIMINARY FINANCIALS & FORWARD-LOOKING STATEMENTS:</strong> All financial metrics, EBITDA bridges, infrastructure yield calculations, working capital metrics, and staged capital deployment structures contained in this Memorandum are <strong>preliminary model outputs</strong>. All assumptions remain subject to verification. Projections are not guarantees of future performance. Actual results, performance, or achievements may differ materially due to various risks, including global macroeconomic shifts, fuel and freight volatility, regulatory changes, climate impacts on marine biomass, and execution risks inherent in multinational infrastructure deployment.</p>
+            <p><strong style="color: var(--corp-navy);">PRELIMINARY FINANCIALS & FORWARD-LOOKING STATEMENTS:</strong> All financial metrics, EBITDA bridges, infrastructure yield calculations, working capital metrics, and staged capital deployment structures contained in this Memorandum are <strong>preliminary model outputs</strong>. All assumptions remain subject to verification. Projections are not is designed to support of future performance. Actual results, performance, or achievements may differ materially due to various risks, including global macroeconomic shifts, fuel and freight volatility, regulatory changes, climate impacts on marine biomass, and execution risks inherent in multinational infrastructure deployment.</p>
             <p><strong style="color: var(--corp-navy);">DUE DILIGENCE REQUIRED:</strong> This document is not audited financial advice. Final investment decisions require independent legal, tax, financial, technical, operational, and market due diligence by the receiving party.</p>
             <p>This document contains proprietary information, including but not limited to, the Al Ashry Tri-Format Ice Network deployment strategy, SuperFrozen LCO₂ integration models, USA M&A integration frameworks, and the Ocean Pearl Intelligent Operations Platform architecture. This document is strictly confidential. By accepting delivery of this Memorandum, the recipient agrees to maintain strict confidentiality and to not reproduce, distribute, or disclose this document, in whole or in part, without the express written consent of the Company.</p>
         </div>
     </div>
-
     <!-- PAGE 3: GLOBAL THESIS -->
     <div class="doc-page">
         <div class="page-header">
@@ -141,25 +145,20 @@
         
         <div class="exec-visual-box">
             <div class="flex flex-col md:flex-row items-center justify-center gap-6 w-full text-sm font-bold">
-                <div class="p-6 bg-slate-100 border border-slate-300 text-slate-700 text-center w-full">Raw Marine Biomass</div>
-                <div class="text-2xl text-slate-600">→</div>
+                <div class="p-6 bg-slate-100 border border-slate-300 text-slate-800 text-center w-full">Raw Marine Biomass</div>
+                <div class="text-2xl text-slate-700">→</div>
                 <div class="p-6 bg-blue-100 border-2 border-blue-600 text-blue-900 text-center w-full">SuperFrozen Processing</div>
-                <div class="text-2xl text-slate-600">→</div>
+                <div class="text-2xl text-slate-700">→</div>
                 <div class="p-6 bg-yellow-100 border-2 border-yellow-700 text-yellow-900 text-center w-full">FMCG Brands</div>
-                <div class="text-2xl text-slate-600">→</div>
+                <div class="text-2xl text-slate-700">→</div>
                 <div class="p-6 bg-sky-100 border border-sky-600 text-sky-900 text-center w-full">Global Retail</div>
             </div>
             <div class="mt-8 pt-4 border-t-2 border-corp-gold w-full text-center">
                 <span class="p-4 bg-corp-navy text-white inline-block">Value Repatriation → Indonesian HQ</span>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             For decades, the global seafood supply chain has been crippled by fragmented middlemen, high post-harvest spoilage, and disconnected trading entities. Ocean Pearl executes a paradigm shift by deploying physical infrastructure directly at the ocean's edge. By vertically integrating from proprietary coastal ice factories through to wholly-owned USA and MENA retail distribution, Ocean Pearl aims to capture the entire margin curve, transforming marine protein from a volatile commodity into a sovereign-grade infrastructure asset.
-        </div>
-    </div>
-
-    <!-- PAGE 4: INDONESIA NATIONAL CHAMPION -->
+        </div></div></div>
+<!-- PAGE 4: INDONESIA NATIONAL CHAMPION -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Executive Investment Summary</span>
@@ -194,17 +193,11 @@
                     <div class="text-[12px] font-black uppercase text-corp-navy tracking-widest">Treasury Control</div>
                     <div class="w-full h-1 bg-corp-navy"></div>
                 </div>
-            </div>
-        </div>
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The true value of Ocean Pearl lies not in any single geographic hub, but in the seamless integration of the entire platform. The Platform Integration Map demonstrates how physical sourcing in Oman triggers predictive AI processing schedules in Indonesia, which simultaneously executes inventory balancing algorithms for the USA and Egypt hubs. This synchronized architecture eliminates siloed inefficiencies, supporting capital velocity and operational control across the global supply chain.
         </div>
-    </div>
-
-    <!-- PAGE 23: THE CORE MOAT THESIS -->
+    </div></div></div>
+<!-- PAGE 23: THE CORE MOAT THESIS -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 2: The Core Moat / Heavy Infrastructure</span>
@@ -231,17 +224,10 @@
                     <div class="text-[10px] uppercase">Trade Finance</div>
                 </div>
             </div>
-            <div class="mt-8 text-[11px] text-slate-500 uppercase font-black">Structural Monopoly over the Cold Chain</div>
-        </div>
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            Seafood trading is historically defined by low barriers to entry and fragile supply lines. Ocean Pearl engineers an unassailable advantage by deploying physical assets directly at the point of harvest. By introducing the Al Ashry Tri-Format Ice Network and SuperFrozen LCO₂ systems, Ocean Pearl secures a structural monopoly over the cold chain in targeted regions. Competitors cannot replicate this without incurring massive CapEx delays, securing coastal land rights, and matching our localized fleet integration.
-        </div>
-    </div>
-
-    <!-- PAGE 24: FIXED ICE FACTORY MODEL -->
+            <div class="mt-8 text-[11px] text-slate-500 uppercase font-black">Structural structural advantage over the Cold Chain</div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            Seafood trading is historically defined by low barriers to entry and fragile supply lines. Ocean Pearl engineers an infrastructure-backed advantage by deploying physical assets directly at the point of harvest. By introducing the Al Ashry Tri-Format Ice Network and SuperFrozen LCO₂ systems, Ocean Pearl secures a structural structural advantage over the cold chain in targeted regions. Competitors cannot replicate this without incurring material CapEx delays, securing coastal land rights, and matching our localized fleet integration.
+        </div></div></div>
+<!-- PAGE 24: FIXED ICE FACTORY MODEL -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 2: The Core Moat / Heavy Infrastructure</span>
@@ -254,15 +240,10 @@
             
     <div class="exec-visual-box p-0 border border-slate-300 overflow-hidden shadow-2xl">
         <img src="assets/renders/fixed_ice_factory.png" alt="Industrial Fixed Ice Factory" class="w-full h-[400px] object-cover">
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+    </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Fixed Ice Factories serve as the heavy-industrial anchors of the Ocean Pearl network. Deployed at major coastal hubs and processing centers, these multi-ton capacity plants provide a stable, uninterrupted supply of industrial-grade ice. This permanent infrastructure eliminates the chronic ice shortages that plague independent fishermen, ensuring that Ocean Pearl remains the primary operational partner for large-scale fleets unloading at major Indonesian and MENA ports.
-        </div>
-    </div>
-
-    <!-- PAGE 25: MOBILE TRUCK ICE FACTORY -->
+        </div></div></div>
+<!-- PAGE 25: MOBILE TRUCK ICE FACTORY -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 2: The Core Moat / Heavy Infrastructure</span>
@@ -275,15 +256,10 @@
             
     <div class="exec-visual-box p-0 border border-slate-300 overflow-hidden shadow-2xl">
         <img src="assets/renders/mobile_ice_truck.png" alt="Mobile Truck Ice Unit" class="w-full h-[400px] object-cover">
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+    </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The highest quality marine biomass often exists in decentralized, remote coastal zones lacking permanent power or port access. Ocean Pearl solves this via the Al Ashry Mobile Truck Ice Factory. These self-contained, rapidly deployable units act as dynamic infrastructure, dispatched to remote beaches during seasonal catch spikes. By bringing ice directly to the artisanal fisherman, Ocean Pearl captures high-grade raw material before it suffers temperature degradation.
-        </div>
-    </div>
-
-    <!-- PAGE 26: VESSEL-BASED ICE FACTORY -->
+        </div></div></div>
+<!-- PAGE 26: VESSEL-BASED ICE FACTORY -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 2: The Core Moat / Heavy Infrastructure</span>
@@ -296,15 +272,10 @@
             
     <div class="exec-visual-box p-0 border border-slate-300 overflow-hidden shadow-2xl">
         <img src="assets/renders/vessel_ice_factory.png" alt="Vessel-Based Ice Factory" class="w-full h-[400px] object-cover">
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            To secure the massive volume of the Oman/Yemen/Somalia corridor and remote Eastern Indonesia, Ocean Pearl deploys vessel-mounted ice factories. These floating collection nodes generate ice deep at sea, exchanging it with localized fleets for raw catch. This eliminates the need for smaller vessels to return to port for ice, drastically increasing their days-at-sea and yielding a continuous flow of directly preserved deep-water biomass directly into the Ocean Pearl supply chain.
-        </div>
-    </div>
-
-    <!-- PAGE 27: SUPERFROZEN LCO2 -->
+    </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            To secure the material volume of the Oman/Yemen/Somalia corridor and remote Eastern Indonesia, Ocean Pearl deploys vessel-mounted ice factories. These floating collection nodes generate ice deep at sea, exchanging it with localized fleets for raw catch. This eliminates the need for smaller vessels to return to port for ice, drastically increasing their days-at-sea and yielding a continuous flow of directly preserved deep-water biomass directly into the Ocean Pearl supply chain.
+        </div></div></div>
+<!-- PAGE 27: SUPERFROZEN LCO2 -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 2: The Core Moat / Heavy Infrastructure</span>
@@ -342,17 +313,11 @@
                     <span class="text-xl font-black text-blue-300">Infinite</span>
                     <span class="text-[10px] uppercase font-bold text-slate-500">Shelf Stability</span>
                 </div>
-            </div>
-        </div>
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Preservation is the ultimate determinant of pricing. By integrating SuperFrozen LCO₂ (-60°C) technology into its processing lines, Ocean Pearl bypasses standard commodity freezing. This extreme low-temperature application halts cellular degradation entirely, allowing tuna and octopus to be exported at sashimi-grade quality. This technological barrier elevates standard catch into the highest pricing echelon of the Japanese and North American luxury markets.
         </div>
-    </div>
-
-    <!-- PAGE 28: PROCUREMENT CONTROL -->
+    </div></div></div>
+<!-- PAGE 28: PROCUREMENT CONTROL -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 2: The Core Moat / Heavy Infrastructure</span>
@@ -381,17 +346,11 @@
                     <div class="text-3xl mb-2">🤝</div>
                     <div class="uppercase">Step 3: Exclusive Procurement</div>
                 </div>
-            </div>
-        </div>
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             By controlling the ice supply, Ocean Pearl effectively controls the catch. Fishermen dependent on the Tri-Format Ice Network are incentivized through barter and immediate purchase agreements to deliver their entire haul to Ocean Pearl. This physical dependency produces higher-quality fish, resulting in higher payouts for the fisherman and a highly defensible, long-term procurement pipeline for the conglomerate, insulated from local middleman bidding wars.
         </div>
-    </div>
-
-    <!-- PAGE 29: SPOILAGE REDUCTION -->
+    </div></div></div>
+<!-- PAGE 29: SPOILAGE REDUCTION -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 2: The Core Moat / Heavy Infrastructure</span>
@@ -405,11 +364,11 @@
     <div class="exec-visual-box bg-slate-50 p-12 border border-slate-300">
         <div class="grid grid-cols-2 gap-12 w-full h-full items-center">
             <div class="flex flex-col gap-4">
-                <div class="text-sm font-black text-slate-700 uppercase tracking-widest">Legacy Waste Profile</div>
+                <div class="text-sm font-black text-slate-800 uppercase tracking-widest">Legacy Waste Profile</div>
                 <div class="w-full h-6 bg-slate-200 rounded-full overflow-hidden">
                     <div class="h-full bg-red-400" style="width: 30%;"></div>
                 </div>
-                <div class="flex justify-between text-[12px] font-bold text-slate-700">
+                <div class="flex justify-between text-[12px] font-bold text-slate-800">
                     <span>30% Material Loss</span>
                     <span>70% Realized Value</span>
                 </div>
@@ -423,17 +382,11 @@
                     <span>2% Operational Variance</span>
                     <span class="text-emerald-600 font-black">98% VALUE CAPTURE</span>
                 </div>
-            </div>
-        </div>
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             In emerging markets, up to 30% of harvested seafood is lost to temperature abuse before reaching a processing plant. Ocean Pearl's coastal and vessel-based ice infrastructure eliminates this delay. By chilling the catch within minutes of harvest, biomass that would have degraded to local market grade or fishmeal is preserved as export-grade product, instantly generating a material margin improvement purely through operational efficiency.
         </div>
-    </div>
-
-    <!-- PAGE 30: INFRASTRUCTURE YIELD -->
+    </div></div></div>
+<!-- PAGE 30: INFRASTRUCTURE YIELD -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 2: The Core Moat / Heavy Infrastructure</span>
@@ -453,7 +406,7 @@
                     <th class="p-4 border border-slate-700">Supply Lock Radius</th>
                 </tr>
             </thead>
-            <tbody class="text-slate-700">
+            <tbody class="text-slate-800">
                 <tr class="bg-slate-50">
                     <td class="p-4 border border-slate-200">Fixed Ice Factory</td>
                     <td class="p-4 border border-slate-200 text-center">High (Volume)</td>
@@ -471,15 +424,10 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+    </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Unlike pure trading firms, Ocean Pearl's financial model is underpinned by explicit infrastructure yields. Fixed and mobile ice factories generate direct revenue via local sales while providing the indirect EBITDA margin of supply lock-in. Cold storage assets prevent forced distress-selling during oversupply, and SuperFrozen lines generate a calculable pricing delta. This dual-yield structure provides downside protection and high cash-flow visibility for institutional capital.
-        </div>
-    </div>
-
-    <!-- PAGE 31: STRATEGIC DEFENSIBILITY -->
+        </div></div></div>
+<!-- PAGE 31: STRATEGIC DEFENSIBILITY -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 2: The Core Moat / Heavy Infrastructure</span>
@@ -493,7 +441,7 @@
     <div class="exec-visual-box bg-slate-50 p-12 border border-slate-300">
         <div class="flex flex-col gap-6 w-full h-full">
             <div class="text-sm font-black text-corp-navy uppercase mb-4 tracking-widest text-center">Entry Barriers & Institutional Moat</div>
-            <div class="flex flex-col gap-4 font-bold text-slate-700">
+            <div class="flex flex-col gap-4 font-bold text-slate-800">
                 <div class="flex items-center gap-4">
                     <div class="w-32 text-right text-[12px] font-black uppercase">Capital Intensity</div>
                     <div class="flex-grow h-4 bg-slate-200 rounded-full overflow-hidden">
@@ -506,17 +454,11 @@
                         <div class="h-full bg-corp-navy" style="width: 90%;"></div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The Ocean Pearl platform is highly insulated against competitive replication. A new entrant would need to deploy tens of millions in localized CapEx to build competing ice networks, navigate complex coastal land rights, establish trust with thousands of localized fleets, and build a synchronized, multi-continent cold-chain distribution network. The combination of early infrastructure dominance and deep working-capital facilities establishes a highly defensible market position.
         </div>
-    </div>
-
-    <!-- PAGE 32: MOAT SUMMARY -->
+    </div></div></div>
+<!-- PAGE 32: MOAT SUMMARY -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 2: The Core Moat / Heavy Infrastructure</span>
@@ -527,15 +469,10 @@
         
         <div class="exec-visual-box bg-corp-navy text-white text-center p-12">
             <h4 class="font-serif text-3xl mb-4 leading-tight text-white">"Our competitive advantage is not a brand; it is the steel, ice, and cold-storage infrastructure sitting at the edge of the ocean."</h4>
-            <div class="w-16 h-1 mx-auto mt-8" style="background-color: var(--corp-gold);"></div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            The Tri-Format Ice Network, paired with SuperFrozen integration, forms the bedrock of the Ocean Pearl investment thesis. This heavy-infrastructure approach replaces the volatile, relationship-dependent sourcing of traditional seafood traders with a mathematically secure, asset-backed procurement pipeline. It guarantees the quality, volume, and pricing stability required to support a global $500M FMCG retail footprint.
-        </div>
-    </div>
-
-    <!-- PAGE 33: PRODUCT ECOSYSTEM THESIS -->
+            <div class="w-16 h-1 mx-auto mt-8" style="background-color: var(--corp-gold);"></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            The Tri-Format Ice Network, paired with SuperFrozen integration, forms the bedrock of the Ocean Pearl investment thesis. This heavy-infrastructure approach replaces the volatile, relationship-dependent sourcing of traditional seafood traders with a disciplined, asset-backed procurement pipeline. The preliminary model indicates the quality, volume, and pricing stability required to support a global $500M FMCG retail footprint.
+        </div></div></div>
+<!-- PAGE 33: PRODUCT ECOSYSTEM THESIS -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 3: FMCG-Grade Product Ecosystem</span>
@@ -558,17 +495,10 @@
                     <div class="text-lg text-corp-navy">OMAN / GCC</div>
                     <div class="text-[10px] text-slate-500 uppercase">Western Anchor</div>
                 </div>
-            </div>
-        </div>
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            Infrastructure guarantees the supply; the Brand Ecosystem guarantees the margin. Ocean Pearl deliberately structures its output into a sophisticated Fast-Moving Consumer Goods (FMCG) portfolio. By segmenting the biomass into 8 targeted brand divisions—from luxury sashimi to mass-market cans and ESG-compliant fishmeal—the company completely mitigates commodity exposure, capturing the final retail markup previously surrendered to global distributors.
-        </div>
-    </div>
-
-    <!-- PAGE 34: GLOBAL PRODUCT ARCHITECTURE -->
+            </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            Infrastructure is designed to support the supply; the Brand Ecosystem is designed to support the margin. Ocean Pearl deliberately structures its output into a sophisticated Fast-Moving Consumer Goods (FMCG) portfolio. By segmenting the biomass into 8 targeted brand divisions—from luxury sashimi to mass-market cans and ESG-compliant fishmeal—the company completely mitigates commodity exposure, capturing the final retail markup previously surrendered to global distributors.
+        </div></div></div>
+<!-- PAGE 34: GLOBAL PRODUCT ARCHITECTURE -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 3: FMCG-Grade Product Ecosystem</span>
@@ -588,17 +518,11 @@
             <div class="p-4 bg-slate-50 border border-slate-200 shadow-sm text-corp-navy uppercase">Canned Division</div>
             <div class="p-4 bg-slate-50 border border-slate-200 shadow-sm text-corp-navy uppercase">Marine Protein</div>
             <div class="p-4 bg-slate-50 border border-slate-200 shadow-sm text-corp-navy uppercase">Private Label</div>
-            <div class="p-4 bg-corp-gold text-white shadow-md uppercase">Retail Tech Apps</div>
-        </div>
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            <div class="p-4 bg-corp-gold text-white shadow-md uppercase">Retail Tech Apps</div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The Ocean Pearl product matrix is designed for total biomass utilization. High-grade catch is routed to Premium and AirFresh channels for maximum margin. Mid-grade catch is processed into Chef Selection and Private Label lines. High-volume pelagic species feed the mass-market Canned division, while the vast majority of organic processing byproducts are monetized via the Marine Protein division. This structure ensures biomass optimization and highly diversified revenue streams.
         </div>
-    </div>
-
-    <!-- PAGE 35: OCEAN PEARL PREMIUM -->
+    </div></div></div>
+<!-- PAGE 35: OCEAN PEARL PREMIUM -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 3: FMCG-Grade Product Ecosystem</span>
@@ -611,15 +535,10 @@
             
     <div class="exec-visual-box p-0 border border-slate-300 overflow-hidden shadow-2xl">
         <img src="assets/product_mockups/premium_tuna.png" alt="Ocean Pearl Premium Tuna" class="w-full h-[400px] object-cover">
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+    </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Ocean Pearl Premium is the flagship brand powered by SuperFrozen (-60°C) technology. Targeted strictly at high-end Japanese retail, luxury USA sushi chains, and premium global wholesalers, this division handles the highest-grade tuna and octopus. The packaging is engineered to meet strict Tokyo and FDA export standards, projecting an ultra-premium aesthetic that commands the highest price realization within the Ocean Pearl portfolio.
-        </div>
-    </div>
-
-    <!-- PAGE 36: CHEF SELECTION -->
+        </div></div></div>
+<!-- PAGE 36: CHEF SELECTION -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 3: FMCG-Grade Product Ecosystem</span>
@@ -632,15 +551,10 @@
             
     <div class="exec-visual-box p-0 border border-slate-300 overflow-hidden shadow-2xl">
         <img src="assets/product_mockups/premium_tuna.png" alt="Chef Selection HORECA" class="w-full h-[400px] object-cover">
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            The Chef Selection division targets the massive Hotel, Restaurant, and Catering (HORECA) markets, specifically within the GCC, Saudi Arabia, and the USA. This product line focuses on directly portion-controlled, easy-to-prep frozen fillets and bulk packs. By providing strict quality consistency and reliable volume to executive chefs and airline caterers, Ocean Pearl secures high-value, recurring B2B procurement contracts.
-        </div>
-    </div>
-
-    <!-- PAGE 37: AIRFRESH -->
+    </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            The Chef Selection division targets the material Hotel, Restaurant, and Catering (HORECA) markets, specifically within the GCC, Saudi Arabia, and the USA. This product line focuses on directly portion-controlled, easy-to-prep frozen fillets and bulk packs. By providing strict quality consistency and reliable volume to executive chefs and airline caterers, Ocean Pearl secures high-value, recurring B2B procurement contracts.
+        </div></div></div>
+<!-- PAGE 37: AIRFRESH -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 3: FMCG-Grade Product Ecosystem</span>
@@ -654,7 +568,7 @@
     <div class="exec-visual-box bg-white p-12 border border-slate-300">
         <div class="flex flex-col items-center w-full">
             <div class="text-sm font-black text-corp-navy uppercase mb-8 tracking-widest">AirFresh Logistics Highway</div>
-            <div class="flex items-center gap-4 w-full justify-around font-bold text-slate-700">
+            <div class="flex items-center gap-4 w-full justify-around font-bold text-slate-800">
                 <div class="flex flex-col items-center gap-2">
                     <div class="text-2xl">🌊</div>
                     <span class="text-[12px] uppercase">Harvest</span>
@@ -673,17 +587,11 @@
                     <div class="text-2xl">🍱</div>
                     <span class="text-[12px] uppercase">Global Retail</span>
                 </div>
-            </div>
-        </div>
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Certain high-value species—such as live grouper, lobster, and fresh chilled reef fish—demand immediate air-freight logistics to maximize value. The AirFresh division utilizes rapid transit from Indonesian and Omani hubs directly into the markets of Singapore, China, and the GCC. This high-velocity division bypasses traditional cold storage entirely, generating rapid cash conversion cycles and elite margin profiles.
         </div>
-    </div>
-
-    <!-- PAGE 38: OCEAN GOLD -->
+    </div></div></div>
+<!-- PAGE 38: OCEAN GOLD -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 3: FMCG-Grade Product Ecosystem</span>
@@ -696,15 +604,10 @@
             
     <div class="exec-visual-box p-0 border border-slate-300 overflow-hidden shadow-2xl">
         <img src="assets/product_mockups/premium_tuna.png" alt="Ocean Gold Smoked Tuna" class="w-full h-[400px] object-cover">
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+    </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Ocean Gold represents the platform's foray into high-margin, Ready-To-Eat (RTE) value-added manufacturing. Executed entirely within the Indonesian processing hubs, this division produces premium smoked tuna slices and cured seafood products. Designed for immediate shelf-placement in global gourmet supermarkets and delicatessens, Ocean Gold captures the ultimate downstream retail markup while significantly extending product shelf life.
-        </div>
-    </div>
-
-    <!-- PAGE 39: CANNED DIVISION -->
+        </div></div></div>
+<!-- PAGE 39: CANNED DIVISION -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 3: FMCG-Grade Product Ecosystem</span>
@@ -717,15 +620,10 @@
             
     <div class="exec-visual-box p-0 border border-slate-300 overflow-hidden shadow-2xl">
         <img src="assets/product_mockups/canned_seafood.png" alt="Ocean Pearl Canned Seafood" class="w-full h-[400px] object-cover">
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            To monetize the immense volume of pelagic species (sardines, mackerel, standard tuna) captured via the Oman and Indonesian fleets, Ocean Pearl operates a massive Canned division. This shelf-stable product line is targeted specifically at the rapidly growing, food-security conscious markets of MENA and Africa. The Canned division provides a highly predictable, high-volume revenue baseload that insulates the company from the volatility of fresh/frozen exports.
-        </div>
-    </div>
-
-    <!-- PAGE 40: MARINE PROTEIN -->
+    </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            To monetize the immense volume of pelagic species (sardines, mackerel, standard tuna) captured via the Oman and Indonesian fleets, Ocean Pearl operates a material Canned division. This shelf-stable product line is targeted specifically at the rapidly growing, food-security conscious markets of MENA and Africa. The Canned division provides a highly predictable, high-volume revenue baseload that insulates the company from the volatility of fresh/frozen exports.
+        </div></div></div>
+<!-- PAGE 40: MARINE PROTEIN -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 3: FMCG-Grade Product Ecosystem</span>
@@ -738,15 +636,10 @@
             
     <div class="exec-visual-box p-0 border border-slate-300 overflow-hidden shadow-2xl">
         <img src="assets/product_mockups/fishmeal_bag.png" alt="Marine Protein Fishmeal" class="w-full h-[400px] object-cover">
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+    </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The Marine Protein division ensures that Ocean Pearl operates a High-Precision Biomass Optimization ecosystem. All offal, bones, and trimmings from the primary processing lines are systematically rendered into high-grade fishmeal, fish oil, and pet food ingredients. This not only fulfills strict institutional ESG mandates but also generates a highly lucrative, purely additive EBITDA stream sold into the booming global aquaculture feed market.
-        </div>
-    </div>
-
-    <!-- PAGE 41: PRIVATE LABEL -->
+        </div></div></div>
+<!-- PAGE 41: PRIVATE LABEL -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 3: FMCG-Grade Product Ecosystem</span>
@@ -759,15 +652,10 @@
             
     <div class="exec-visual-box p-0 border border-slate-300 overflow-hidden shadow-2xl">
         <img src="assets/product_mockups/canned_seafood.png" alt="Private Label USA" class="w-full h-[400px] object-cover">
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            Alongside its proprietary brands, Ocean Pearl dedicates substantial manufacturing capacity to Private Label production. By partnering directly with massive USA supermarket chains and GCC distributors, Ocean Pearl manufactures frozen and canned products packaged under the retailer's own brand. This strategy guarantees massive, recurring volume offtake, deeply embedding Ocean Pearl into the structural supply chains of the world's largest retailers.
-        </div>
-    </div>
-
-    <!-- PAGE 42: PRODUCT SUMMARY -->
+    </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            Alongside its proprietary brands, Ocean Pearl dedicates substantial manufacturing capacity to Private Label production. By partnering directly with material USA supermarket chains and GCC distributors, Ocean Pearl manufactures frozen and canned products packaged under the retailer's own brand. This strategy is designed to support material, recurring volume offtake, deeply embedding Ocean Pearl into the structural supply chains of the world's largest retailers.
+        </div></div></div>
+<!-- PAGE 42: PRODUCT SUMMARY -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 3: FMCG-Grade Product Ecosystem</span>
@@ -778,15 +666,10 @@
         
         <div class="exec-visual-box text-white text-center p-12" style="background-color: var(--corp-navy);">
             <h4 class="font-serif text-3xl mb-4 leading-tight text-white">"Our brand architecture ensures that no single market fluctuation or commodity price drop can destabilize the platform's yield."</h4>
-            <div class="w-16 h-1 mx-auto mt-8" style="background-color: var(--corp-gold);"></div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            <div class="w-16 h-1 mx-auto mt-8" style="background-color: var(--corp-gold);"></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The 8-pillar product ecosystem is the financial engine that converts physical infrastructure into sovereign-grade returns. By operating concurrently across luxury sashimi, high-volume HORECA, mass-market canned goods, and biomass-optimized fishmeal, Ocean Pearl achieves a directly hedged margin profile. This FMCG-grade capability positions the platform not as a price-taker in the commodity market, but secures strong pricing leverage in global retail.
-        </div>
-    </div>
-
-    <!-- PAGE 43: AI PLATFORM THESIS -->
+        </div></div></div>
+<!-- PAGE 43: AI PLATFORM THESIS -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 4: AI Operations Platform</span>
@@ -812,17 +695,10 @@
                     <div class="text-xl mb-2 text-emerald-400">📲</div>
                     <div class="text-[12px] uppercase">Retail Sync</div>
                 </div>
-            </div>
-        </div>
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             A decentralized global seafood operation cannot be governed by legacy spreadsheets. The Ocean Pearl Intelligent Operations Platform (OP_OS) is a proprietary, Palantir-style digital ecosystem designed to centralize millions of data points across the supply chain. From IoT thermal sensors on deep-sea vessels to real-time Japanese commodity pricing APIs, this digital command structure ensures that the Indonesian HQ exercises full operational visibility and instantaneous strategic reaction across six global hubs.
-        </div>
-    </div>
-
-    <!-- PAGE 44: GLOBAL COMMAND CENTER -->
+        </div></div></div>
+<!-- PAGE 44: GLOBAL COMMAND CENTER -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 4: AI Operations Platform</span>
@@ -832,14 +708,13 @@
         <h3 class="exec-subheadline">Centralized visibility over 10,000+ moving logistics nodes.</h3>
         
         <div class="exec-visual-box p-0 bg-transparent border-none">
-            <img src="./assets/op_command_center.png" alt="Ocean Pearl Global Command Center" class="w-full h-auto rounded shadow-2xl object-cover" style="border: 2px solid var(--corp-navy);">
+            <img src="assets/screenshots/command_center.png" alt="Ocean Pearl Global Command Center" class="w-full h-auto rounded shadow-2xl object-cover" style="border: 2px solid var(--corp-navy);">
         </div>
         
         <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Located within the Jakarta/Surabaya holding headquarters, the Global Supply Chain Command Center operates with the rigorous precision of a tier-1 logistics giant. The facility consolidates telemetry from the Oman fleet, thermal statuses from the USA cold-storage hubs, and live processing yields from the Indonesian factories onto a single executive wall. This eradicates information silos, allowing executive leadership to actively balance global inventory rather than reacting to delayed subsidiary reports.
         </div>
     </div>
-
     <!-- PAGE 45: FLEET TELEMETRY -->
     <div class="doc-page">
         <div class="page-header">
@@ -857,7 +732,7 @@
             <div class="p-6 grid grid-cols-3 gap-6 w-full font-mono text-sm">
                 <div class="col-span-2 border border-slate-700 bg-[#1e293b] p-4 relative h-48">
                     <div class="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9IiM2NDc0OGIiLz48L3N2Zz4=')]"></div>
-                    <h4 class="text-slate-600 mb-2 border-b border-slate-700 pb-1">INDIAN OCEAN SECTOR: 4A</h4>
+                    <h4 class="text-slate-700 mb-2 border-b border-slate-700 pb-1">INDIAN OCEAN SECTOR: 4A</h4>
                     <div class="w-2 h-2 rounded-full bg-emerald-400 absolute top-12 left-16 animate-pulse"></div>
                     <div class="w-2 h-2 rounded-full bg-emerald-400 absolute top-24 left-32 animate-pulse"></div>
                     <div class="w-2 h-2 rounded-full bg-emerald-400 absolute top-10 left-48 animate-pulse"></div>
@@ -866,25 +741,19 @@
                 </div>
                 <div class="space-y-4">
                     <div class="border border-slate-700 bg-[#1e293b] p-3">
-                        <div class="text-slate-700 mb-1">MOTHER VESSEL 04 (OMAN)</div>
+                        <div class="text-slate-800 mb-1">MOTHER VESSEL 04 (OMAN)</div>
                         <div class="text-lg text-white font-bold">114.2 MT</div>
                         <div class="text-[13px] text-emerald-400">HOLD CAPACITY: 82%</div>
                     </div>
                     <div class="border border-slate-700 bg-[#1e293b] p-3">
-                        <div class="text-slate-700 mb-1">MOTHER VESSEL 07 (PAPUA)</div>
+                        <div class="text-slate-800 mb-1">MOTHER VESSEL 07 (PAPUA)</div>
                         <div class="text-lg text-white font-bold">62.8 MT</div>
                         <div class="text-[13px] text-emerald-400">HOLD CAPACITY: 41%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+                    </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Traditional processors operate blindly until a vessel docks. Ocean Pearl outfits contracted fleets and wholly-owned mother ships with tamper-proof satellite telemetry. This provides the AI engine with accurate ETA, exact catch tonnage, and fuel consumption metrics days before the vessel makes landfall. The Indonesian processing hubs subsequently dynamically schedule labor and factory uptime, completely eradicating processing bottlenecks and idle-factory overhead.
         </div>
-    </div>
-
-    <!-- PAGE 46: THERMAL INTELLIGENCE -->
+    </div></div></div>
+<!-- PAGE 46: THERMAL INTELLIGENCE -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 4: AI Operations Platform</span>
@@ -901,11 +770,11 @@
             <div class="p-8 w-full font-mono">
                 <div class="flex justify-between items-end border-b border-slate-700 pb-2 mb-6">
                     <div>
-                        <div class="text-sm text-slate-700">CONSIGNMENT OP-USA-8821</div>
+                        <div class="text-sm text-slate-800">CONSIGNMENT OP-USA-8821</div>
                         <div class="text-xl text-white">SASHIMI GRADE TUNA LOINS</div>
                     </div>
                     <div class="text-right">
-                        <div class="text-sm text-slate-700">CURRENT AMBIENT</div>
+                        <div class="text-sm text-slate-800">CURRENT AMBIENT</div>
                         <div class="text-2xl text-blue-400 font-bold">-61.2°C</div>
                     </div>
                 </div>
@@ -916,20 +785,15 @@
                         <span class="absolute -right-12 bottom-7 text-[13px] text-red-400">CRITICAL -50°C</span>
                     </div>
                 </div>
-                <div class="mt-4 text-[13px] text-slate-600 flex justify-between">
+                <div class="mt-4 text-[13px] text-slate-700 flex justify-between">
                     <span>JAKARTA DEPARTURE (T-240H)</span>
                     <span>PACIFIC TRANSIT (T-120H)</span>
                     <span>LA PORT ARRIVAL (NOW)</span>
                 </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             SuperFrozen products lose their premium status if the core temperature drops below -50°C for even a brief duration. The OP_OS thermal intelligence module integrates IoT probes into every export container. This immutable temperature log is monitored via satellite in real-time. If a container's refrigeration unit malfunctions at sea, the AI instantly triggers a distress protocol with the shipping carrier and proactively files automated insurance claims, safeguarding the platform's working capital.
-        </div>
-    </div>
-
-    <!-- PAGE 47: PROCUREMENT ENGINE -->
+        </div></div></div>
+<!-- PAGE 47: PROCUREMENT ENGINE -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 4: AI Operations Platform</span>
@@ -939,31 +803,25 @@
         <h3 class="exec-subheadline">Algorithmic supply-demand matching.</h3>
         
         <div class="exec-visual-box bg-[#0f172a] p-0 font-mono text-sm">
-            <div class="w-full h-8 bg-[#1e293b] flex items-center px-4 justify-between text-sm border-b border-slate-700 text-slate-600">
+            <div class="w-full h-8 bg-[#1e293b] flex items-center px-4 justify-between text-sm border-b border-slate-700 text-slate-700">
                 <span>OP_OS // MODULE_03 // PRICING_ALGO</span>
             </div>
             <div class="p-6 grid grid-cols-2 gap-4 w-full">
                 <div class="border border-slate-700 bg-[#1e293b] p-4">
-                    <h4 class="text-slate-600 mb-4 border-b border-slate-700 pb-2">TOKYO API (TOYOSU)</h4>
+                    <h4 class="text-slate-700 mb-4 border-b border-slate-700 pb-2">TOKYO API (TOYOSU)</h4>
                     <div class="flex justify-between mb-2"><span class="text-white">BLUEFIN LION</span><span class="text-emerald-400">¥8,400/KG ▲</span></div>
                     <div class="flex justify-between mb-2"><span class="text-white">YELLOWFIN</span><span class="text-red-400">¥2,100/KG ▼</span></div>
                     <div class="flex justify-between"><span class="text-white">OCTOPUS</span><span class="text-emerald-400">¥1,800/KG ▲</span></div>
                 </div>
                 <div class="border border-slate-700 bg-[#1e293b] p-4">
-                    <h4 class="text-slate-600 mb-4 border-b border-slate-700 pb-2">HQ PROCESSING ALLOCATION</h4>
+                    <h4 class="text-slate-700 mb-4 border-b border-slate-700 pb-2">HQ PROCESSING ALLOCATION</h4>
                     <div class="flex justify-between mb-2"><span class="text-slate-500">DIVERT YF TO:</span><span class="text-white font-bold">USA HUB (STEAKS)</span></div>
                     <div class="flex justify-between mb-2"><span class="text-slate-500">DIVERT BF TO:</span><span class="text-white font-bold">JAPAN (SASHIMI)</span></div>
-                    <div class="flex justify-between"><span class="text-slate-500">DIVERT LOW-GRADE:</span><span class="text-white font-bold">CANNED (MENA)</span></div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+                    <div class="flex justify-between"><span class="text-slate-500">DIVERT LOW-GRADE:</span><span class="text-white font-bold">CANNED (MENA)</span></div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Because Ocean Pearl controls a diversified product ecosystem, it possesses strategic optionality. The OP_OS Pricing Engine continuously scrapes global wholesale markets (Toyosu, Fulton, Rungis) to identify pricing deltas. If the Japanese market is oversupplied with Yellowfin, the AI automatically instructs the Indonesian processing hubs to cut the incoming biomass into frozen steaks for the USA market instead, mathematically optimizing the margin realization per metric ton.
         </div>
-    </div>
-
-    <!-- PAGE 48: EXECUTIVE AI -->
+    </div></div></div>
+<!-- PAGE 48: EXECUTIVE AI -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 4: AI Operations Platform</span>
@@ -976,28 +834,22 @@
             <div class="flex items-start gap-4 w-full">
                 <div class="w-8 h-8 rounded bg-blue-600 flex items-center justify-center text-white shrink-0">OP</div>
                 <div class="bg-slate-800 p-4 rounded-lg border border-slate-700 w-full">
-                    <p class="mb-4 text-slate-600">EXECUTIVE QUERY: Evaluate diversion of 40 MT of Skipjack from Egypt Hub to Saudi JV based on current container freight indices.</p>
+                    <p class="mb-4 text-slate-700">EXECUTIVE QUERY: Evaluate diversion of 40 MT of Skipjack from Egypt Hub to Saudi JV based on current container freight indices.</p>
                     <div class="h-px bg-slate-700 my-4 w-full"></div>
                     <p class="text-white mb-2 font-bold">ANALYSIS COMPLETE:</p>
                     <ul class="space-y-2 text-sm mb-4">
                         <li class="flex justify-between"><span>Red Sea Freight Delta:</span><span class="text-red-400">+$420/TEU</span></li>
                         <li class="flex justify-between"><span>Saudi HORECA Margin Uplift:</span><span class="text-emerald-400">+14.5%</span></li>
-                        <li class="flex justify-between"><span>Inventory Risk (Egypt):</span><span class="text-slate-600">Negligible (32 Days Cover)</span></li>
+                        <li class="flex justify-between"><span>Inventory Risk (Egypt):</span><span class="text-slate-700">Negligible (32 Days Cover)</span></li>
                     </ul>
                     <div class="bg-slate-900 p-3 border-l-2 border-emerald-500">
                         <span class="text-emerald-500 font-bold block mb-1">RECOMMENDATION: EXECUTE DIVERSION</span>
                         Projected net EBITDA impact: +$18,400. Click to approve automated BOL revision.
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+                    </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Strategic agility is a primary differentiator for the platform. The Executive Financial AI acts as a sophisticated digital analyst, sitting alongside the C-Suite. By integrating freight indices, warehouse holding costs, FX fluctuations, and live subsidiary inventory levels, the AI can instantly run complex profitability scenarios. This ensures that every shipping container is directed to the geographic hub yielding the highest mathematical return on capital.
         </div>
-    </div>
-
-    <!-- PAGE 49: RETAIL APP ECOSYSTEM -->
+    </div></div></div>
+<!-- PAGE 49: RETAIL APP ECOSYSTEM -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 4: AI Operations Platform</span>
@@ -1007,14 +859,13 @@
         <h3 class="exec-subheadline">Capturing B2B digital sales channels in emerging hubs.</h3>
         
         <div class="exec-visual-box p-0 bg-transparent border-none">
-            <img src="./assets/retail_app_mockup.png" alt="Ocean Pearl Mobile Retail App" class="w-full h-auto max-h-[400px] rounded shadow object-contain" style="border: 1px solid var(--corp-navy);">
+            <img src="assets/screenshots/retail_app.png" alt="Ocean Pearl Mobile Retail App" class="w-full h-auto max-h-[400px] rounded shadow object-contain" style="border: 1px solid var(--corp-navy);">
         </div>
         
         <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            In markets like Egypt and Saudi Arabia, local distribution is highly reliant on mobile ordering. Ocean Pearl deploys a proprietary, white-labeled mobile application specifically designed for regional chefs, restaurants, and local distributors. This digital portal allows B2B clients to view live local inventory, place instant bulk orders, and track delivery. By digitalizing the final-mile sales layer, Ocean Pearl secures a massive competitive advantage over traditional importers reliant on telephone sales.
+            In markets like Egypt and Saudi Arabia, local distribution is highly reliant on mobile ordering. Ocean Pearl deploys a proprietary, white-labeled mobile application specifically designed for regional chefs, restaurants, and local distributors. This digital portal allows B2B clients to view live local inventory, place instant bulk orders, and track delivery. By digitalizing the final-mile sales layer, Ocean Pearl secures a material competitive advantage over traditional importers reliant on telephone sales.
         </div>
     </div>
-
     <!-- PAGE 50: AI PLATFORM SUMMARY -->
     <div class="doc-page">
         <div class="page-header">
@@ -1044,16 +895,11 @@
                 </div>
             </div>
             <div class="w-1/2 p-8 flex items-center justify-center bg-slate-50">
-                <p class="text-sm italic text-slate-700 font-serif">"Technology in seafood is largely applied to catch methods. Ocean Pearl is the first to apply it purely to margin protection."</p>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            The Ocean Pearl OP_OS platform is a fundamental differentiator that elevates the company from a traditional processor into an institutional-grade infrastructure operator. By systematically replacing human guesswork with algorithmic certainty across fleet telemetry, thermal tracking, and global pricing strategy, the AI platform guarantees execution efficiency. This directly translates into protected EBITDA, satisfying the strict risk-management requirements of sovereign debt and equity providers.
-        </div>
-    </div>
-
-    <!-- PAGE 51: USA M&A THESIS -->
+                <p class="text-sm italic text-slate-800 font-serif">"Technology in seafood is largely applied to catch methods. Ocean Pearl is the first to apply it purely to margin protection."</p>
+            </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            The Ocean Pearl OP_OS platform is a fundamental differentiator that elevates the company from a traditional processor into an institutional-grade infrastructure operator. By systematically replacing human guesswork with algorithmic certainty across fleet telemetry, thermal tracking, and global pricing strategy, the AI platform is designed to support execution efficiency. This directly translates into protected EBITDA, satisfying the strict risk-management requirements of sovereign debt and equity providers.
+        </div></div></div>
+<!-- PAGE 51: USA M&A THESIS -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 5: USA Acquisition & Global Distribution</span>
@@ -1066,7 +912,7 @@
     <div class="exec-visual-box bg-white p-12 border border-slate-300">
         <div class="flex flex-col items-center w-full font-bold text-sm">
             <div class="text-sm font-black text-corp-navy uppercase mb-12 tracking-widest">USA M&A Strategy Roadmap</div>
-            <div class="flex items-center gap-4 w-full justify-around text-slate-700">
+            <div class="flex items-center gap-4 w-full justify-around text-slate-800">
                 <div class="flex flex-col items-center gap-2">
                     <div class="p-4 bg-slate-50 border border-slate-200 uppercase">Target Screening</div>
                 </div>
@@ -1082,17 +928,10 @@
                 <div class="flex flex-col items-center gap-2">
                     <div class="p-4 bg-corp-gold text-white uppercase shadow-lg">Retail Distribution</div>
                 </div>
-            </div>
-        </div>
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The ultimate objective of vertical integration is direct access to the USA consumer. However, organic market entry into North America is notoriously slow, heavily gated by established importer relationships and stringent FDA licensing. Rather than engaging in a prolonged organic build, Ocean Pearl allocates Stage 3 capital for the strategic acquisition of a well-established, cash-flow positive USA seafood distributor. This executes an immediate, private-equity-grade market takeover.
-        </div>
-    </div>
-
-    <!-- PAGE 52: USA TARGET PROFILE -->
+        </div></div></div>
+<!-- PAGE 52: USA TARGET PROFILE -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 5: USA Acquisition & Global Distribution</span>
@@ -1110,29 +949,23 @@
                 </div>
                 <div class="flex border-b border-slate-200">
                     <div class="w-1/3 p-3 font-semibold text-corp-navy">Revenue Baseline</div>
-                    <div class="w-2/3 p-3 text-slate-600">$20M - $40M Annual Recurring Revenue (Provides immediate scale without excessive M&A premium).</div>
+                    <div class="w-2/3 p-3 text-slate-700">$20M - $40M Annual Recurring Revenue (Provides immediate scale without excessive M&A premium).</div>
                 </div>
                 <div class="flex border-b border-slate-200">
                     <div class="w-1/3 p-3 font-semibold text-corp-navy">Licenses & Compliance</div>
-                    <div class="w-2/3 p-3 text-slate-600">Active FDA Import Licenses and existing HACCP certifications (Bypasses 18-month regulatory lag).</div>
+                    <div class="w-2/3 p-3 text-slate-700">Active FDA Import Licenses and existing HACCP certifications (Bypasses 18-month regulatory lag).</div>
                 </div>
                 <div class="flex border-b border-slate-200">
                     <div class="w-1/3 p-3 font-semibold text-corp-navy">Infrastructure</div>
-                    <div class="w-2/3 p-3 text-slate-600">Proprietary or long-term leased Cold Storage facility near major port (LA, NY/NJ, or Miami).</div>
+                    <div class="w-2/3 p-3 text-slate-700">Proprietary or long-term leased Cold Storage facility near major port (LA, NY/NJ, or Miami).</div>
                 </div>
                 <div class="flex border-b border-slate-200">
                     <div class="w-1/3 p-3 font-semibold text-corp-navy">Client Base</div>
-                    <div class="w-2/3 p-3 text-slate-600">Active vendor numbers with Tier-1 USA supermarkets (e.g., Kroger, Publix, Whole Foods).</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+                    <div class="w-2/3 p-3 text-slate-700">Active vendor numbers with Tier-1 USA supermarkets (e.g., Kroger, Publix, Whole Foods).</div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Ocean Pearl does not acquire distressed assets. The targeted acquisition must be a healthy, profitable entity that currently sources product from fragmented Asian traders. The M&A thesis relies on purchasing this distributor and immediately replacing their existing third-party procurement pipeline with Ocean Pearl's captive Indonesian supply. This instantly expands the target's gross margins while providing Ocean Pearl a turnkey distribution highway into American supermarkets.
         </div>
-    </div>
-
-    <!-- PAGE 53: POST-MERGER INTEGRATION -->
+    </div></div></div>
+<!-- PAGE 53: POST-MERGER INTEGRATION -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 5: USA Acquisition & Global Distribution</span>
@@ -1145,12 +978,12 @@
             <div class="flex flex-col items-center gap-6 w-full text-sm font-bold">
                 <div class="flex w-full gap-8">
                     <div class="flex-1 p-6 bg-slate-100 border border-slate-400 text-center opacity-70">
-                        <div class="text-slate-700 mb-2">Pre-Acquisition Target</div>
-                        <div class="text-sm text-slate-600">High Cost of Goods</div>
+                        <div class="text-slate-800 mb-2">Pre-Acquisition Target</div>
+                        <div class="text-sm text-slate-700">High Cost of Goods</div>
                     </div>
                     <div class="flex-1 p-6 bg-slate-100 border border-slate-400 text-center opacity-70">
-                        <div class="text-slate-700 mb-2">Fragmented Importers</div>
-                        <div class="text-sm text-slate-600">Margin Leakage</div>
+                        <div class="text-slate-800 mb-2">Fragmented Importers</div>
+                        <div class="text-sm text-slate-700">Margin Leakage</div>
                     </div>
                 </div>
                 
@@ -1161,26 +994,20 @@
                         <div class="text-corp-gold mb-2">Ocean Pearl HQ</div>
                         <div class="text-sm text-slate-500">100% Equity Ownership</div>
                     </div>
-                    <div class="text-xl text-slate-600 w-12 text-center">→</div>
+                    <div class="text-xl text-slate-700 w-12 text-center">→</div>
                     <div class="flex-1 p-6 bg-sky-100 border border-sky-400 text-center">
                         <div class="text-corp-navy mb-2">Direct Indonesia Factory Feed</div>
-                        <div class="text-sm text-slate-700">Replaces COGS Supply Line</div>
+                        <div class="text-sm text-slate-800">Replaces COGS Supply Line</div>
                     </div>
-                    <div class="text-xl text-slate-600 w-12 text-center">→</div>
+                    <div class="text-xl text-slate-700 w-12 text-center">→</div>
                     <div class="flex-1 p-6 bg-yellow-100 border-2 border-yellow-600 text-center shadow-md">
                         <div class="text-yellow-900 mb-2">Immediate EBITDA Accretion</div>
                         <div class="text-sm text-yellow-700">Eliminates 22% Middleman Markup</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+                    </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The synergy extraction model is entirely mathematical. Prior to acquisition, the USA target surrenders approximately 18% to 25% of margin to import brokers, freight forwarders, and trading intermediaries. Upon Day 1 of integration, Ocean Pearl redirects its Indonesian manufacturing output directly to the target's cold-storage floors. By eliminating all third-party markup, the target's EBITDA profile immediately expands, rendering the acquisition highly accretive.
         </div>
-    </div>
-
-    <!-- PAGE 54: USA RETAIL PENETRATION -->
+    </div></div></div>
+<!-- PAGE 54: USA RETAIL PENETRATION -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 5: USA Acquisition & Global Distribution</span>
@@ -1204,17 +1031,11 @@
                     <div class="text-[10px] text-slate-500 uppercase">LA / California Market</div>
                 </div>
             </div>
-            <div class="mt-12 text-sm text-corp-gold uppercase tracking-tighter">Connected to Top-Tier Supermarket Distribution Centers</div>
+            <div class="mt-12 text-sm text-corp-gold uppercase tracking-tighter">Connected to Top-Tier Supermarket Distribution Centers</div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            Acquiring the target is the mechanism; mass retail penetration is the goal. Leveraging the newly acquired USA hub, Ocean Pearl aggressively pushes its branded FMCG portfolio—specifically frozen retail bags and canned products—onto American shelves. Furthermore, Ocean Pearl utilizes the target's existing supermarket relationships to secure high-volume Private Label manufacturing contracts. This dual approach is designed to support that the Indonesian factories operate at maximum utilization.
         </div>
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            Acquiring the target is the mechanism; mass retail penetration is the goal. Leveraging the newly acquired USA hub, Ocean Pearl aggressively pushes its branded FMCG portfolio—specifically frozen retail bags and canned products—onto American shelves. Furthermore, Ocean Pearl utilizes the target's existing supermarket relationships to secure high-volume Private Label manufacturing contracts. This dual approach guarantees that the Indonesian factories operate at maximum utilization.
-        </div>
-    </div>
-
-    <!-- PAGE 55: FDA COMPLIANCE -->
+    </div></div></div>
+<!-- PAGE 55: FDA COMPLIANCE -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 5: USA Acquisition & Global Distribution</span>
@@ -1227,29 +1048,24 @@
             <div class="flex flex-col gap-4 w-full text-left">
                 <div class="flex justify-between items-center bg-slate-50 p-4 border border-slate-200 shadow-sm">
                     <span class="font-bold text-corp-navy w-1/3">1. IoT Capture</span>
-                    <span class="text-slate-600 text-sm w-2/3">Live thermal telemetry logged at Indonesia HQ.</span>
+                    <span class="text-slate-700 text-sm w-2/3">Live thermal telemetry logged at Indonesia HQ.</span>
                 </div>
                 <div class="flex justify-between items-center bg-slate-50 p-4 border border-slate-200 shadow-sm">
                     <span class="font-bold text-corp-navy w-1/3">2. Advance Electronic Notification</span>
-                    <span class="text-slate-600 text-sm w-2/3">AI Platform submits FSMA data to USA FDA pre-arrival.</span>
+                    <span class="text-slate-700 text-sm w-2/3">AI Platform submits FSMA data to USA FDA pre-arrival.</span>
                 </div>
                 <div class="flex justify-between items-center bg-slate-50 p-4 border border-slate-200 shadow-sm">
                     <span class="font-bold text-corp-navy w-1/3">3. Container Dispatch</span>
-                    <span class="text-slate-600 text-sm w-2/3">Physical transit from Indonesia to USA Hub.</span>
+                    <span class="text-slate-700 text-sm w-2/3">Physical transit from Indonesia to USA Hub.</span>
                 </div>
                 <div class="flex justify-between items-center bg-corp-navy text-white p-4 border-l-4 border-corp-gold shadow-md">
                     <span class="font-bold w-1/3 text-corp-gold">4. Expedited Port Clearance</span>
                     <span class="text-sm w-2/3">Clean digital audit presented. Zero regulatory disruption.</span>
                 </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            The United States Food and Drug Administration (FDA) strictly enforces the Food Safety Modernization Act (FSMA). Fragmented exporters frequently suffer delays or cargo rejection due to incomplete traceability. Because Ocean Pearl owns the entire supply chain from the Omani fishing vessel to the USA cold-storage door, it provides a auditable, unbroken digital audit trail. This institutional-grade compliance guarantees expedited port clearance and zero regulatory disruption.
-        </div>
-    </div>
-
-    <!-- PAGE 56: MARGIN WATERFALL -->
+            </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            The United States Food and Drug Administration (FDA) strictly enforces the Food Safety Modernization Act (FSMA). Fragmented exporters frequently suffer delays or cargo rejection due to incomplete traceability. Because Ocean Pearl owns the entire supply chain from the Omani fishing vessel to the USA cold-storage door, it provides a auditable, un digital audit trail. This institutional-grade compliance is designed to support expedited port clearance and zero regulatory disruption.
+        </div></div></div>
+<!-- PAGE 56: MARGIN WATERFALL -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 5: USA Acquisition & Global Distribution</span>
@@ -1261,21 +1077,16 @@
         <div class="exec-visual-box bg-white p-8">
             <h4 class="font-bold text-sm text-corp-navy uppercase mb-6 w-full text-center">Value Chain Margin Recapture (Illustrative)</h4>
             <div class="flex items-end justify-center gap-4 h-48 w-full text-sm font-bold">
-                <div class="flex flex-col items-center"><div class="w-16 h-12 bg-slate-300 mb-2"></div><span class="text-center text-slate-700">Raw Catch Cost</span></div>
-                <div class="flex flex-col items-center"><div class="w-16 h-8 bg-red-400 mb-2 opacity-50"></div><span class="text-center text-slate-700">Local Broker (Eliminated)</span></div>
+                <div class="flex flex-col items-center"><div class="w-16 h-12 bg-slate-300 mb-2"></div><span class="text-center text-slate-800">Raw Catch Cost</span></div>
+                <div class="flex flex-col items-center"><div class="w-16 h-8 bg-red-400 mb-2 opacity-50"></div><span class="text-center text-slate-800">Local Broker (Eliminated)</span></div>
                 <div class="flex flex-col items-center"><div class="w-16 h-16 bg-corp-gold mb-2"></div><span class="text-center text-corp-navy">Ocean Pearl Processing</span></div>
-                <div class="flex flex-col items-center"><div class="w-16 h-12 bg-red-400 mb-2 opacity-50"></div><span class="text-center text-slate-700">Import Agent (Eliminated)</span></div>
-                <div class="flex flex-col items-center"><div class="w-16 h-12 bg-red-400 mb-2 opacity-50"></div><span class="text-center text-slate-700">USA Wholesale (Eliminated)</span></div>
+                <div class="flex flex-col items-center"><div class="w-16 h-12 bg-red-400 mb-2 opacity-50"></div><span class="text-center text-slate-800">Import Agent (Eliminated)</span></div>
+                <div class="flex flex-col items-center"><div class="w-16 h-12 bg-red-400 mb-2 opacity-50"></div><span class="text-center text-slate-800">USA Wholesale (Eliminated)</span></div>
                 <div class="flex flex-col items-center"><div class="w-16 h-48 bg-corp-blue mb-2"></div><span class="text-center text-corp-navy">Ocean Pearl Retained Margin</span></div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The economic rationale for the USA acquisition is directly demonstrated by the margin waterfall logic. By structurally eliminating the local Indonesian broker, the international export agent, and the USA domestic wholesaler, Ocean Pearl successfully compresses five layers of third-party profit-taking into a single, vertically integrated corporate entity. This strategy structurally supports the high EBITDA margins required by tier-1 institutional investors.
-        </div>
-    </div>
-
-    <!-- PAGE 57: GLOBAL SYNCHRONIZATION -->
+        </div></div></div>
+<!-- PAGE 57: GLOBAL SYNCHRONIZATION -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 5: USA Acquisition & Global Distribution</span>
@@ -1290,26 +1101,20 @@
                 <div class="flex justify-between w-full mt-4 gap-4">
                     <div class="flex-1 p-4 bg-white border border-slate-300 text-center">
                         <div class="font-bold text-corp-blue mb-2">USA Hub</div>
-                        <div class="text-slate-700 text-sm">Bulk Institutional Export</div>
+                        <div class="text-slate-800 text-sm">Bulk Institutional Export</div>
                     </div>
                     <div class="flex-1 p-4 bg-white border border-slate-300 text-center">
                         <div class="font-bold text-corp-blue mb-2">Egypt Hub</div>
-                        <div class="text-slate-700 text-sm">Regional FMCG Deficit</div>
+                        <div class="text-slate-800 text-sm">Regional FMCG Deficit</div>
                     </div>
                     <div class="flex-1 p-4 bg-white border border-slate-300 text-center">
                         <div class="font-bold text-corp-blue mb-2">Japan/China</div>
-                        <div class="text-slate-700 text-sm">AirFresh / Premium</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+                        <div class="text-slate-800 text-sm">AirFresh / Premium</div>
+                    </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             With the integration of the USA target, Ocean Pearl achieves true global equilibrium. The Indonesian headquarters leverages the OP_OS AI to continuously balance inventory between the USA, Egypt, and East Asia. If American supermarkets display a sudden spike in demand for canned products, the AI routes bulk shipments away from Egypt to fulfill USA requirements. This global interconnectedness protects the platform against localized economic downturns.
         </div>
-    </div>
-
-    <!-- PAGE 58: USA & DISTRIBUTION SUMMARY -->
+    </div></div></div>
+<!-- PAGE 58: USA & DISTRIBUTION SUMMARY -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 5: USA Acquisition & Global Distribution</span>
@@ -1320,15 +1125,10 @@
         
         <div class="exec-visual-box text-white text-center p-12" style="background-color: var(--corp-navy);">
             <h4 class="font-serif text-3xl mb-4 leading-tight text-white">"We do not leave our margin on the docks of Jakarta. We carry it entirely into the freezer aisles of New York."</h4>
-            <div class="w-16 h-1 mx-auto mt-8" style="background-color: var(--corp-gold);"></div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            <div class="w-16 h-1 mx-auto mt-8" style="background-color: var(--corp-gold);"></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The execution of the USA acquisition completes the Ocean Pearl physical infrastructure loop. It transitions the conglomerate from a regional Asian processor into a structurally advantaged global distributor. By owning the final mile of American distribution, alongside the Egyptian MENA hub, the platform successfully bridges the gap between deep-sea sourcing and global retail, establishing a network that is virtually impossible for mid-market competitors to unseat.
-        </div>
-    </div>
-
-    <!-- PAGE 59: FINANCIAL THESIS -->
+        </div></div></div>
+<!-- PAGE 59: FINANCIAL THESIS -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 6: The Institutional Financial Model</span>
@@ -1353,14 +1153,10 @@
             </div>
         </div>
         <div class="mt-8 text-center text-[11px] text-slate-500 uppercase tracking-widest font-black">Mathematical Yield Verification Loop</div>
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+    </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The Ocean Pearl financial model eschews the speculative hockey-stick projections typical of early-stage ventures. Instead, it is engineered to infrastructure-fund standards. Every projected dollar of EBITDA is mathematically tethered to physical operational capacity—specifically, ice network utilization, factory throughput, and defined freight corridors. This model provides transparent, bank-reviewable logic that isolates how physical assets are converted into sovereign-grade free cash flow over a 10-year horizon.
         </div>
     </div>
-
     <!-- PAGE 60: ASSUMPTIONS REGISTER -->
     <div class="doc-page">
         <div class="page-header">
@@ -1385,44 +1181,44 @@
                         <td class="p-4 font-bold text-sm" style="color: var(--corp-navy);" rowspan="3">Pricing & Yield</td>
                         <td class="p-4 border-l border-slate-200 font-bold text-slate-800">Premium SuperFrozen Tuna</td>
                         <td class="p-4 text-right font-mono text-emerald-600 font-bold text-sm">$18.50 / kg</td>
-                        <td class="p-4 text-slate-700 border-l border-slate-200">Discounted 12% against 3-yr Toyosu moving average.</td>
+                        <td class="p-4 text-slate-800 border-l border-slate-200">Discounted 12% against 3-yr Toyosu moving average.</td>
                     </tr>
                     <tr class="border-b border-slate-200 bg-slate-50">
                         <td class="p-4 border-l border-slate-200 font-bold text-slate-800">Canned / Mass Market</td>
                         <td class="p-4 text-right font-mono text-emerald-600 font-bold text-sm">$2.80 / kg</td>
-                        <td class="p-4 text-slate-700 border-l border-slate-200">Indexed to MENA FMCG bulk distributor rates.</td>
+                        <td class="p-4 text-slate-800 border-l border-slate-200">Indexed to MENA FMCG bulk distributor rates.</td>
                     </tr>
                     <tr class="border-b border-slate-300 bg-slate-50">
                         <td class="p-4 border-l border-slate-200 font-bold text-slate-800">Processing Yield (Tuna)</td>
                         <td class="p-4 text-right font-mono text-emerald-600 font-bold text-sm">58.0%</td>
-                        <td class="p-4 text-slate-700 border-l border-slate-200">Standardized industrial yield; offal routed to fishmeal.</td>
+                        <td class="p-4 text-slate-800 border-l border-slate-200">Standardized industrial yield; offal routed to fishmeal.</td>
                     </tr>
                     <tr class="border-b border-slate-200 bg-white">
                         <td class="p-4 font-bold text-sm" style="color: var(--corp-navy);" rowspan="3">Operating Cost</td>
                         <td class="p-4 border-l border-slate-200 font-bold text-slate-800">Reefer Freight (Asia-USA)</td>
                         <td class="p-4 text-right font-mono text-red-600 font-bold text-sm">$6,500 / TEU</td>
-                        <td class="p-4 text-slate-700 border-l border-slate-200">Conservative structural baseline; ignores temporary spot lows.</td>
+                        <td class="p-4 text-slate-800 border-l border-slate-200">Conservative structural baseline; ignores temporary spot lows.</td>
                     </tr>
                     <tr class="border-b border-slate-200 bg-white">
                         <td class="p-4 border-l border-slate-200 font-bold text-slate-800">Indonesia Labor Cost</td>
                         <td class="p-4 text-right font-mono text-red-600 font-bold text-sm">$320 / month</td>
-                        <td class="p-4 text-slate-700 border-l border-slate-200">Indexed to Surabaya regional minimum wage + 15% ESG premium.</td>
+                        <td class="p-4 text-slate-800 border-l border-slate-200">Indexed to Surabaya regional minimum wage + 15% ESG premium.</td>
                     </tr>
                     <tr class="border-b border-slate-300 bg-white">
                         <td class="p-4 border-l border-slate-200 font-bold text-slate-800">LCO2 Processing Cost</td>
                         <td class="p-4 text-right font-mono text-red-600 font-bold text-sm">$0.45 / kg</td>
-                        <td class="p-4 text-slate-700 border-l border-slate-200">Fixed utility assumption for -60°C rapid freeze.</td>
+                        <td class="p-4 text-slate-800 border-l border-slate-200">Fixed utility assumption for -60°C rapid freeze.</td>
                     </tr>
                     <tr class="border-b border-slate-200 bg-slate-50">
                         <td class="p-4 font-bold text-sm" style="color: var(--corp-navy);" rowspan="2">Working Capital</td>
                         <td class="p-4 border-l border-slate-200 font-bold text-slate-800">Inventory Days (Average)</td>
                         <td class="p-4 text-right font-mono text-blue-600 font-bold text-sm">45 Days</td>
-                        <td class="p-4 text-slate-700 border-l border-slate-200">Accounts for 30-day ocean transit + 15-day hub buffer.</td>
+                        <td class="p-4 text-slate-800 border-l border-slate-200">Accounts for 30-day ocean transit + 15-day hub buffer.</td>
                     </tr>
                     <tr class="border-b border-slate-200 bg-slate-50">
                         <td class="p-4 border-l border-slate-200 font-bold text-slate-800">Receivable Days (DSO)</td>
                         <td class="p-4 text-right font-mono text-blue-600 font-bold text-sm">35 Days</td>
-                        <td class="p-4 text-slate-700 border-l border-slate-200">Backed by letters of credit and trade finance facilities.</td>
+                        <td class="p-4 text-slate-800 border-l border-slate-200">Backed by letters of credit and trade finance facilities.</td>
                     </tr>
                 </tbody>
             </table>
@@ -1432,7 +1228,6 @@
             A financial model is only as credible as its inputs. The Master Assumptions Register deliberately employs conservative pricing and inflated operational cost contingencies. By pegging premium revenues below historical moving averages and stress-testing freight/logistics costs above standard market rates, the resulting EBITDA projections provide a highly defensible base case that withstands rigorous Big-4 audit scrutiny.
         </div>
     </div>
-
     <!-- PAGE 61: REVENUE GEOGRAPHY -->
     <div class="doc-page">
         <div class="page-header">
@@ -1450,41 +1245,35 @@
                     <div class="h-full flex items-center justify-center text-white text-sm font-bold" style="width: 35%; background-color: var(--corp-navy);">USA (35%)</div>
                     <div class="h-full flex items-center justify-center text-white text-sm font-bold" style="width: 25%; background-color: var(--corp-blue);">Japan/China (25%)</div>
                     <div class="h-full flex items-center justify-center text-white text-sm font-bold" style="width: 20%; background-color: var(--corp-gold);">GCC/MENA (20%)</div>
-                    <div class="h-full flex items-center justify-center text-slate-700 text-sm font-bold bg-slate-300" style="width: 15%;">Europe (15%)</div>
-                    <div class="h-full flex items-center justify-center text-slate-700 text-sm font-bold bg-slate-200" style="width: 5%;">Dom (5%)</div>
+                    <div class="h-full flex items-center justify-center text-slate-800 text-sm font-bold bg-slate-300" style="width: 15%;">Europe (15%)</div>
+                    <div class="h-full flex items-center justify-center text-slate-800 text-sm font-bold bg-slate-200" style="width: 5%;">Dom (5%)</div>
                 </div>
                 
                 <div class="w-full mt-10 grid grid-cols-5 gap-4 text-center text-sm">
                     <div>
                         <div class="font-bold text-corp-navy text-base">USA</div>
-                        <div class="text-slate-600 mt-1">Retail / Supermarkets</div>
+                        <div class="text-slate-700 mt-1">Retail / Supermarkets</div>
                     </div>
                     <div>
                         <div class="font-bold text-corp-blue text-base">JAP/CHN</div>
-                        <div class="text-slate-600 mt-1">Premium / Sashimi</div>
+                        <div class="text-slate-700 mt-1">Premium / Sashimi</div>
                     </div>
                     <div>
                         <div class="font-bold text-base" style="color: var(--corp-gold);">GCC/MENA</div>
-                        <div class="text-slate-600 mt-1">HORECA / Canned</div>
+                        <div class="text-slate-700 mt-1">HORECA / Canned</div>
                     </div>
                     <div>
-                        <div class="font-bold text-slate-700 text-base">EUROPE</div>
-                        <div class="text-slate-600 mt-1">Private Label</div>
+                        <div class="font-bold text-slate-800 text-base">EUROPE</div>
+                        <div class="text-slate-700 mt-1">Private Label</div>
                     </div>
                     <div>
-                        <div class="font-bold text-slate-700 text-base">DOMESTIC</div>
-                        <div class="text-slate-700 mt-1">Local Wholesale</div>
-                    </div>
-                </div>
-            </div>
+                        <div class="font-bold text-slate-800 text-base">DOMESTIC</div>
+                        <div class="text-slate-800 mt-1">Local Wholesale</div>
+                    </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            Concentration risk is unacceptable for institutional debt providers. By Year 5, Ocean Pearl achieves a directly balanced geographic revenue profile. The high-volume, high-margin USA market anchors the platform via direct retail penetration. The Japan/China corridor absorbs all premium SuperFrozen output, while the GCC/MENA region provides a material, recession-resistant baseload for canned and HORECA products. This structure immunizes the company against localized economic shocks.
         </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            Concentration risk is unacceptable for institutional debt providers. By Year 5, Ocean Pearl achieves a directly balanced geographic revenue profile. The high-volume, high-margin USA market anchors the platform via direct retail penetration. The Japan/China corridor absorbs all premium SuperFrozen output, while the GCC/MENA region provides a massive, recession-resistant baseload for canned and HORECA products. This structure immunizes the company against localized economic shocks.
-        </div>
-    </div>
-
-    <!-- PAGE 62: REVENUE FLOW -->
+    </div></div></div>
+<!-- PAGE 62: REVENUE FLOW -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 6: The Institutional Financial Model</span>
@@ -1497,9 +1286,9 @@
             <div class="flex flex-col items-center gap-2 w-full">
                 <!-- Base -->
                 <div class="w-full bg-slate-100 p-6 text-center border-2 border-slate-300 rounded shadow-sm">
-                    <div class="font-bold text-slate-700 uppercase tracking-widest text-sm mb-1">Input Commodity</div>
+                    <div class="font-bold text-slate-800 uppercase tracking-widest text-sm mb-1">Input Commodity</div>
                     <div class="font-bold text-slate-800 text-xl">Raw Marine Biomass</div>
-                    <div class="font-mono text-slate-600 mt-1 text-lg">Avg Cost: $3.00 / kg</div>
+                    <div class="font-mono text-slate-700 mt-1 text-lg">Avg Cost: $3.00 / kg</div>
                 </div>
                 
                 <div class="h-10 border-l-4 border-corp-navy"></div>
@@ -1534,17 +1323,11 @@
                         <div class="uppercase text-sm text-slate-200 mb-2">Grade C / Mass</div>
                         <div class="text-lg">Canned Tins</div>
                         <div class="font-mono text-xl mt-2">$4.50</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+                    </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The fundamental economic multiplier of Ocean Pearl is its processing architecture. Raw biomass acquired at base commodity rates ($3.00/kg average) is never exported as a raw commodity. Instead, it passes through the Indonesian processing hub and is routed into the exact FMCG product pillar that mathematically yields the highest margin delta. The result is a blended portfolio realization that dramatically outperforms standard regional seafood trading.
         </div>
-    </div>
-
-    <!-- PAGE 63: REVENUE MIX TABLE -->
+    </div></div></div>
+<!-- PAGE 63: REVENUE MIX TABLE -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 6: The Institutional Financial Model</span>
@@ -1568,35 +1351,35 @@
                     <tr class="border-b border-slate-200">
                         <td class="p-4 text-left font-bold text-corp-navy text-sm">OP Premium (SuperFrozen)</td>
                         <td class="p-4 font-mono text-sm">4,500</td>
-                        <td class="p-4 text-sm text-slate-600">12.0%</td>
+                        <td class="p-4 text-sm text-slate-700">12.0%</td>
                         <td class="p-4 font-mono text-emerald-600 font-bold text-base">42.5%</td>
                         <td class="p-4 font-bold text-sm">28.4%</td>
                     </tr>
                     <tr class="border-b border-slate-200 bg-slate-50">
                         <td class="p-4 text-left font-bold text-corp-navy text-sm">Chef Selection (HORECA)</td>
                         <td class="p-4 font-mono text-sm">11,200</td>
-                        <td class="p-4 text-sm text-slate-600">29.8%</td>
+                        <td class="p-4 text-sm text-slate-700">29.8%</td>
                         <td class="p-4 font-mono text-emerald-600 font-bold text-base">28.0%</td>
                         <td class="p-4 font-bold text-sm">31.2%</td>
                     </tr>
                     <tr class="border-b border-slate-200">
                         <td class="p-4 text-left font-bold text-corp-navy text-sm">Ocean Gold (Smoked/RTE)</td>
                         <td class="p-4 font-mono text-sm">2,100</td>
-                        <td class="p-4 text-sm text-slate-600">5.6%</td>
+                        <td class="p-4 text-sm text-slate-700">5.6%</td>
                         <td class="p-4 font-mono text-emerald-600 font-bold text-base">38.0%</td>
                         <td class="p-4 font-bold text-sm">11.5%</td>
                     </tr>
                     <tr class="border-b border-slate-200 bg-slate-50">
                         <td class="p-4 text-left font-bold text-corp-navy text-sm">Canned Division</td>
                         <td class="p-4 font-mono text-sm">14,800</td>
-                        <td class="p-4 text-sm text-slate-600">39.4%</td>
+                        <td class="p-4 text-sm text-slate-700">39.4%</td>
                         <td class="p-4 font-mono text-emerald-600 font-bold text-base">18.5%</td>
                         <td class="p-4 font-bold text-sm">22.1%</td>
                     </tr>
                     <tr class="border-b border-slate-300">
                         <td class="p-4 text-left font-bold text-corp-navy text-sm">Marine Protein (Fishmeal)</td>
                         <td class="p-4 font-mono text-sm">4,900</td>
-                        <td class="p-4 text-sm text-slate-600">13.2%</td>
+                        <td class="p-4 text-sm text-slate-700">13.2%</td>
                         <td class="p-4 font-mono text-emerald-600 font-bold text-base">14.0%</td>
                         <td class="p-4 font-bold text-sm">6.8%</td>
                     </tr>
@@ -1612,10 +1395,9 @@
         </div>
         
         <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            The financial model highlights an inverse relationship between volume and margin that provides ultimate platform stability. The Canned Division accounts for nearly 40% of the volume but yields lower gross margins, acting as a fixed-cost absorption engine. Conversely, Ocean Pearl Premium accounts for only 12% of physical volume but drives almost 30% of total Gross Profit. This stratification ensures that fixed infrastructure costs are deeply covered, allowing luxury product lines to drop purely to the bottom line.
+            The financial model highlights an inverse relationship between volume and margin that provides strategic platform stability. The Canned Division accounts for nearly 40% of the volume but yields lower gross margins, acting as a fixed-cost absorption engine. Conversely, Ocean Pearl Premium accounts for only 12% of physical volume but drives almost 30% of total Gross Profit. This stratification ensures that fixed infrastructure costs are deeply covered, allowing luxury product lines to support the bottom line.
         </div>
     </div>
-
     <!-- PAGE 64: INFRASTRUCTURE YIELD MODEL -->
     <div class="doc-page">
         <div class="page-header">
@@ -1657,15 +1439,10 @@
                     </div>
                     <span class="text-sm font-bold mt-4 text-slate-800 uppercase">Cold Storage</span>
                 </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Ocean Pearl does not project "tech multiples." It calculates Return on Assets (ROA) utilizing standard infrastructure yield logic. The Tri-Format Ice Network and integrated Cold Storage facilities operate as independent profit centers. Vessel Ice factories command the highest ROA due to their ability to capture deep-water volumes without land-based leasing costs. Even without the downstream retail margin, the underlying heavy infrastructure inherently functions as a profitable, cash-yielding enterprise.
-        </div>
-    </div>
-
-    <!-- PAGE 65: INFRASTRUCTURE METRICS -->
+        </div></div></div>
+<!-- PAGE 65: INFRASTRUCTURE METRICS -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 6: The Institutional Financial Model</span>
@@ -1690,35 +1467,35 @@
                         <td class="p-4 text-left font-bold text-corp-navy">Fixed Ice Factory (50T/Day)</td>
                         <td class="p-4 font-mono font-bold">$1.20M</td>
                         <td class="p-4">85%</td>
-                        <td class="p-4 font-mono text-slate-600">15 Years</td>
+                        <td class="p-4 font-mono text-slate-700">15 Years</td>
                         <td class="p-4 font-bold text-emerald-600 text-base">4.2 Years</td>
                     </tr>
                     <tr class="border-b border-slate-200 bg-slate-50">
                         <td class="p-4 text-left font-bold text-corp-navy">Mobile Truck Unit (Al Ashry)</td>
                         <td class="p-4 font-mono font-bold">$0.18M</td>
                         <td class="p-4">92%</td>
-                        <td class="p-4 font-mono text-slate-600">8 Years</td>
+                        <td class="p-4 font-mono text-slate-700">8 Years</td>
                         <td class="p-4 font-bold text-emerald-600 text-base">2.8 Years</td>
                     </tr>
                     <tr class="border-b border-slate-200">
                         <td class="p-4 text-left font-bold text-corp-navy">Vessel Ice Generator Node</td>
                         <td class="p-4 font-mono font-bold">$0.45M</td>
                         <td class="p-4">95%</td>
-                        <td class="p-4 font-mono text-slate-600">10 Years</td>
+                        <td class="p-4 font-mono text-slate-700">10 Years</td>
                         <td class="p-4 font-bold text-emerald-600 text-base">3.1 Years</td>
                     </tr>
                     <tr class="border-b border-slate-200 bg-slate-50">
                         <td class="p-4 text-left font-bold text-corp-navy">SuperFrozen LCO2 Line</td>
                         <td class="p-4 font-mono font-bold">$2.80M</td>
                         <td class="p-4">75%</td>
-                        <td class="p-4 font-mono text-slate-600">12 Years</td>
+                        <td class="p-4 font-mono text-slate-700">12 Years</td>
                         <td class="p-4 font-bold text-emerald-600 text-base">3.5 Years</td>
                     </tr>
                     <tr class="border-b border-slate-300">
                         <td class="p-4 text-left font-bold text-corp-navy">Cold Storage Hub (5,000 MT)</td>
                         <td class="p-4 font-mono font-bold">$4.50M</td>
                         <td class="p-4">88%</td>
-                        <td class="p-4 font-mono text-slate-600">20 Years</td>
+                        <td class="p-4 font-mono text-slate-700">20 Years</td>
                         <td class="p-4 font-bold text-emerald-600 text-base">5.5 Years</td>
                     </tr>
                 </tbody>
@@ -1729,7 +1506,6 @@
             CapEx is deployed strategically to assets that possess accelerated payback periods relative to their useful lifespans. Mobile truck units generate the fastest cash recovery (2.8 years) due to their low absolute cost and continuous 92% utilization chasing seasonal catch. Large-scale cold storage requires a 5.5-year payback, yet offers a 20-year structural lifespan, providing immense, fully depreciated cash generation in the latter half of the model.
         </div>
     </div>
-
     <!-- PAGE 66: WORKING CAPITAL -->
     <div class="doc-page">
         <div class="page-header">
@@ -1764,23 +1540,18 @@
                 <div class="absolute top-6 h-12 border-l-4 border-slate-800" style="left: 80%;"></div>
                 
                 <!-- Day Count Below -->
-                <div class="absolute top-20 text-slate-700 font-mono" style="left: 0%;">Day 0</div>
-                <div class="absolute top-20 text-slate-700 font-mono" style="left: 13%;">Day 15</div>
-                <div class="absolute top-20 text-slate-700 font-mono" style="left: 43%;">Day 45</div>
+                <div class="absolute top-20 text-slate-800 font-mono" style="left: 0%;">Day 0</div>
+                <div class="absolute top-20 text-slate-800 font-mono" style="left: 13%;">Day 15</div>
+                <div class="absolute top-20 text-slate-800 font-mono" style="left: 43%;">Day 45</div>
                 <div class="absolute top-20 text-slate-800 font-mono font-bold" style="left: 78%;">Day 80</div>
             </div>
             
             <div class="text-center text-sm text-slate-800 font-bold mt-12 pt-6 border-t border-slate-200">
                 Gross Cycle: 80 Days. Financed entirely via 90-Day Revolving Trade Facilities.
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Seafood is a heavily working-capital intensive industry; the cash conversion cycle (CCC) determines scalability. If Ocean Pearl utilized equity to fund inventory crossing the Pacific, ROE would collapse. Instead, the model relies on robust working capital architecture. The 80-day cycle (from Indonesian procurement to USA retail collection) is strictly funded via dedicated, low-interest revolving trade finance facilities, preserving corporate equity exclusively for hard-asset infrastructure deployment.
-        </div>
-    </div>
-
-    <!-- PAGE 67: TRADE FINANCE -->
+        </div></div></div>
+<!-- PAGE 67: TRADE FINANCE -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 6: The Institutional Financial Model</span>
@@ -1814,17 +1585,11 @@
                 <!-- Step 5 -->
                 <div class="flex bg-slate-50 border border-slate-300 p-4 items-center rounded shadow-sm">
                     <div class="w-12 h-12 flex-shrink-0 bg-slate-700 text-white flex items-center justify-center font-bold text-xl mr-6 rounded">5</div>
-                    <div><span class="font-bold text-slate-800 text-base block">Facility Settlement</span>USA Hub repays the Trade Bank advance plus standard LIBOR/SOFR interest margin.</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+                    <div><span class="font-bold text-slate-800 text-base block">Facility Settlement</span>USA Hub repays the Trade Bank advance plus standard LIBOR/SOFR interest margin.</div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The platform achieves limitless scale by leveraging back-to-back Letters of Credit (LCs) and documentary trade finance. When PT Ocean Pearl Indonesia ships a container to its USA subsidiary, a global trade bank instantly advances 85% of the invoice value against the Bill of Lading. This immediate cash injection allows the Indonesian hub to continuously procure raw catch from local fishermen without waiting for the American retailer to pay their 30-day invoice, maximizing capital velocity.
         </div>
-    </div>
-
-    <!-- PAGE 68: CAPITAL STRUCTURE -->
+    </div></div></div>
+<!-- PAGE 68: CAPITAL STRUCTURE -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 6: The Institutional Financial Model</span>
@@ -1836,12 +1601,12 @@
         <div class="exec-visual-box bg-white p-10 flex flex-row items-center justify-center gap-10 border border-slate-300">
             <!-- Stack Graphic -->
             <div class="w-1/3 flex flex-col h-64 border-4 border-slate-800 rounded-lg overflow-hidden shadow-xl">
-                <div class="h-1/5 bg-slate-200 flex flex-col items-center justify-center text-sm font-bold text-slate-700 border-b-2 border-slate-400"><span>Trade Revolver</span><span class="font-mono text-slate-700 text-sm">Short-Term</span></div>
+                <div class="h-1/5 bg-slate-200 flex flex-col items-center justify-center text-sm font-bold text-slate-800 border-b-2 border-slate-400"><span>Trade Revolver</span><span class="font-mono text-slate-800 text-sm">Short-Term</span></div>
                 <div class="h-2/5 bg-corp-blue flex flex-col items-center justify-center text-sm font-bold text-white border-b-2 border-slate-400"><span>ECA / Infra Debt</span><span class="font-mono text-white text-sm">Long-Term</span></div>
                 <div class="h-2/5 bg-corp-navy flex flex-col items-center justify-center text-sm font-bold text-white"><span>Sovereign Equity</span><span class="font-mono text-white text-sm">Permanent</span></div>
             </div>
             <!-- Logic Box -->
-            <div class="w-2/3 space-y-6 text-sm text-slate-700">
+            <div class="w-2/3 space-y-6 text-sm text-slate-800">
                 <div class="p-4 border-l-8 border-corp-navy bg-slate-50 shadow-sm rounded-r">
                     <span class="font-bold text-corp-navy block mb-1 text-base">Equity (Sponsor / Sovereign)</span>
                     Funds pure M&A acquisitions, high-risk initial CapEx, and secures the required debt ratios.
@@ -1851,18 +1616,13 @@
                     Long-term, low-interest debt funding the Tri-Format Ice Network and Cold Storage. Secured by hard assets.
                 </div>
                 <div class="p-4 border-l-8 border-slate-400 bg-slate-50 shadow-sm rounded-r">
-                    <span class="font-bold text-slate-700 block mb-1 text-base">Revolving Trade Facility</span>
+                    <span class="font-bold text-slate-800 block mb-1 text-base">Revolving Trade Facility</span>
                     Short-term, continuous facility funding global inventory in transit. Strictly ring-fenced to Working Capital.
                 </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Structuring the $500M capital requirement purely as equity severely dilutes sponsor returns. The Ocean Pearl funding strategy deploys a sophisticated, multi-tranche capital stack. Base equity acts as the anchor, but the heavy lifting of scale is executed via Export Credit Agency (ECA) backed infrastructure debt, secured against the physical factories. Global inventory is financed through dedicated revolvers. This optimizes the Weighted Average Cost of Capital (WACC) and maximizes equity IRR.
-        </div>
-    </div>
-
-    <!-- PAGE 69: DEBT & SUKUK -->
+        </div></div></div>
+<!-- PAGE 69: DEBT & SUKUK -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 6: The Institutional Financial Model</span>
@@ -1884,21 +1644,21 @@
                 <tbody>
                     <tr class="border-b border-slate-200">
                         <td class="p-4 font-bold text-corp-navy text-base">Phase 1: Project Finance</td>
-                        <td class="p-4 font-bold text-slate-700">Years 1 - 3</td>
+                        <td class="p-4 font-bold text-slate-800">Years 1 - 3</td>
                         <td class="p-4 font-mono text-slate-800 font-bold">Senior Secured Debt</td>
-                        <td class="p-4 text-slate-700 leading-relaxed">Specific localized Indonesian/Omani processing facilities and physical assets.</td>
+                        <td class="p-4 text-slate-800 leading-relaxed">Specific localized Indonesian/Omani processing facilities and physical assets.</td>
                     </tr>
                     <tr class="border-b border-slate-200 bg-slate-50">
                         <td class="p-4 font-bold text-corp-navy text-base">Phase 2: M&A Facility</td>
-                        <td class="p-4 font-bold text-slate-700">Year 3 - 4</td>
+                        <td class="p-4 font-bold text-slate-800">Year 3 - 4</td>
                         <td class="p-4 font-mono text-slate-800 font-bold">Mezzanine / Bridge Loan</td>
-                        <td class="p-4 text-slate-700 leading-relaxed">Targeted USA Distributor cash-flows, contracts, and retail receivables.</td>
+                        <td class="p-4 text-slate-800 leading-relaxed">Targeted USA Distributor cash-flows, contracts, and retail receivables.</td>
                     </tr>
                     <tr class="border-b border-slate-300">
                         <td class="p-4 font-bold text-corp-navy text-base">Phase 3: Labuan Sukuk</td>
-                        <td class="p-4 font-bold text-slate-700">Year 5+</td>
+                        <td class="p-4 font-bold text-slate-800">Year 5+</td>
                         <td class="p-4 font-mono text-emerald-700 font-bold">Corp. Green Sukuk (ESG)</td>
-                        <td class="p-4 text-slate-700 leading-relaxed">The consolidated, stabilized EBITDA of the global holding platform.</td>
+                        <td class="p-4 text-slate-800 leading-relaxed">The consolidated, stabilized EBITDA of the global holding platform.</td>
                     </tr>
                 </tbody>
             </table>
@@ -1908,7 +1668,6 @@
             As Ocean Pearl achieves structural maturity in Stage 4 (Year 5+), it will transition away from localized commercial bank debt. The ultimate capital objective is the issuance of an institutional corporate bond or ESG-compliant Islamic Sukuk, domiciled in a tier-1 jurisdiction such as Labuan or the DIFC. The "Marine Protein" biomass-optimized division allows the Sukuk to be classified as Green/ESG, drastically lowering the coupon rate by tapping into sovereign sustainability mandates.
         </div>
     </div>
-
     <!-- PAGE 70: 10-YEAR EBITDA MODEL -->
     <div class="doc-page">
         <div class="page-header">
@@ -1932,7 +1691,7 @@
                 </thead>
                 <tbody>
                     <tr class="border-b border-slate-100">
-                        <td class="p-4 text-left font-bold text-slate-700 text-sm">Gross Platform Revenue</td>
+                        <td class="p-4 text-left font-bold text-slate-800 text-sm">Gross Platform Revenue</td>
                         <td class="p-4 font-mono text-sm">42.5</td>
                         <td class="p-4 font-mono text-sm">118.2</td>
                         <td class="p-4 font-mono bg-slate-50 font-bold text-sm">285.4</td>
@@ -1940,7 +1699,7 @@
                         <td class="p-4 font-mono text-sm">510.2</td>
                     </tr>
                     <tr class="border-b border-slate-100">
-                        <td class="p-4 text-left font-bold text-slate-700 text-sm">Cost of Goods Sold (COGS)</td>
+                        <td class="p-4 text-left font-bold text-slate-800 text-sm">Cost of Goods Sold (COGS)</td>
                         <td class="p-4 font-mono text-sm text-red-700">(32.3)</td>
                         <td class="p-4 font-mono text-sm text-red-700">(87.4)</td>
                         <td class="p-4 font-mono bg-slate-50 text-red-700 font-bold text-sm">(199.7)</td>
@@ -1956,7 +1715,7 @@
                         <td class="p-4 font-mono font-bold text-sm">168.4</td>
                     </tr>
                     <tr class="border-b border-slate-100">
-                        <td class="p-4 text-left font-bold text-slate-700 text-sm">Operating Expenses (SG&A)</td>
+                        <td class="p-4 text-left font-bold text-slate-800 text-sm">Operating Expenses (SG&A)</td>
                         <td class="p-4 font-mono text-sm text-red-700">(4.1)</td>
                         <td class="p-4 font-mono text-sm text-red-700">(8.5)</td>
                         <td class="p-4 font-mono bg-slate-50 text-red-700 font-bold text-sm">(14.2)</td>
@@ -1972,7 +1731,7 @@
                         <td class="p-4 font-mono font-bold text-emerald-600 text-base">144.4</td>
                     </tr>
                     <tr>
-                        <td class="p-4 text-left font-bold text-slate-600 text-sm">EBITDA Margin %</td>
+                        <td class="p-4 text-left font-bold text-slate-700 text-sm">EBITDA Margin %</td>
                         <td class="p-4 font-mono text-sm font-bold">14.3%</td>
                         <td class="p-4 font-mono text-sm font-bold">18.8%</td>
                         <td class="p-4 font-mono bg-slate-50 font-bold text-base text-corp-navy">25.0%</td>
@@ -1987,7 +1746,6 @@
             The model demonstrates a disciplined, phased EBITDA expansion. Year 1 reflects the lower margin profile of the initial operational beachhead in Oman/Indonesia. The critical inflection point occurs in Year 5 (EBITDA $71.5M), corresponding with the completion of the USA strategic acquisition and the rollout of SuperFrozen lines. This integration eliminates third-party import markups, driving the blended consolidated EBITDA margin aggressively from 14.3% to a stabilized 25.0%.
         </div>
     </div>
-
     <!-- PAGE 71: EBITDA BRIDGE -->
     <div class="doc-page">
         <div class="page-header">
@@ -2005,28 +1763,28 @@
                 <div class="flex flex-col items-center">
                     <span class="mb-3 text-slate-800 text-lg">22.3</span>
                     <div class="w-16 bg-slate-400 shadow" style="height: 60px;"></div>
-                    <span class="mt-4 text-center w-20 leading-tight font-sans text-slate-700">Y3 Base</span>
+                    <span class="mt-4 text-center w-20 leading-tight font-sans text-slate-800">Y3 Base</span>
                 </div>
                 
                 <!-- USA M&A Uplift -->
                 <div class="flex flex-col items-center relative" style="margin-bottom: 60px;">
                     <span class="mb-3 text-emerald-600 text-lg">+18.5</span>
                     <div class="w-16 bg-emerald-400 shadow border-t-2 border-emerald-300" style="height: 50px;"></div>
-                    <span class="text-center w-24 leading-tight font-sans text-slate-700 absolute -bottom-12">USA M&A Integration</span>
+                    <span class="text-center w-24 leading-tight font-sans text-slate-800 absolute -bottom-12">USA M&A Integration</span>
                 </div>
                 
                 <!-- SuperFrozen Uplift -->
                 <div class="flex flex-col items-center relative" style="margin-bottom: 110px;">
                     <span class="mb-3 text-emerald-600 text-lg">+14.2</span>
                     <div class="w-16 bg-emerald-400 shadow border-t-2 border-emerald-300" style="height: 38px;"></div>
-                    <span class="text-center w-24 leading-tight font-sans text-slate-700 absolute -bottom-12">SuperFrozen Yield</span>
+                    <span class="text-center w-24 leading-tight font-sans text-slate-800 absolute -bottom-12">SuperFrozen Yield</span>
                 </div>
                 
                 <!-- Canned / Scale -->
                 <div class="flex flex-col items-center relative" style="margin-bottom: 148px;">
                     <span class="mb-3 text-emerald-600 text-lg">+16.5</span>
                     <div class="w-16 bg-emerald-400 shadow border-t-2 border-emerald-300" style="height: 44px;"></div>
-                    <span class="text-center w-24 leading-tight font-sans text-slate-700 absolute -bottom-12">Canned Div Scale</span>
+                    <span class="text-center w-24 leading-tight font-sans text-slate-800 absolute -bottom-12">Canned Div Scale</span>
                 </div>
                 
                 <!-- Final Y5 -->
@@ -2036,15 +1794,10 @@
                     <span class="mt-4 text-center w-20 leading-tight font-sans text-corp-navy font-bold text-base">Y5 Target</span>
                 </div>
                 
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The jump from Year 3 ($22.3M) to Year 5 ($71.5M) is not based on assumed organic sales growth; it is an engineered margin expansion. The EBITDA bridge isolates the exact drivers: $18.5M generated purely by capturing the middleman margin via the USA acquisition, $14.2M generated by upgrading standard catch into SuperFrozen sashimi, and $16.5M provided by the raw volume scale of the new MENA canning lines. 
-        </div>
-    </div>
-
-    <!-- PAGE 72: CASHFLOW MODEL -->
+        </div></div></div>
+<!-- PAGE 72: CASHFLOW MODEL -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 6: The Institutional Financial Model</span>
@@ -2067,7 +1820,7 @@
                 </thead>
                 <tbody>
                     <tr class="border-b border-slate-100">
-                        <td class="p-4 text-left font-bold text-slate-700 text-sm">Operating Cash Flow (OCF)</td>
+                        <td class="p-4 text-left font-bold text-slate-800 text-sm">Operating Cash Flow (OCF)</td>
                         <td class="p-4 font-mono text-sm">3.2</td>
                         <td class="p-4 font-mono text-sm">8.4</td>
                         <td class="p-4 font-mono text-sm">18.5</td>
@@ -2075,7 +1828,7 @@
                         <td class="p-4 font-mono font-bold text-emerald-600 text-base">62.8</td>
                     </tr>
                     <tr class="border-b border-slate-100">
-                        <td class="p-4 text-left font-bold text-slate-700 text-sm">CapEx (Infrastructure Build)</td>
+                        <td class="p-4 text-left font-bold text-slate-800 text-sm">CapEx (Infrastructure Build)</td>
                         <td class="p-4 font-mono text-red-600 font-bold text-sm">(18.5)</td>
                         <td class="p-4 font-mono text-red-600 font-bold text-sm">(24.0)</td>
                         <td class="p-4 font-mono text-red-600 font-bold text-sm">(12.5)</td>
@@ -2083,12 +1836,12 @@
                         <td class="p-4 font-mono text-red-600 font-bold text-sm">(6.0)</td>
                     </tr>
                     <tr class="border-b border-slate-300">
-                        <td class="p-4 text-left font-bold text-slate-700 text-sm">M&A Acquisition Outlay</td>
-                        <td class="p-4 font-mono text-sm text-slate-600">-</td>
-                        <td class="p-4 font-mono text-sm text-slate-600">-</td>
-                        <td class="p-4 font-mono text-sm text-slate-600">-</td>
+                        <td class="p-4 text-left font-bold text-slate-800 text-sm">M&A Acquisition Outlay</td>
+                        <td class="p-4 font-mono text-sm text-slate-700">-</td>
+                        <td class="p-4 font-mono text-sm text-slate-700">-</td>
+                        <td class="p-4 font-mono text-sm text-slate-700">-</td>
                         <td class="p-4 font-mono text-red-700 font-bold text-base bg-red-50 border-l border-r border-red-200">(45.0)</td>
-                        <td class="p-4 font-mono text-sm text-slate-600">-</td>
+                        <td class="p-4 font-mono text-sm text-slate-700">-</td>
                     </tr>
                     <tr class="border-b-4 border-corp-navy bg-slate-100">
                         <td class="p-4 text-left font-bold text-corp-navy text-base uppercase">Unlevered Free Cash Flow</td>
@@ -2099,22 +1852,21 @@
                         <td class="p-4 font-mono font-bold text-emerald-700 text-lg">56.8</td>
                     </tr>
                     <tr class="bg-slate-50">
-                        <td class="p-4 text-left font-bold text-slate-600 text-sm">Debt Service (P+I)</td>
-                        <td class="p-4 font-mono text-sm text-slate-600">(1.5)</td>
-                        <td class="p-4 font-mono text-sm text-slate-600">(2.8)</td>
-                        <td class="p-4 font-mono text-sm text-slate-600">(4.2)</td>
-                        <td class="p-4 font-mono text-sm text-slate-600">(8.5)</td>
-                        <td class="p-4 font-mono text-sm text-slate-600">(12.0)</td>
+                        <td class="p-4 text-left font-bold text-slate-700 text-sm">Debt Service (P+I)</td>
+                        <td class="p-4 font-mono text-sm text-slate-700">(1.5)</td>
+                        <td class="p-4 font-mono text-sm text-slate-700">(2.8)</td>
+                        <td class="p-4 font-mono text-sm text-slate-700">(4.2)</td>
+                        <td class="p-4 font-mono text-sm text-slate-700">(8.5)</td>
+                        <td class="p-4 font-mono text-sm text-slate-700">(12.0)</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         
         <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            Infrastructure businesses exhibit a classic "J-Curve" cashflow profile. Years 1 and 2 operate in negative free cashflow due to heavy upfront CapEx deployment (Ice factories, Cold Storage). Year 4 experiences a deliberate cash dip to execute the $45M USA strategic acquisition. However, by Year 5, CapEx requirements normalize to maintenance levels while operating cashflow surges, producing a massive $56.8M in unlevered free cash flow, comfortably covering all debt service obligations with a high DSCR.
+            Infrastructure businesses exhibit a classic "J-Curve" cashflow profile. Years 1 and 2 operate in negative free cashflow due to heavy upfront CapEx deployment (Ice factories, Cold Storage). Year 4 experiences a deliberate cash dip to execute the $45M USA strategic acquisition. However, by Year 5, CapEx requirements normalize to maintenance levels while operating cashflow surges, producing a material $56.8M in unlevered free cash flow, comfortably covering all debt service obligations with a high DSCR.
         </div>
     </div>
-
     <!-- PAGE 73: DSCR & METRICS -->
     <div class="doc-page">
         <div class="page-header">
@@ -2132,21 +1884,16 @@
                 <span class="absolute right-4 bottom-16 text-red-600 font-bold bg-white px-2">1.2x Bank Minimum Threshold</span>
                 
                 <!-- Bars -->
-                <div class="flex flex-col items-center z-10"><span class="mb-2 text-slate-700 font-bold text-base">2.1x</span><div class="w-12 bg-corp-navy shadow" style="height: 33px;"></div><span class="mt-4 text-center w-12 font-sans font-bold text-slate-600">Y1</span></div>
-                <div class="flex flex-col items-center z-10"><span class="mb-2 text-slate-700 font-bold text-base">3.0x</span><div class="w-12 bg-corp-navy shadow" style="height: 48px;"></div><span class="mt-4 text-center w-12 font-sans font-bold text-slate-600">Y2</span></div>
-                <div class="flex flex-col items-center z-10"><span class="mb-2 text-slate-700 font-bold text-base">4.4x</span><div class="w-12 bg-corp-navy shadow" style="height: 70px;"></div><span class="mt-4 text-center w-12 font-sans font-bold text-slate-600">Y3</span></div>
-                <div class="flex flex-col items-center z-10"><span class="mb-2 text-slate-700 font-bold text-base">4.1x</span><div class="w-12 bg-corp-navy shadow" style="height: 65px;"></div><span class="mt-4 text-center w-12 font-sans font-bold text-slate-600">Y4</span></div>
+                <div class="flex flex-col items-center z-10"><span class="mb-2 text-slate-800 font-bold text-base">2.1x</span><div class="w-12 bg-corp-navy shadow" style="height: 33px;"></div><span class="mt-4 text-center w-12 font-sans font-bold text-slate-700">Y1</span></div>
+                <div class="flex flex-col items-center z-10"><span class="mb-2 text-slate-800 font-bold text-base">3.0x</span><div class="w-12 bg-corp-navy shadow" style="height: 48px;"></div><span class="mt-4 text-center w-12 font-sans font-bold text-slate-700">Y2</span></div>
+                <div class="flex flex-col items-center z-10"><span class="mb-2 text-slate-800 font-bold text-base">4.4x</span><div class="w-12 bg-corp-navy shadow" style="height: 70px;"></div><span class="mt-4 text-center w-12 font-sans font-bold text-slate-700">Y3</span></div>
+                <div class="flex flex-col items-center z-10"><span class="mb-2 text-slate-800 font-bold text-base">4.1x</span><div class="w-12 bg-corp-navy shadow" style="height: 65px;"></div><span class="mt-4 text-center w-12 font-sans font-bold text-slate-700">Y4</span></div>
                 <div class="flex flex-col items-center z-10"><span class="mb-2 text-emerald-600 font-bold text-lg">5.2x</span><div class="w-14 bg-emerald-500 shadow border-t-2 border-emerald-300" style="height: 83px;"></div><span class="mt-4 text-center w-14 font-sans font-bold text-emerald-700">Y5</span></div>
                 <div class="flex flex-col items-center z-10"><span class="mb-2 text-emerald-600 font-bold text-lg">6.1x</span><div class="w-14 bg-emerald-500 shadow border-t-2 border-emerald-300" style="height: 97px;"></div><span class="mt-4 text-center w-14 font-sans font-bold text-emerald-700">Y6</span></div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Commercial banks and ECA lenders require mathematical proof of solvency. The standard institutional Debt Service Coverage Ratio (DSCR) minimum is typically 1.20x to 1.25x. The Ocean Pearl model is structurally engineered to never drop below 2.0x, even during the heavy CapEx deployment of Year 1. Post-acquisition in Year 5, the DSCR explodes past 5.0x, indicating that the platform generates more than five times the operational cash required to service its principal and interest, rendering the debt extremely low-risk.
-        </div>
-    </div>
-
-    <!-- PAGE 74: SCENARIO ANALYSIS -->
+        </div></div></div>
+<!-- PAGE 74: SCENARIO ANALYSIS -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 6: The Institutional Financial Model</span>
@@ -2168,9 +1915,9 @@
                 <tbody>
                     <tr class="border-b border-slate-200">
                         <td class="p-5 text-left font-bold text-slate-800 text-sm">Scenario Definition</td>
-                        <td class="p-5 text-slate-600 text-sm text-left bg-red-50 leading-relaxed">Prices drop 15%. Freight stays at pandemic highs. Utilization drops to 60%.</td>
-                        <td class="p-5 text-slate-600 text-sm text-left leading-relaxed">Current Toyosu baseline. Standard freight. 85% utilization.</td>
-                        <td class="p-5 text-slate-600 text-sm text-left bg-emerald-50 leading-relaxed">Sashimi supercycle. Immediate USA synergy. 95% utilization.</td>
+                        <td class="p-5 text-slate-700 text-sm text-left bg-red-50 leading-relaxed">Prices drop 15%. Freight stays at pandemic highs. Utilization drops to 60%.</td>
+                        <td class="p-5 text-slate-700 text-sm text-left leading-relaxed">Current Toyosu baseline. Standard freight. 85% utilization.</td>
+                        <td class="p-5 text-slate-700 text-sm text-left bg-emerald-50 leading-relaxed">Sashimi supercycle. Immediate USA synergy. 95% utilization.</td>
                     </tr>
                     <tr class="border-b border-slate-200 bg-white">
                         <td class="p-5 text-left font-bold text-corp-navy text-sm">Stabilized EBITDA Margin</td>
@@ -2198,7 +1945,6 @@
             A sovereign-grade feasibility study must prove that the project survives disaster. In the severe Downside Case—assuming a 15% drop in global fish pricing, permanently elevated freight costs, and poor factory utilization—the platform still maintains a positive 14.2% EBITDA margin and a 1.3x DSCR. It does not default. This extraordinary downside protection is directly attributed to the FMCG diversification strategy, where mass-market canned goods absorb the impact of luxury pricing collapses.
         </div>
     </div>
-
     <!-- PAGE 75: SENSITIVITY HEATMAP -->
     <div class="doc-page">
         <div class="page-header">
@@ -2211,12 +1957,12 @@
         <div class="exec-visual-box bg-white p-8 border border-slate-300">
             <h4 class="font-bold text-lg text-corp-navy uppercase mb-6 w-full text-center">Project IRR Output Matrix</h4>
             <div class="flex mt-2 mb-4 items-center justify-center">
-                <span class="text-sm font-bold text-slate-700 uppercase tracking-widest bg-slate-100 py-1 px-4 rounded border border-slate-200">Premium Seafood Price Variance (X-Axis)</span>
+                <span class="text-sm font-bold text-slate-800 uppercase tracking-widest bg-slate-100 py-1 px-4 rounded border border-slate-200">Premium Seafood Price Variance (X-Axis)</span>
             </div>
             <table class="w-full text-sm text-center border-collapse font-mono">
                 <thead>
                     <tr>
-                        <th class="p-4 border border-slate-300 bg-slate-200 text-sm text-left font-sans text-slate-700">Freight Cost<br>Variance</th>
+                        <th class="p-4 border border-slate-300 bg-slate-200 text-sm text-left font-sans text-slate-800">Freight Cost<br>Variance</th>
                         <th class="p-4 border border-slate-300 bg-slate-100 font-bold">-15% Price</th>
                         <th class="p-4 border border-slate-300 bg-slate-100 font-bold">-5% Price</th>
                         <th class="p-4 border border-slate-300 bg-slate-800 text-white font-bold text-base">Base Price</th>
@@ -2226,7 +1972,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th class="p-4 border border-slate-300 bg-slate-100 text-left font-sans text-slate-700">-20% Freight</th>
+                        <th class="p-4 border border-slate-300 bg-slate-100 text-left font-sans text-slate-800">-20% Freight</th>
                         <td class="p-4 border border-slate-300 bg-amber-50 text-amber-800 font-bold text-base">16.4%</td>
                         <td class="p-4 border border-slate-300 bg-emerald-50 text-emerald-800 font-bold text-base">21.5%</td>
                         <td class="p-4 border border-slate-300 bg-emerald-100 text-emerald-900 font-black text-lg">25.1%</td>
@@ -2242,7 +1988,7 @@
                         <td class="p-4 border border-slate-300 bg-emerald-300 text-emerald-900 font-black text-lg">28.9%</td>
                     </tr>
                     <tr>
-                        <th class="p-4 border border-slate-300 bg-slate-100 text-left font-sans text-slate-700">+20% Freight</th>
+                        <th class="p-4 border border-slate-300 bg-slate-100 text-left font-sans text-slate-800">+20% Freight</th>
                         <td class="p-4 border border-slate-300 bg-red-100 text-red-900 font-black text-lg">11.8%</td>
                         <td class="p-4 border border-slate-300 bg-red-50 text-red-800 font-bold text-base">16.2%</td>
                         <td class="p-4 border border-slate-300 bg-amber-50 text-amber-800 font-bold text-base">20.4%</td>
@@ -2257,7 +2003,6 @@
             Because the platform relies heavily on global logistics, the most potent risk intersection is a simultaneous collapse in Japanese sashimi pricing combined with a spike in global container freight rates. The sensitivity matrix mathematically confirms that even in this worst-case quadrant (Bottom-Left), the project IRR remains at a positive 11.8%. The Base Case target of 22.8% sits comfortably in the protected green zone, demonstrating excellent risk-adjusted yield.
         </div>
     </div>
-
     <!-- PAGE 76: TREASURY GOVERNANCE -->
     <div class="doc-page">
         <div class="page-header">
@@ -2288,17 +2033,10 @@
                     <div class="uppercase mb-2">Repatriation Engine</div>
                     <div class="text-[10px] text-slate-500 font-normal">Systematic Earnings Routing</div>
                 </div>
-            </div>
-        </div>
-    </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Operating a decentralized conglomerate across Indonesia (IDR), Japan (JPY), Oman (OMR), and the USA (USD) introduces immense Foreign Exchange (FX) risk. Unmanaged, currency fluctuation can completely erase operational EBITDA. To mitigate this, Ocean Pearl institutes a strict, centralized Treasury Committee governed by Big-4 advisory standards. All intercompany sales are executed in USD to enforce a single reporting currency, isolating localized FX risk purely to domestic operational expenses.
-        </div>
-    </div>
-
-    <!-- PAGE 77: TREASURY COMPLIANCE WORKFLOW -->
+        </div></div></div>
+<!-- PAGE 77: TREASURY COMPLIANCE WORKFLOW -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 7: Treasury Governance & AML</span>
@@ -2311,12 +2049,12 @@
             <div class="flex flex-col gap-4 text-sm font-bold w-full">
                 <!-- Top Subsidiaries -->
                 <div class="flex gap-6 w-full">
-                    <div class="flex-1 bg-slate-50 border-2 border-slate-300 p-6 text-center text-slate-700 rounded shadow-sm">
-                        <div class="text-sm uppercase text-slate-700 mb-1">USA Subsidiary</div>
+                    <div class="flex-1 bg-slate-50 border-2 border-slate-300 p-6 text-center text-slate-800 rounded shadow-sm">
+                        <div class="text-sm uppercase text-slate-800 mb-1">USA Subsidiary</div>
                         <div class="text-lg text-corp-navy">USD Retail Collection</div>
                     </div>
-                    <div class="flex-1 bg-slate-50 border-2 border-slate-300 p-6 text-center text-slate-700 rounded shadow-sm">
-                        <div class="text-sm uppercase text-slate-700 mb-1">Egypt Subsidiary</div>
+                    <div class="flex-1 bg-slate-50 border-2 border-slate-300 p-6 text-center text-slate-800 rounded shadow-sm">
+                        <div class="text-sm uppercase text-slate-800 mb-1">Egypt Subsidiary</div>
                         <div class="text-lg text-corp-navy">MENA Hard Currency</div>
                     </div>
                 </div>
@@ -2324,7 +2062,7 @@
                 <!-- Connector Down -->
                 <div class="flex justify-center text-corp-navy text-2xl py-2">
                     <div class="flex flex-col items-center">
-                        <span class="text-sm text-slate-700 uppercase tracking-widest mb-1">OECD Transfer Pricing Repatriation</span>
+                        <span class="text-sm text-slate-800 uppercase tracking-widest mb-1">OECD Transfer Pricing Repatriation</span>
                         <span>↓↓↓</span>
                     </div>
                 </div>
@@ -2338,7 +2076,7 @@
                 <!-- Connector Down -->
                 <div class="flex justify-center text-corp-navy text-2xl py-2">
                     <div class="flex flex-col items-center">
-                        <span class="text-sm text-slate-700 uppercase tracking-widest mb-1">Centralized Capital Allocation</span>
+                        <span class="text-sm text-slate-800 uppercase tracking-widest mb-1">Centralized Capital Allocation</span>
                         <span>↓↓↓</span>
                     </div>
                 </div>
@@ -2356,16 +2094,11 @@
                     <div class="flex-1 bg-emerald-50 text-emerald-900 border border-emerald-200 p-5 text-center rounded shadow-sm">
                         <div class="text-sm uppercase text-emerald-600 mb-1">Dividend Distribution</div>
                         <div class="text-base">Investor Yield</div>
-                    </div>
-                </div>
-            </div>
+                    </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            Sovereign Wealth Funds cannot invest in opaque structures. The Ocean Pearl treasury architecture ensures total transparency. Capital generated by foreign subsidiaries (USA, Egypt) is not trapped offshore; it is systematically repatriated to the Indonesian Master HQ via strict, OECD-compliant transfer pricing agreements. This clean, unidirectional capital flow is designed to support that debt servicing and investor dividend distributions are executed from a single, fully audited apex entity, eliminating AML red flags.
         </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            Sovereign Wealth Funds cannot invest in opaque structures. The Ocean Pearl treasury architecture ensures total transparency. Capital generated by foreign subsidiaries (USA, Egypt) is not trapped offshore; it is systematically repatriated to the Indonesian Master HQ via strict, OECD-compliant transfer pricing agreements. This clean, unidirectional capital flow guarantees that debt servicing and investor dividend distributions are executed from a single, fully audited apex entity, eliminating AML red flags.
-        </div>
-    </div>
-    <!-- PAGE 78: STRATEGIC CAPITAL DEPLOYMENT & REPATRIATION -->
+    </div></div></div>
+<!-- PAGE 78: STRATEGIC CAPITAL DEPLOYMENT & REPATRIATION -->
     <div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 7: Treasury Governance & AML</span>
@@ -2382,16 +2115,16 @@
                 <div class="flex-1 bg-slate-50 border-2 border-slate-300 p-6 flex flex-col justify-between shadow-sm">
                     <div class="text-center mb-4">
                         <div class="text-lg text-corp-navy mb-1">International Asset Base</div>
-                        <div class="text-sm text-slate-700 uppercase tracking-widest">70–75% Strategic Deployment</div>
+                        <div class="text-sm text-slate-800 uppercase tracking-widest">70–75% Strategic Deployment</div>
                     </div>
                     <div class="space-y-3 mb-4">
                         <div class="p-3 bg-white border border-slate-200 rounded">
                             <div class="text-corp-navy">Downstream Assets</div>
-                            <div class="text-sm text-slate-700 font-normal">USA/MENA Hubs, Retail Networks, Cold-Chain</div>
+                            <div class="text-sm text-slate-800 font-normal">USA/MENA Hubs, Retail Networks, Cold-Chain</div>
                         </div>
                         <div class="p-3 bg-white border border-slate-200 rounded">
                             <div class="text-corp-navy">Procurement Assets</div>
-                            <div class="text-sm text-slate-700 font-normal">Deep-Sea Fleets, Sourcing Corridors</div>
+                            <div class="text-sm text-slate-800 font-normal">Deep-Sea Fleets, Sourcing Corridors</div>
                         </div>
                     </div>
                     <div class="text-center text-sm text-emerald-600 font-bold">Foreign EBITDA Generation Hub</div>
@@ -2402,7 +2135,7 @@
                     <div class="flex flex-col items-center">
                         <div class="text-sm uppercase text-emerald-600 font-black mb-1">Profit Flows</div>
                         <div class="text-3xl text-emerald-500">→</div>
-                        <div class="text-sm uppercase text-slate-600 font-bold mt-1 text-center">Dividends & Fees</div>
+                        <div class="text-sm uppercase text-slate-700 font-bold mt-1 text-center">Dividends & Fees</div>
                     </div>
                     <div class="flex flex-col items-center">
                         <div class="text-sm uppercase text-corp-navy font-black mb-1 text-center">IP & Export<br>Control</div>
@@ -2430,8 +2163,8 @@
         </div>
 
         <!-- Governance Note Box -->
-        <div class="w-full p-4 bg-slate-100 border border-slate-300 mb-6 text-sm text-slate-700 italic">
-            <span class="font-bold uppercase text-slate-600 not-italic block mb-1">Regulatory & Governance Compliance:</span>
+        <div class="w-full p-4 bg-slate-100 border border-slate-300 mb-6 text-sm text-slate-800 italic">
+            <span class="font-bold uppercase text-slate-700 not-italic block mb-1">Regulatory & Governance Compliance:</span>
             All cross-border capital allocations are subject to applicable Indonesian, host-country, tax, foreign exchange, investment, banking, and transfer-pricing regulations. Final structures must be reviewed by qualified legal, tax, and banking advisers before execution.
         </div>
         
@@ -2439,7 +2172,6 @@
             The international deployment strategy is designed to expand Indonesian enterprise value, strengthen export competitiveness, and consolidate global earnings under Indonesian-led governance. While approximately 75% of capital is deployed internationally to acquire high-value distribution hubs and procurement infrastructure, this architecture is engineered to increase Indonesian export power and downstream value capture. Every foreign asset serves as a direct routing engine for Indonesian marine products, ensuring that higher-margin retail price realization is captured and systematically repatriated to the Indonesian HQ. This multinational framework ensures that strategic, management, and treasury control remain anchored in Indonesia, driving long-term enterprise value growth for the domestic economy.
         </div>
     </div>
-
     <!-- PAGE 79: FINANCIAL SUMMARY -->
     <div class="doc-page">
         <div class="page-header">
@@ -2451,21 +2183,10 @@
         
         <div class="exec-visual-box text-white text-center p-12" style="background-color: var(--corp-navy);">
             <h4 class="font-serif text-3xl mb-4 leading-tight text-white">"We do not underwrite the unpredictable price of fish. We underwrite the mathematical yield of global cold-chain infrastructure."</h4>
-            <div class="w-16 h-1 mx-auto mt-8" style="background-color: var(--corp-gold);"></div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            The financial logic of Ocean Pearl is unassailable. By deploying heavy infrastructure at the point of harvest, the company secures an asset-backed procurement advantage. By utilizing trade finance, it scales globally without trapping equity. By integrating the USA retail node, it captures the final margin multiplier. The resulting 10-year model—generating a stabilized 25.0% EBITDA margin and 22.8% IRR—proves that Ocean Pearl is a highly disciplined, sovereign-grade platform capable of absorbing massive tier-1 capital deployment.
-        </div>
-    </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            The financial logic of Ocean Pearl is unassailable. By deploying heavy infrastructure at the point of harvest, the company secures an asset-backed procurement advantage. By utilizing trade finance, it scales globally without trapping equity. By integrating the USA retail node, it captures the final margin multiplier. The resulting 10-year model—generating a stabilized 25.0% EBITDA margin and 22.8% IRR—proves that Ocean Pearl is a highly disciplined, sovereign-grade platform capable of absorbing massive tier-1 capital deployment.
-        </div>
-    </div>
-
-
-    <!-- PAGE 80: SECTION OPENING -->
+            <div class="w-16 h-1 mx-auto mt-8" style="background-color: var(--corp-gold);"></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            The financial logic of Ocean Pearl is infrastructure-backed and disciplined. By deploying heavy infrastructure at the point of harvest, the company is designed to secure an asset-backed procurement advantage. By utilizing trade finance, it aims to scale globally without trapping excessive equity. By integrating the USA retail node, it seeks to capture downstream margin expansion. The resulting 10-year model—showing a preliminary stabilized 25.0% EBITDA margin and 22.8% target IRR, subject to validation—indicates that Ocean Pearl may represent a disciplined, sovereign-grade platform capable of absorbing large-scale institutional capital deployment.
+        </div></div></div>
+<!-- PAGE 80: SECTION OPENING -->
     <div class="doc-page divider-page">
         <div class="divider-content">
             <h1 class="text-6xl font-extrabold mb-4 text-white">Section 8</h1>
@@ -2476,7 +2197,7 @@
             </p>
         </div>
     </div>
-
+    
     <!-- PAGE 81: FISHERIES MODERNIZATION -->
     <div class="doc-page">
         <div class="page-header">
@@ -2490,13 +2211,13 @@
             <div class="grid grid-cols-2 gap-12 w-full">
                 <!-- Fragmented Logic -->
                 <div class="flex flex-col">
-                    <div class="text-sm uppercase text-slate-600 font-bold mb-4 tracking-widest">Legacy Fragmented Chain</div>
+                    <div class="text-sm uppercase text-slate-700 font-bold mb-4 tracking-widest">Legacy Fragmented Chain</div>
                     <div class="space-y-3 opacity-60">
-                        <div class="p-4 bg-slate-100 border border-slate-300 text-slate-700 text-sm font-bold">Ambient Post-Harvest Storage</div>
+                        <div class="p-4 bg-slate-100 border border-slate-300 text-slate-800 text-sm font-bold">Ambient Post-Harvest Storage</div>
                         <div class="flex justify-center text-slate-500">↓</div>
                         <div class="p-4 bg-red-50 border border-red-200 text-red-900 text-sm font-bold">30% Material Spoilage Loss</div>
                         <div class="flex justify-center text-slate-500">↓</div>
-                        <div class="p-4 bg-slate-100 border border-slate-300 text-slate-700 text-sm font-bold">Low-Value Commodity Trading</div>
+                        <div class="p-4 bg-slate-100 border border-slate-300 text-slate-800 text-sm font-bold">Low-Value Commodity Trading</div>
                     </div>
                 </div>
                 
@@ -2516,26 +2237,22 @@
             <div class="mt-10 grid grid-cols-3 gap-6 w-full pt-8 border-t border-slate-200">
                 <div class="text-center">
                     <div class="text-2xl font-black text-corp-navy">95%</div>
-                    <div class="text-sm text-slate-700 uppercase font-bold">Quality Retention</div>
+                    <div class="text-sm text-slate-800 uppercase font-bold">Quality Retention</div>
                 </div>
                 <div class="text-center">
                     <div class="text-2xl font-black text-emerald-600">-30%</div>
-                    <div class="text-sm text-slate-700 uppercase font-bold">Waste Reduction</div>
+                    <div class="text-sm text-slate-800 uppercase font-bold">Waste Reduction</div>
                 </div>
                 <div class="text-center">
                     <div class="text-2xl font-black text-corp-gold">+42%</div>
-                    <div class="text-sm text-slate-700 uppercase font-bold">Net National Value Add</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            Indonesian fisheries currently lose approximately 30% of their economic value due to post-harvest thermal failure. Ocean Pearl treats this as a massive infrastructure deficit. By deploying coastal ice factories and mobile thermal logistics, the platform systematically modernizes the nation's primary seafood assets. This transformation shifts the national seafood industry from a low-velocity raw material supplier to a high-precision global protein powerhouse, directly increasing national GDP contribution per tonne of harvest.
+                    <div class="text-sm text-slate-800 uppercase font-bold">Net National Value Add</div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            Indonesian fisheries currently lose approximately 30% of their economic value due to post-harvest thermal failure. Ocean Pearl treats this as a material infrastructure deficit. By deploying coastal ice factories and mobile thermal logistics, the platform systematically modernizes the nation's primary seafood assets. This transformation shifts the national seafood industry from a low-velocity raw material supplier to a high-precision global protein powerhouse, directly increasing national GDP contribution per tonne of harvest.
         </div>
     </div>
-
+    </div>
+    
     <!-- PAGE 82: FISHERMAN INCOME & COASTAL DEVELOPMENT -->
-    <div class="doc-page">
+    </div><div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 8: Government Impact & ESG</span>
             <span class="page-num">82</span>
@@ -2549,12 +2266,12 @@
                     <div class="text-5xl mb-4 text-corp-gold">🎣</div>
                     <div class="text-center">
                         <div class="font-bold text-corp-navy">Traditional Fisherman</div>
-                        <div class="text-sm text-slate-700">The Sourcing Foundation</div>
+                        <div class="text-sm text-slate-800">The Sourcing Foundation</div>
                     </div>
                 </div>
                 <div class="flex-grow flex flex-col gap-4">
                     <div class="p-5 bg-corp-navy text-white flex justify-between items-center shadow-lg">
-                        <span class="font-bold">Guaranteed Coastal Procurement</span>
+                        <span class="font-bold">structured Coastal Procurement</span>
                         <span class="text-sm px-3 py-1 bg-white/20 rounded">Liquidity Security</span>
                     </div>
                     <div class="p-5 bg-white border-2 border-corp-gold flex justify-between items-center shadow-md">
@@ -2568,19 +2285,16 @@
                 </div>
             </div>
             <div class="mt-8 text-center w-full">
-                <div class="text-[11px] text-slate-700 font-medium max-w-xl mx-auto italic">
+                <div class="text-[11px] text-slate-800 font-medium max-w-xl mx-auto italic">
                     "By providing the ice necessary to preserve the catch, Ocean Pearl enables the fisherman to participate in high-margin global markets rather than being trapped in local commodity pricing."
                 </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             The Ocean Pearl inclusion logic is engineered to modernize coastal communities. Instead of top-down displacement, the platform acts as a market-access partner for smallholder fishermen. By deploying ice factories at the village level, we provide the infrastructure necessary for catch stabilization. This allows fishermen to deliver grade-A marine protein, triggering the 'Premium Bonus' mechanism which results in a material 15–20% increase in net household income. This creates a sustainable coastal development loop that aligns private capital with national poverty reduction goals.
         </div>
     </div>
-
+    
     <!-- PAGE 83: REGIONAL INDUSTRIALIZATION -->
-    <div class="doc-page">
+    </div><div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 8: Government Impact & ESG</span>
             <span class="page-num">83</span>
@@ -2593,8 +2307,8 @@
                 <!-- Sulawesi/Makassar -->
                 <div class="bg-white p-6 border-t-4 border-corp-navy shadow-md">
                     <div class="text-corp-navy mb-2">Makassar Hub</div>
-                    <div class="text-sm text-slate-700 mb-4 uppercase">Western Gateway</div>
-                    <ul class="text-sm space-y-2 text-slate-600 font-normal">
+                    <div class="text-sm text-slate-800 mb-4 uppercase">Western Gateway</div>
+                    <ul class="text-sm space-y-2 text-slate-700 font-normal">
                         <li>• Deep-water port integration</li>
                         <li>• Centralized processing capacity</li>
                         <li>• Regional transshipment control</li>
@@ -2603,8 +2317,8 @@
                 <!-- Maluku -->
                 <div class="bg-white p-6 border-t-4 border-corp-gold shadow-md">
                     <div class="text-corp-navy mb-2">Maluku Corridor</div>
-                    <div class="text-sm text-slate-700 mb-4 uppercase">Productivity Anchor</div>
-                    <ul class="text-sm space-y-2 text-slate-600 font-normal">
+                    <div class="text-sm text-slate-800 mb-4 uppercase">Productivity Anchor</div>
+                    <ul class="text-sm space-y-2 text-slate-700 font-normal">
                         <li>• Tuna processing expansion</li>
                         <li>• Cold-chain hub network</li>
                         <li>• Inter-island thermal logistics</li>
@@ -2613,8 +2327,8 @@
                 <!-- Papua -->
                 <div class="bg-white p-6 border-t-4 border-blue-600 shadow-md">
                     <div class="text-corp-navy mb-2">Papua Region</div>
-                    <div class="text-sm text-slate-700 mb-4 uppercase">The Sourcing Frontier</div>
-                    <ul class="text-sm space-y-2 text-slate-600 font-normal">
+                    <div class="text-sm text-slate-800 mb-4 uppercase">The Sourcing Frontier</div>
+                    <ul class="text-sm space-y-2 text-slate-700 font-normal">
                         <li>• Remote ice-factory deployment</li>
                         <li>• Coastal community integration</li>
                         <li>• Artisanal catch stabilization</li>
@@ -2623,20 +2337,16 @@
             </div>
             
             <div class="mt-8 flex justify-center w-full gap-4 items-center">
-                <span class="text-sm font-bold text-slate-600 uppercase">Industrial Integration Flow:</span>
+                <span class="text-sm font-bold text-slate-700 uppercase">Industrial Integration Flow:</span>
                 <div class="flex-grow h-0.5 bg-slate-200"></div>
                 <div class="px-4 py-2 bg-corp-navy text-white text-sm rounded">Total Archipelago Synergy</div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Strategic decentralization is the key to Indonesian maritime dominance. Ocean Pearl focuses its infrastructure deployment in Papua, Maluku, and Sulawesi—the high-productivity zones of Eastern Indonesia. By building industrial-grade processing and thermal hubs in these regions, the platform reduces the economic isolation of remote islands. This strengthens the national logistics backbone, increases inter-island trade velocity, and ensures that the economic benefits of the maritime economy are distributed across the entire archipelago.
         </div>
     </div>
-
-
+    
     <!-- PAGE 84: FOOD SECURITY & PROTEIN INFRASTRUCTURE -->
-    <div class="doc-page">
+    </div><div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 8: Government Impact & ESG</span>
             <span class="page-num">84</span>
@@ -2646,15 +2356,15 @@
         
         <div class="exec-visual-box bg-white p-10 border border-slate-300">
             <div class="flex flex-col items-center w-full">
-                <div class="text-sm uppercase text-slate-600 font-bold mb-8 tracking-widest">The National Protein Security Buffer</div>
+                <div class="text-sm uppercase text-slate-700 font-bold mb-8 tracking-widest">The National Protein Security Buffer</div>
                 
                 <div class="flex gap-4 w-full h-48 items-end justify-center mb-8">
                     <div class="w-24 bg-slate-100 border border-slate-300 flex flex-col justify-end items-center p-2">
-                        <div class="text-sm text-slate-700 mb-2 uppercase font-bold text-center">Unstable Supply</div>
+                        <div class="text-sm text-slate-800 mb-2 uppercase font-bold text-center">Unstable Supply</div>
                         <div class="w-full h-1/3 bg-slate-300"></div>
                     </div>
                     <div class="w-24 bg-slate-100 border border-slate-300 flex flex-col justify-end items-center p-2">
-                        <div class="text-sm text-slate-700 mb-2 uppercase font-bold text-center">High Spoilage</div>
+                        <div class="text-sm text-slate-800 mb-2 uppercase font-bold text-center">High Spoilage</div>
                         <div class="w-full h-1/2 bg-slate-300"></div>
                     </div>
                     <div class="w-8 flex items-center justify-center text-2xl text-corp-gold font-bold">→</div>
@@ -2667,23 +2377,19 @@
                 <div class="grid grid-cols-2 gap-8 w-full mt-4">
                     <div class="p-6 bg-slate-50 border border-slate-200">
                         <div class="text-sm font-bold text-corp-navy mb-2">Inventory Stabilization</div>
-                        <div class="text-sm text-slate-700 leading-relaxed font-normal">Maintaining multi-month cold-storage reserves to buffer against seasonal harvest fluctuations and ensure price stability for domestic markets.</div>
+                        <div class="text-sm text-slate-800 leading-relaxed font-normal">Maintaining multi-month cold-storage reserves to buffer against seasonal harvest fluctuations and ensure price stability for domestic markets.</div>
                     </div>
                     <div class="p-6 bg-slate-50 border border-slate-200">
                         <div class="text-sm font-bold text-corp-navy mb-2">Regional Distribution Velocity</div>
-                        <div class="text-sm text-slate-700 leading-relaxed font-normal">Utilizing the Ocean Pearl thermal fleet to transport high-quality protein from remote Eastern harvest zones to Western population centers.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+                        <div class="text-sm text-slate-800 leading-relaxed font-normal">Utilizing the Ocean Pearl thermal fleet to transport high-quality protein from remote Eastern harvest zones to Western population centers.</div>
+                    </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             As the global demand for animal protein escalates, national food security becomes synonymous with cold-chain security. Ocean Pearl acts as a strategic buffer for the Republic of Indonesia. By deploying industrial-scale freezing and storage assets, the platform creates a resilient protein corridor. This infrastructure ensures that even during harvest disruptions or global supply chain shocks, Indonesia retains a stable, high-quality seafood reserve capable of feeding its domestic population at predictable price points.
         </div>
     </div>
-
+    </div>
+    
     <!-- PAGE 85: ESG & Biomass Optimization -->
-    <div class="doc-page">
+    </div><div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 8: Government Impact & ESG</span>
             <span class="page-num">85</span>
@@ -2705,46 +2411,42 @@
                     <!-- Nodes -->
                     <div class="absolute top-0 right-0 p-3 bg-white text-corp-navy rounded shadow-lg translate-x-1/2 -translate-y-1/2 border border-slate-300">
                         <div class="text-[13px] font-black uppercase mb-1">Human Grade</div>
-                        <div class="text-[12px] font-medium text-slate-700">Premium Fillets & Loins</div>
+                        <div class="text-[12px] font-medium text-slate-800">Premium Fillets & Loins</div>
                     </div>
                     <div class="absolute bottom-0 right-0 p-3 bg-white text-corp-navy rounded shadow-lg translate-x-1/2 translate-y-1/2 border border-slate-300">
                         <div class="text-[13px] font-black uppercase mb-1">Industrial</div>
-                        <div class="text-[12px] font-medium text-slate-700">High-Protein Fishmeal</div>
+                        <div class="text-[12px] font-medium text-slate-800">High-Protein Fishmeal</div>
                     </div>
                     <div class="absolute bottom-0 left-0 p-3 bg-white text-corp-navy rounded shadow-lg -translate-x-1/2 translate-y-1/2 border border-slate-300">
                         <div class="text-[13px] font-black uppercase mb-1">Thermal</div>
-                        <div class="text-[12px] font-medium text-slate-700">LCO2 Heat Exchange Re-use</div>
+                        <div class="text-[12px] font-medium text-slate-800">LCO2 Heat Exchange Re-use</div>
                     </div>
                     <div class="absolute top-0 left-0 p-3 bg-white text-corp-navy rounded shadow-lg -translate-x-1/2 -translate-y-1/2 border border-slate-300">
                         <div class="text-[13px] font-black uppercase mb-1">Biotech</div>
-                        <div class="text-[12px] font-medium text-slate-700">Omega-3 Oil Extraction</div>
+                        <div class="text-[12px] font-medium text-slate-800">Omega-3 Oil Extraction</div>
                     </div>
                 </div>
                 
                 <div class="mt-12 flex gap-8 w-full justify-center text-sm text-center font-bold">
                     <div class="flex flex-col gap-1">
                         <span class="text-corp-gold">99.2%</span>
-                        <span class="text-slate-600 uppercase text-[13px]">Resource Utilization</span>
+                        <span class="text-slate-700 uppercase text-[13px]">Resource Utilization</span>
                     </div>
                     <div class="flex flex-col gap-1">
                         <span class="text-corp-gold">Zero</span>
-                        <span class="text-slate-600 uppercase text-[13px]">Wastewater Discharge</span>
+                        <span class="text-slate-700 uppercase text-[13px]">Wastewater Discharge</span>
                     </div>
                     <div class="flex flex-col gap-1">
                         <span class="text-corp-gold">Certified</span>
-                        <span class="text-slate-600 uppercase text-[13px]">MSC / FIP Compliant</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            Sustainability at Ocean Pearl is an operational mandate, not a marketing checkbox. By integrating high-precision processing, the platform eliminates the concept of 'offal.' Every byproduct—from heads and bones for fishmeal to liver oils for nutraceuticals—is captured and monetized. This Value-maximization approach across all byproducts materially increases the EBITDA yield per fish while simultaneously meeting the most stringent ESG requirements of global institutional lenders. Ocean Pearl proves that environmental discipline and infrastructure profitability are mutually reinforcing.
+                        <span class="text-slate-700 uppercase text-[13px]">MSC / FIP Compliant</span>
+                    </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            Sustainability at Ocean Pearl is an operational mandate, not a marketing checkbox. By integrating high-precision processing, the platform eliminates the concept of 'offal.' Every byproduct—from heads and bones for fishmeal to liver oils for nutraceuticals—is captured and monetized. This Value-maximization approach across all byproducts materially increases the EBITDA yield per fish while simultaneously meeting the most stringent ESG requirements of global institutional lenders. Ocean Pearl indicates that environmental discipline and infrastructure profitability are mutually reinforcing.
         </div>
     </div>
-
+    </div>
+    
     <!-- PAGE 86: EMPLOYMENT & SKILLS DEVELOPMENT -->
-    <div class="doc-page">
+    </div><div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 8: Government Impact & ESG</span>
             <span class="page-num">86</span>
@@ -2754,7 +2456,7 @@
         
         <div class="exec-visual-box bg-white p-10 border border-slate-300">
             <div class="flex flex-col gap-6 w-full">
-                <div class="text-sm uppercase text-slate-600 font-bold mb-2 tracking-widest text-center">The Ocean Pearl Skills Escalator</div>
+                <div class="text-sm uppercase text-slate-700 font-bold mb-2 tracking-widest text-center">The Ocean Pearl Skills Escalator</div>
                 
                 <div class="flex flex-col gap-2">
                     <div class="flex items-center gap-4">
@@ -2769,15 +2471,15 @@
                         <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-xl border border-slate-300">02</div>
                         <div class="flex-grow p-4 bg-slate-50 border border-slate-300 shadow-sm border-l-4 border-corp-blue">
                             <div class="text-sm font-bold text-corp-navy">Technical Processing & Cold-Chain Logistics</div>
-                            <div class="text-sm text-slate-700 font-normal">SuperFrozen facility management, HACCP compliance, and maritime engineering.</div>
+                            <div class="text-sm text-slate-800 font-normal">SuperFrozen facility management, HACCP compliance, and maritime engineering.</div>
                         </div>
                     </div>
                     <div class="flex justify-center h-4 text-slate-500">|</div>
                     <div class="flex items-center gap-4">
                         <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-xl border border-slate-300">01</div>
                         <div class="flex-grow p-4 bg-slate-50 border border-slate-300 shadow-sm border-l-4 border-slate-400">
-                            <div class="text-sm font-bold text-slate-700">Modernized Sourcing Operations</div>
-                            <div class="text-sm text-slate-700 font-normal">Ice factory management, coastal procurement, and quality-standard training.</div>
+                            <div class="text-sm font-bold text-slate-800">Modernized Sourcing Operations</div>
+                            <div class="text-sm text-slate-800 font-normal">Ice factory management, coastal procurement, and quality-standard training.</div>
                         </div>
                     </div>
                 </div>
@@ -2786,27 +2488,22 @@
             <div class="mt-8 flex justify-between w-full p-6 bg-slate-50 rounded border border-slate-200">
                 <div class="text-center flex-1 border-r border-slate-200">
                     <div class="text-xl font-bold text-corp-navy">5,000+</div>
-                    <div class="text-[13px] uppercase font-bold text-slate-600">Direct Industrial Jobs</div>
+                    <div class="text-[13px] uppercase font-bold text-slate-700">Direct Industrial Jobs</div>
                 </div>
                 <div class="text-center flex-1 border-r border-slate-200">
                     <div class="text-xl font-bold text-corp-navy">25,000+</div>
-                    <div class="text-[13px] uppercase font-bold text-slate-600">Indirect Ecosystem Impact</div>
+                    <div class="text-[13px] uppercase font-bold text-slate-700">Indirect Ecosystem Impact</div>
                 </div>
                 <div class="text-center flex-1">
                     <div class="text-xl font-bold text-corp-navy">100%</div>
-                    <div class="text-[13px] uppercase font-bold text-slate-600">BPJS / Social Compliance</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+                    <div class="text-[13px] uppercase font-bold text-slate-700">BPJS / Social Compliance</div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Infrastructure is only as potent as the workforce that operates it. Ocean Pearl invests heavily in human capital. By establishing the 'Coastal Excellence Center,' we provide formalized training for coastal residents, transitioning them from unregulated artisanal activities into stable, high-value industrial careers. This includes maritime logistics, advanced thermal engineering, and AI-driven supply chain management. This upskilling initiative directly supports Indonesia's demographic dividend by creating high-quality employment opportunities in the underserved regions of the archipelago.
         </div>
     </div>
-
+    </div>
     
     <!-- PAGE 87: GLOBAL SEAFOOD POSITIONING MAP -->
-    <div class="doc-page">
+    </div><div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 8: Government Impact & ESG</span>
             <span class="page-num">87</span>
@@ -2860,16 +2557,13 @@
                     <span>Indonesian Industrial Brain</span>
                     <span>Pacific Premium Hubs</span>
                 </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Ocean Pearl positions Indonesia at the geographical and industrial center of the global seafood economy. By integrating sourcing from the Oman/Yemen corridor and the Indonesian archipelago with wholly-owned distribution nodes in the USA and Egypt, the platform establishes a seamless protein highway. This architecture ensures that Indonesian-produced marine biomass is routed directly to the world's highest-value markets, establishing the archipelago as the primary coordination hub for global maritime protein flows and long-term food security infrastructure.
         </div>
     </div>
-
+    
     <!-- PAGE 88: GLOBAL COMPETITIVENESS -->
-    <div class="doc-page">
+    </div><div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 8: Government Impact & ESG</span>
             <span class="page-num">88</span>
@@ -2880,11 +2574,11 @@
         <div class="exec-visual-box bg-white p-0 border border-slate-300">
             <div class="grid grid-cols-5 h-64 w-full">
                 <div class="bg-slate-200 flex items-center justify-center border-r border-slate-300">
-                    <span class="rotate-[-90deg] text-sm font-black text-slate-600 whitespace-nowrap uppercase tracking-widest">Global Commodity Market</span>
+                    <span class="rotate-[-90deg] text-sm font-black text-slate-700 whitespace-nowrap uppercase tracking-widest">Global Commodity Market</span>
                 </div>
                 <div class="col-span-4 p-10 flex flex-col justify-center">
                     <div class="flex items-center gap-6 mb-8">
-                        <div class="text-sm font-bold text-slate-700 w-24">Traditional Export</div>
+                        <div class="text-sm font-bold text-slate-800 w-24">Traditional Export</div>
                         <div class="flex-grow h-6 bg-slate-100 relative">
                             <div class="absolute left-0 top-0 h-full w-1/3 bg-slate-400"></div>
                             <span class="absolute left-4 top-1/2 -translate-y-1/2 text-sm text-white font-bold">Raw Commodity Margin</span>
@@ -2900,19 +2594,14 @@
                     <div class="mt-8 flex gap-4">
                         <div class="px-4 py-2 bg-emerald-50 text-emerald-700 text-sm font-bold border border-emerald-200">+300% Margin Retention</div>
                         <div class="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-bold border border-blue-200">Enhanced Pricing Resilience</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            Indonesia possesses the world's most productive marine biomass, yet historically, the majority of the value has been captured by foreign processing and trading hubs in Japan, Singapore, and Europe. Ocean Pearl changes this equation. By integrating the entire value chain—from Indonesian harvest to USA/MENA retail—the platform improves export pricing leverage and downstream value capture. This shift from 'price-taker' to 'higher-value downstream positioning' increases the nation's global economic leverage and ensures that the wealth generated from Indonesian oceans stays within the Indonesian economy.
+                    </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            Indonesia possesses the world's most productive marine biomass, yet historically, the majority of the value has been captured by foreign processing and trading hubs in Japan, Singapore, and Europe. Ocean Pearl changes this equation. By integrating the entire value chain—from Indonesian harvest to USA/MENA retail—the platform imindicates export pricing leverage and downstream value capture. This shift from 'price-taker' to 'higher-value downstream positioning' increases the nation's global economic leverage and ensures that the wealth generated from Indonesian oceans stays within the Indonesian economy.
         </div>
     </div>
-
-
+    </div>
+    
     <!-- PAGE 89: GOVERNMENT PARTNERSHIP & ALIGNMENT -->
-    <div class="doc-page">
+    </div><div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 8: Government Impact & ESG</span>
             <span class="page-num">89</span>
@@ -2922,48 +2611,44 @@
         
         <div class="exec-visual-box bg-slate-50 p-10 border border-slate-300">
             <div class="flex flex-col gap-8 w-full">
-                <div class="text-sm uppercase text-slate-600 font-bold mb-2 tracking-widest text-center">Inter-Ministerial & Infrastructure Alignment</div>
+                <div class="text-sm uppercase text-slate-700 font-bold mb-2 tracking-widest text-center">Inter-Ministerial & Infrastructure Alignment</div>
                 
                 <div class="grid grid-cols-2 gap-4">
                     <div class="p-6 bg-white border border-slate-200 shadow-sm flex items-start gap-4">
                         <div class="w-10 h-10 bg-corp-gold text-white flex items-center justify-center font-bold rounded">01</div>
                         <div>
                             <div class="text-sm font-bold text-corp-navy">BKPM / Ministry of Investment</div>
-                            <div class="text-sm text-slate-700 font-normal">Strategically positioned for and investment incentives for coastal infrastructure deployment in Region III (Eastern Indonesia).</div>
+                            <div class="text-sm text-slate-800 font-normal">Strategically positioned for and investment incentives for coastal infrastructure deployment in Region III (Eastern Indonesia).</div>
                         </div>
                     </div>
                     <div class="p-6 bg-white border border-slate-200 shadow-sm flex items-start gap-4">
                         <div class="w-10 h-10 bg-corp-navy text-white flex items-center justify-center font-bold rounded">02</div>
                         <div>
                             <div class="text-sm font-bold text-corp-navy">Ministry of Marine Affairs (KKP)</div>
-                            <div class="text-sm text-slate-700 font-normal">Strategically aligned with national fisheries modernization targets and implementation of traceable harvest standards.</div>
+                            <div class="text-sm text-slate-800 font-normal">Strategically aligned with national fisheries modernization targets and implementation of traceable harvest standards.</div>
                         </div>
                     </div>
                     <div class="p-6 bg-white border border-slate-200 shadow-sm flex items-start gap-4">
                         <div class="w-10 h-10 bg-blue-600 text-white flex items-center justify-center font-bold rounded">03</div>
                         <div>
                             <div class="text-sm font-bold text-corp-navy">State-Owned Ports (Pelindo)</div>
-                            <div class="text-sm text-slate-700 font-normal">Positioned to integrate with national port hubs (Makassar/Jakarta) to streamline export velocity and cold-chain integrity.</div>
+                            <div class="text-sm text-slate-800 font-normal">Positioned to integrate with national port hubs (Makassar/Jakarta) to streamline export velocity and cold-chain integrity.</div>
                         </div>
                     </div>
                     <div class="p-6 bg-white border border-slate-200 shadow-sm flex items-start gap-4">
                         <div class="w-10 h-10 bg-emerald-600 text-white flex items-center justify-center font-bold rounded">04</div>
                         <div>
                             <div class="text-sm font-bold text-corp-navy">LPEI / Indonesia Eximbank</div>
-                            <div class="text-sm text-slate-700 font-normal">Potential alignment with and trade finance facilities to support high-value FMCG penetration into global markets.</div>
+                            <div class="text-sm text-slate-800 font-normal">Potential alignment with and trade finance facilities to support high-value FMCG penetration into global markets.</div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+                    </div></div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
             Ocean Pearl does not operate in a vacuum. The platform is designed as a private-sector accelerator for established national development priorities. By aligning our capital deployment with BKPM investment incentives, KKP sustainability mandates, and Pelindo logistics networks, we maximize the synergy between private efficiency and public-sector infrastructure. This integrated approach ensures that Ocean Pearl is not just an investment project, but a complementary platform for the modernization of the Indonesian maritime economy.
         </div>
     </div>
-
+    </div>
+    
     <!-- PAGE 90: STRATEGIC NATIONAL IMPACT SUMMARY -->
-    <div class="doc-page">
+    </div><div class="doc-page">
         <div class="page-header">
             <span class="section-title">Section 8: Government Impact & ESG</span>
             <span class="page-num">90</span>
@@ -3001,20 +2686,12 @@
                 <div class="mt-8 text-lg font-serif italic text-white max-w-xl">
                     "This is not a seafood company. This is the industrialization of the Indonesian archipelago's greatest natural resource."
                 </div>
-            </div>
-        </div>
-        
-        <div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
-            Section 8 mathematically confirms that Ocean Pearl is an engine of national value creation. Beyond the internal IRR of 22.8%, the project generates massive socio-economic externalities. By reducing spoilage, upskilling coastal communities, and capturing global downstream margins, the platform establishes Indonesia as a primary global maritime power. This alignment with sovereign food security and industrialization mandates makes Ocean Pearl a low-risk, high-priority asset for the Republic's strategic investment agenda.
-        </div>
-            <div class="mt-4 text-[10px] text-slate-500 italic border-t border-slate-200 pt-2">
-            Note: Figures shown are illustrative strategic scenarios derived from modeled deployment assumptions and subject to execution, market, regulatory, and financing conditions.
-        </div>
+            </div><div class="exec-footer-text" style="border-top-color: var(--corp-gold);">
+            Section 8 mathematically confirms that Ocean Pearl is an engine of national value creation. Beyond the internal IRR of 22.8%, the project generates material socio-economic externalities. By reducing spoilage, upskilling coastal communities, and capturing global downstream margins, the platform establishes Indonesia as a primary global maritime power. This alignment with sovereign food security and industrialization mandates makes Ocean Pearl a low-risk, high-priority asset for the Republic's strategic investment agenda.
         </div>
     </div>
-
     <!-- PAGE 91: TRANSITION DIVIDER -->
-    <div class="doc-page divider-page">
+    </div><div class="doc-page divider-page">
         <div class="divider-content">
             <h1 class="text-5xl font-extrabold mb-4 text-white">Part C</h1>
             <div class="w-16 h-1 mx-auto mb-8" style="background-color: var(--corp-gold);"></div>
@@ -3028,3 +2705,5 @@
 </body>
 </html>
 
+
+    
